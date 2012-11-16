@@ -1,4 +1,4 @@
 grc-jekyll-blog
 ===============
 
-GRC Jekyll
+GRC Jekyll - Initial Change
