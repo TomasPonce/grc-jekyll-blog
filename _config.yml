@@ -1,5 +1,5 @@
-site_name: 'News from London'
-site_url: 'http://london-news.demo'
+site_name: 'The Graphic Rustication Company'
+site_url: 'http://graphicrustication.com'
 markdown: rdiscount
 rdiscount:
     extensions: [smart]
