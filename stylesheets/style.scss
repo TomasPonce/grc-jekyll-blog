@@ -1,1 +1,48 @@
 /* CSS SASS */
+
+/* Variables */
+
+$color-1-base: rgb(209, 62, 44); /* Red */
+
+$color-1: lighten($color-2-base, 10%);
+
+$color-2: rgb(43, 43, 43); /* Black */
+
+$color-2: lighten($color-2-base, 10%);
+
+$color-3: rbg(248, 248, 248); /* Gray */
+
+$color-3: lighten($color-3-base, 10%);
+
+$color-4: rgb(60, 167, 217); /* Blue */
+
+$color-4: lighten($color-4-base, 10%);
+
+/* Fonts */
+
+@mixin font1 {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: $color-1;
+}
+
+h2 {
+	@include font1;
+}
+
+/* The Basics */
+
+body {
+	background: $color-3;
+}
+
+.wrapper {
+	border: 1px solid $color2;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.header {
+	height: 200px;
+}
+
+
