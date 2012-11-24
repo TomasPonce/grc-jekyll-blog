@@ -4,29 +4,58 @@
 
 $color-1-base: rgb(209, 62, 44); /* Red */
 
-$color-1: lighten($color-2-base, 10%);
+$color-1: lighten($color-1-base, 0%);
 
-$color-2: rgb(43, 43, 43); /* Black */
+$color-2-base: rgb(43, 43, 43); /* Black */
 
-$color-2: lighten($color-2-base, 10%);
+$color-2: lighten($color-2-base, 0%);
 
-$color-3: rbg(248, 248, 248); /* Gray */
+$color-3-base: rgb(205, 201, 201); /* Gray */
 
-$color-3: lighten($color-3-base, 10%);
+$color-3: lighten($color-3-base, 0%);
 
-$color-4: rgb(60, 167, 217); /* Blue */
+$color-4-base: rgb(60, 167, 217); /* Blue */
 
-$color-4: lighten($color-4-base, 10%);
+$color-4: lighten($color-4-base, 1%);
 
 /* Fonts */
 
-@mixin font1 {
+@mixin font-1 {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     color: $color-1;
 }
 
+@mixin font-2 {
+	font-family: 'Vollkorn', Georgia, Times, serif;
+    color: $color-4;
+}
+
+h1 {
+	@include font-1;
+}
+
 h2 {
-	@include font1;
+	@include font-1;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+	@include font-2;
+}
+
+a {
+
+	:hover {
+		color: $color-1;
+	}
+	
 }
 
 /* The Basics */
@@ -35,8 +64,9 @@ body {
 	background: $color-3;
 }
 
+/* Structure */
+
 .wrapper {
-	border: 1px solid $color2;
 	margin: 0 auto;
 	width: 90%;
 }
@@ -45,4 +75,22 @@ body {
 	height: 200px;
 }
 
+.column {
+	float: left;
 
+	.column-1 {
+		width: 100%;
+	}
+
+	.column-2 {
+		width: 100/3
+	}
+
+	.column-3 {
+
+	}
+
+	.column-4 {
+
+	}
+}

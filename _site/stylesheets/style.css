@@ -1,1 +1,1 @@
-h2{font-family:'Ubuntu', Helvetica, Arial, sans-serif;color:#d13e2c}body{background:rbga(248, 248, 248, 1)}.wrapper{border:1px solid rgba(43,43,43,0.95);margin:0 auto;width:90%}.header{height:200px}
+h1{font-family:'Ubuntu', Helvetica, Arial, sans-serif;color:#d13e2c}h2{font-family:'Ubuntu', Helvetica, Arial, sans-serif;color:#d13e2c}p{font-family:'Vollkorn', Georgia, Times, serif;color:#40a9da}a :hover{color:#d13e2c}body{background:#cdc9c9}.wrapper{margin:0 auto;width:90%}.header{height:200px}.column{float:left}.column .column-1{width:100%}.column .column-2{width:100/3}
