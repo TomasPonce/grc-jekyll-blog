@@ -33,7 +33,6 @@ $main-width: 90%;
 
 @mixin col-width ($col-number){
 	float: left;
-	padding-right: 10px;
 	width: (100% / $col-number); 
 }
 
@@ -137,14 +136,10 @@ body {
 	width: $main-width;
 }
 
-[class*='columns'] {
-  padding-right: 20px;
-}
-[class*='columns']:last-of-type {
-  padding-right: 0;
-}
 
+/* I need to improve this massivly */
 ul.columns li {
 	@include col-width (3);
+	padding: 10px;
 }
 
