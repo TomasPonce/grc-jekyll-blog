@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>The Graphic Rustication Company</title>
+ <title>The Graphic Rustication Company - Under Construction</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-11-24T00:41:52-08:00</updated>
+ <updated>2012-11-24T22:39:33-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
    <email>fake@mijingo.com</email>
  </author>
 
+ 
+ 	<entry>
+ 		<title>New Nikon 50mm Lens</title>
+ 		<link href="http://graphicrustication.com/articles/new-50mm-nikon-lense"/>
+ 		<updated>2012-11-24T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/articles/new-50mm-nikon-lense</id>
+ 		<content type="html">&lt;p&gt;It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&amp;rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Black Friday Analysis</title>
+ 		<link href="http://graphicrustication.com/articles/black-friday-marketing"/>
+ 		<updated>2012-11-23T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/articles/black-friday-marketing</id>
+ 		<content type="html">&lt;p&gt;Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.&lt;/p&gt;
+</content>
+ 	</entry>
  
  	<entry>
  		<title>Migrating to Jekyll from Wordpress</title>
@@ -23,7 +41,7 @@
 
 &lt;p&gt;Why is this so appealing? First of all it runs fast on any server because it&amp;rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&amp;rsquo;s fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the &lt;em&gt;post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called &lt;/em&gt;site.&lt;/p&gt;
 
-&lt;p&gt;So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. So far I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. That&amp;rsquo;s all for now, next comes a new responsive design.&lt;/p&gt;
+&lt;p&gt;So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. So far I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. That&amp;rsquo;s all for now, next comes a new responsive design.&lt;/li&gt;&lt;/p&gt;
 </content>
  	</entry>
  

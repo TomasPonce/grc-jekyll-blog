@@ -1,5 +1,13 @@
 /* CSS SASS */
 
+/* Box Sizing Border Box Fix - Thanks Chris Coyier*/
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Variables */
 
 $color-1-base: rgb(209, 62, 44); /* Red */
@@ -12,13 +20,28 @@ $color-2: lighten($color-2-base, 0%);
 
 $color-3-base: rgb(205, 201, 201); /* Gray */
 
-$color-3: lighten($color-3-base, 0%);
+$color-3: lighten($color-3-base, 20%);
 
 $color-4-base: rgb(60, 167, 217); /* Blue */
 
 $color-4: lighten($color-4-base, 1%);
 
+$color-5-base: rgb(57, 57, 57);
+$color-5: darken($color-5-base, 0%); /* Drk Gray */
+
+$main-width: 90%;
+
+@mixin col-width ($col-number){
+	float: left;
+	padding-right: 10px;
+	width: (100% / $col-number); 
+}
+
 /* Fonts */
+
+body {
+	font-size: 16px;
+}
 
 @mixin font-1 {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -48,14 +71,23 @@ h4 {
 
 p {
 	@include font-2;
+	color: $color-5;
 }
 
 a {
-
+	color: $color-1;
+	text-decoration: none;
 	:hover {
 		color: $color-1;
 	}
 	
+}
+
+ul {
+	list-style: none;
+	li {
+	
+	}
 }
 
 /* The Basics */
@@ -65,32 +97,54 @@ body {
 }
 
 /* Structure */
-
-.wrapper {
+.header h2, .header .nav ul, .wrapper {
 	margin: 0 auto;
-	width: 90%;
-}
+} 
+
 
 .header {
+	background: url('/images/wood-bg.jpg');
 	height: 200px;
-}
-
-.column {
-	float: left;
-
-	.column-1 {
+	position: relative;
+	h2 {
+		padding: 20px 0 0 0; 
+		width: $main-width;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}	
+	.nav { 
+		background: $color-4;
+		bottom: 0;
+		position: absolute;
+		text-align: center;
 		width: 100%;
-	}
-
-	.column-2 {
-		width: 100/3
-	}
-
-	.column-3 {
-
-	}
-
-	.column-4 {
-
+		ul {
+				
+			li {
+				@include col-width(4);
+				line-height: 200%;
+					a {
+						color: #fff;
+					}	
+				}
+			}
 	}
 }
+
+.wrapper {
+	width: $main-width;
+}
+
+[class*='columns'] {
+  padding-right: 20px;
+}
+[class*='columns']:last-of-type {
+  padding-right: 0;
+}
+
+ul.columns li {
+	@include col-width (3);
+}
+

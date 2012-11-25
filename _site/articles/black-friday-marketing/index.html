@@ -11,7 +11,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>{{site.site_name}}</title>
+  <title>The Graphic Rustication Company - Under Construction</title>
   
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -36,7 +36,7 @@
 
 <body>
     <div class="header">
-      <h2><a href="/">{{site.site_name}}</a></h2>
+      <h2><a href="/">The Graphic Rustication Company - Under Construction</a></h2>
 		<div class="nav">
 			<ul>
 	  			<li><a href="#">Home</a></li>
@@ -48,12 +48,26 @@
     </div>
 <div class="wrapper">
     <ul class="columns">
-	    {% for post in site.posts limit 4 %}
-	    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-	        {{ post.content | truncatewords:75}}<br>
-	            <a href="{{ post.url }}">Read more...</a><br><br>
+	    
+	    <li><span>24 Nov 2012</span> &raquo; <a href="/articles/new-50mm-nikon-lense">New Nikon 50mm Lens</a>
+	        It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I'm still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup. 
+
+
+<br>
+	            <a href="/articles/new-50mm-nikon-lense">Read more...</a><br><br>
 		</li>
-	    {% endfor %}
+	    
+	    <li><span>23 Nov 2012</span> &raquo; <a href="/articles/black-friday-marketing">Black Friday Analysis</a>
+	        <p>Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.</p>
+<br>
+	            <a href="/articles/black-friday-marketing">Read more...</a><br><br>
+		</li>
+	    
+	    <li><span>17 Nov 2012</span> &raquo; <a href="/articles/the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a>
+	        <p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll?</p> <p><code>code(Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the...<br>
+	            <a href="/articles/the-wordpress-to-jekyll-migration">Read more...</a><br><br>
+		</li>
+	    
 	</ul>
 
   <!-- Included JS Files (Uncompressed) -->
