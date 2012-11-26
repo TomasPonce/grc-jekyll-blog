@@ -11,7 +11,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>The Graphic Rustication Company - Under Construction</title>
+  <title>The Graphic Rustication Company</title>
   
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -21,6 +21,7 @@
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/nivo-slider.css">
   <script src="/javascripts/modernizr.foundation.js"></script>
   
   <!-- Included Google Fonts -->
@@ -36,18 +37,29 @@
 
 <body>
     <div class="header">
-      <h2><a href="/">The Graphic Rustication Company - Under Construction</a></h2>
+      <h2><a href="/">The Graphic Rustication Company</a></h2>
 		<div class="nav">
 			<ul>
-	  			<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">Contact</a></li>
+	  			<li class="home"><a href="#">Home</a></li>
+				<li class="about"><a href="#">About</a></li>
+				<li class="work"><a href="#">Work</a></li>
+				<li class="contact"><a href="#">Contact</a></li>
 			</ul>
 		</div>
     </div>
 <div class="wrapper">
-    	<div class="columns three-col posts">
+    	<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider/header-slide1.jpg" data-thumb="images/slider/header-slide1.jpg" alt="" />
+                <img src="images/slider/header-slide2.jpg" data-thumb="images/slider/header-slide2.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/slider/header-slide3.jpg" data-thumb="images/slider/header-slide3.jpg" alt="" data-transition="slideInLeft" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+    </div>
+
+	<div class="columns three-col posts">
 		<ul>
 			
 			<li><h3>24 Nov 2012 &raquo; <br><a href="/articles/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
@@ -61,7 +73,7 @@
 			</li>
 			
 			<li><h3>17 Nov 2012 &raquo; <br><a href="/articles/the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
-				<p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll?</p> <p><code>code(Jekyll...<br>
+				<p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll?</p> <p><code>Jekyll...<br>
 				<a href="/articles/the-wordpress-to-jekyll-migration">Read more...</a><br><br>
 			</li>
 			
@@ -77,42 +89,18 @@
 		</p>	
 	</div>
 	
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-  
-  <script src="javascripts/modernizr.foundation.js"></script>
-  
-  <script src="javascripts/jquery.js"></script>
-  
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
-  <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
-  <script src="javascripts/jquery.foundation.forms.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
-  <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
-  <script src="javascripts/jquery.placeholder.js"></script>
-  
-  <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
-  -->
+
+
   
   <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/foundation.min.js"></script>
-  
-  <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
+ 
 </div> <!-- /wrapper -->
+<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+});
+</script>
 </body>
 </html>

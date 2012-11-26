@@ -6,7 +6,7 @@ date: November 17, 2012
 
 Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll?
 
-`code(Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.)`
+`Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.`
 
 Why is this so appealing? First of all it runs fast on any server because it's only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It's fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the _post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called _site. 
 

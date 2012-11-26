@@ -4,7 +4,7 @@
 
 /* Variables */
 
-$color-1-base: rgb(209, 62, 44); /* Red */
+$color-1-base: rgb(144, 43, 0); /* Red */
 
 $color-1: lighten($color-1-base, 0%);
 
@@ -64,9 +64,13 @@ $main-width: 90%;
     }
 }
 
-
 /* Fonts */
 
+@font-face {  
+	  font-family: "URoman";  
+	  src: local("UnivrstyRoman-Bd-BT-Bold"), url( /images/fonts/UnivrstyRoman-Bd-BT-Bold.ttf ) format("truetype");
+	}
+	
 body {
 	font-size: 16px;
 }
@@ -81,21 +85,8 @@ body {
     color: $color-4;
 }
 
-h1 {
-	@include font-1;
-}
-
-h2 {
-	@include font-1;
-}
-
-h3 {
-	@include font-1;
-	color: $color-5;
-}
-
-h4 {
-	@include font-1;
+@mixin font-3 {
+	font-family: 'URoman' , verdana, helvetica, sans-serif; 	
 }
 
 p {
@@ -111,13 +102,33 @@ a {
 
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 	li {}
+}
+
+h1 {
+	@include font-1;
+}
+
+h2 {
+	font-size: 3em;
+	@include font-3;
+}
+
+h3 {
+	@include font-1;
+	color: $color-5;
+}
+
+h4 {
+	@include font-1;
 }
 
 /* The Basics */
 
 body {
-	background: $color-3;
+	background: $color-3 url('/images/debut_light.png');
 }
 
 /* Structure */
@@ -134,7 +145,7 @@ body {
 		a {color: #fff; text-decoration: none;}
 	}	
 	.nav { 
-		background: $color-4;
+		background: $color-1;
 		bottom: 0;
 		position: absolute;
 		text-align: center;
@@ -142,7 +153,7 @@ body {
 		ul {
 			li {
 				@include col-width(4);
-				line-height: 200%;
+				line-height: 200%; 
 					a {color: #fff;}	
 				}
 			}
@@ -158,21 +169,13 @@ body {
 .columns {
 	ul {
 		@include clear;
-		margin: 0;
-		padding: 0;
+		li {
+			padding: 0 15px;
+		}
+		ul li:last-of-type {
+		
+		}
 	}
-	ul li {
-		padding-right: 15px;
-		@include breakpoint(full-screen) {max-width: 600px;}
-		@include breakpoint(half-screen) {}
-		@include breakpoint(quarter-screen) {min-width: 250px;}
-		@include breakpoint(mobile) {width: 900%;}	
-	}
-	
-	ul li:last-of-type {
-		padding: 0;
-	}
-	
 }
 
 .one-col ul li {
@@ -186,9 +189,32 @@ body {
 .three-col ul li {
 	@include col-width(3);
 	background: #fff;
-	border: 1px solid red;
 }
 
 .four-col ul li {
 	@include col-width(4);
+}
+
+.posts {border: 4px solid #ccc; background: #fff;
+	ul {
+		background: #fff;
+	}
+}
+
+/* Media Queries */
+
+.columns {
+	ul {
+		li {
+			@include breakpoint(full-screen) {max-width: 600px;}
+			@include breakpoint(half-screen) {}
+			@include breakpoint(quarter-screen) {width: 100%;}
+			@include breakpoint(mobile) {width: 90%;}
+		}
+	}
+}
+
+.nav ul  { 
+		li a {@include breakpoint(quarter-screen) {font-size: 1.5em; line-height: 2em}
+		}
 }

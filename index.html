@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+
+	<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/slider/header-slide1.jpg" data-thumb="images/slider/header-slide1.jpg" alt="" />
+                <img src="images/slider/header-slide2.jpg" data-thumb="images/slider/header-slide2.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/slider/header-slide3.jpg" data-thumb="images/slider/header-slide3.jpg" alt="" data-transition="slideInLeft" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+    </div>
+
 	<div class="columns three-col posts">
 		<ul>
 			{% for post in site.posts limit 4 %}
