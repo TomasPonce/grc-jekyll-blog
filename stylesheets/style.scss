@@ -1,12 +1,6 @@
 /* CSS SASS */
 
-/* Box Sizing Border Box Fix - Thanks Chris Coyier*/
-
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import "box-sizing";
 
 /* Variables */
 
@@ -27,14 +21,49 @@ $color-4-base: rgb(60, 167, 217); /* Blue */
 $color-4: lighten($color-4-base, 1%);
 
 $color-5-base: rgb(57, 57, 57);
+
 $color-5: darken($color-5-base, 0%); /* Drk Gray */
 
 $main-width: 90%;
+
+/* Columns */
 
 @mixin col-width ($col-number){
 	float: left;
 	width: (100% / $col-number); 
 }
+
+/* Breakpoints */
+
+@mixin breakpoint($point) {
+  @if $point == full-screen {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == half-screen {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == quarter-screen {
+	@media (max-width: 650px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 480px)  { @content; }
+  }
+}
+
+/* Clearfix */
+
+@mixin clear() {
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 
 /* Fonts */
 
@@ -61,11 +90,12 @@ h2 {
 }
 
 h3 {
-
+	@include font-1;
+	color: $color-5;
 }
 
 h4 {
-
+	@include font-1;
 }
 
 p {
@@ -76,17 +106,12 @@ p {
 a {
 	color: $color-1;
 	text-decoration: none;
-	:hover {
-		color: $color-1;
-	}
-	
+	:hover {color: $color-1;}
 }
 
 ul {
 	list-style: none;
-	li {
-	
-	}
+	li {}
 }
 
 /* The Basics */
@@ -105,13 +130,8 @@ body {
 	background: url('/images/wood-bg.jpg');
 	height: 200px;
 	position: relative;
-	h2 {
-		padding: 20px 0 0 0; 
-		width: $main-width;
-		a {
-			color: #fff;
-			text-decoration: none;
-		}
+	h2 {padding: 20px 0 0 0; width: $main-width;
+		a {color: #fff; text-decoration: none;}
 	}	
 	.nav { 
 		background: $color-4;
@@ -120,13 +140,10 @@ body {
 		text-align: center;
 		width: 100%;
 		ul {
-				
 			li {
 				@include col-width(4);
 				line-height: 200%;
-					a {
-						color: #fff;
-					}	
+					a {color: #fff;}	
 				}
 			}
 	}
@@ -136,10 +153,42 @@ body {
 	width: $main-width;
 }
 
+/* Columns */
 
-/* I need to improve this massivly */
-ul.columns li {
-	@include col-width (3);
-	padding: 10px;
+.columns {
+	ul {
+		@include clear;
+		margin: 0;
+		padding: 0;
+	}
+	ul li {
+		padding-right: 15px;
+		@include breakpoint(full-screen) {max-width: 600px;}
+		@include breakpoint(half-screen) {}
+		@include breakpoint(quarter-screen) {min-width: 250px;}
+		@include breakpoint(mobile) {width: 900%;}	
+	}
+	
+	ul li:last-of-type {
+		padding: 0;
+	}
+	
 }
 
+.one-col ul li {
+	@include col-width(1);
+}
+
+.two-col ul li {
+	@include col-width(2);
+}
+
+.three-col ul li {
+	@include col-width(3);
+	background: #fff;
+	border: 1px solid red;
+}
+
+.four-col ul li {
+	@include col-width(4);
+}
