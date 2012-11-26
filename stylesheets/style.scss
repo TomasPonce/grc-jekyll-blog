@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 4em;
 	@include font-3;
 }
 
@@ -123,6 +123,7 @@ h3 {
 
 h4 {
 	@include font-1;
+	font-size: 2.5em;
 }
 
 /* The Basics */
@@ -139,25 +140,32 @@ body {
 
 .header {
 	background: url('/images/wood-bg.jpg');
-	height: 200px;
+	display: block;
 	position: relative;
-	h2 {padding: 20px 0 0 0; width: $main-width;
+	text-align: center;
+	h2 {
+		padding: .5em 0;
 		a {color: #fff; text-decoration: none;}
 	}	
-	.nav { 
-		background: $color-1;
-		bottom: 0;
-		position: absolute;
-		text-align: center;
-		width: 100%;
-		ul {
-			li {
-				@include col-width(4);
-				line-height: 200%; 
-					a {color: #fff;}	
-				}
+	
+	
+}
+
+.nav { 
+	background: $color-5;
+	border-bottom: 4px solid $color-1;
+	border-top: 4px solid #fff;
+	bottom: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	ul {@include clear;
+		li {
+			@include col-width(5);
+			line-height: 2.5em; 
+				a {color: #fff;font-size: 1.4em;}	
 			}
-	}
+		}
 }
 
 .wrapper {
@@ -195,9 +203,28 @@ body {
 	@include col-width(4);
 }
 
-.posts {border: 4px solid #ccc; background: #fff;
+.points {
 	ul {
 		background: #fff;
+		li {
+			background: #fff;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+			h4 {
+				color: $color-5;
+				border-bottom: 4px solid #666;
+			}
+		}
+	}
+}
+
+.posts {
+ 		
+		ul {
+			margin: 15px 0 0 0;
+			background: #fff;
 	}
 }
 
