@@ -98,8 +98,9 @@
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
+	display: none;
 	text-align:center;
-	padding: 15px 0;
+	padding: 15px;
 }
 .nivo-controlNav a {
 	cursor:pointer;

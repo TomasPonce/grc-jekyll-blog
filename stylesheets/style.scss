@@ -232,7 +232,7 @@ body {
 		li {
 			text-align: center;
 			img {
-				width: 100%;
+				width: 80%;
 			}
 			h4 {
 				color: $color-5;
@@ -277,9 +277,12 @@ body {
 		li {
 			@include breakpoint(full-screen) {max-width: 600px;}
 			@include breakpoint(half-screen) {}
-			@include breakpoint(quarter-screen) {width: 100%;}
-			@include breakpoint(mobile) {width: 90%;}
+			@include breakpoint(quarter-screen) {margin: 15px 0; padding: 0; width: 100%;}
+			@include breakpoint(mobile) {}
+			}
+		li:first-of-type, li:last-of-type {@include breakpoint(quarter-screen) {padding: 0;}
 		}
+	
 	}
 }
 
