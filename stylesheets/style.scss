@@ -79,16 +79,19 @@ $main-width: 90%;
 
 /* Retina Display*/
 
-@mixin background-image-retina($file, $type, $width, $height) {
-  background-image: url($file + '.' + $type);
-
-  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-    & {
-      background-image: url($file + '_@2x.' + $type);
-      -webkit-background-size: $width $height;
-    }
+@mixin retina {
+  @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    @content;
   }
 }
+
+@mixin generic-background-image($image) {
+	background: url("#{$image}.png");
+	  @include retina {
+	    background: image-url("#{$image}_@2X.png");
+	}
+}
+
 
 
 /* Fonts */
@@ -164,7 +167,7 @@ h4 {
 /* The Basics */
 
 body {
-	@include background-image-retina('/images/nasty_fabric', 'png', 369px, 400px);
+	@include generic-background-image("/images/nasty_fabric");
 }
 
 /* Structure */
