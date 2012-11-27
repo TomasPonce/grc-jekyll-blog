@@ -24,6 +24,11 @@ $color-5-base: rgb(57, 57, 57);
 
 $color-5: darken($color-5-base, 0%); /* Drk Gray */
 
+$color-6-base: rgb(0, 0, 0);
+
+$color-6: lighten($color-6-base, 15%); /* Modified Black */
+
+
 $main-width: 90%;
 
 /* Columns */
@@ -145,7 +150,7 @@ h4 {
 /* The Basics */
 
 body {
-	background: #ccc;
+	background: #ccc url('/images/nasty_fabric.png');
 }
 
 /* Structure */
@@ -170,7 +175,7 @@ body {
 .nav { 
 	background: $color-5;
 	border-bottom: 4px solid $color-1;
-	border-top: 4px solid #fff;
+	border-top: 1px solid $color-6;
 	bottom: 0;
 	position: relative;
 	text-align: center;
