@@ -164,7 +164,7 @@ h4 {
 /* The Basics */
 
 body {
-	@include background-image-retina('/images/nasty_fabric', 'png', 0px, 0px);
+	@include background-image-retina('/images/nasty_fabric', 'png', 369px, 400px);
 }
 
 /* Structure */
