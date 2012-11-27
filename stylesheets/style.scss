@@ -50,6 +50,14 @@ $main-width: 90%;
   }
 }
 
+/* CSS3 Shadows */
+
+@mixin shadow() {
+	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+
 /* Clearfix */
 
 @mixin clear() {
@@ -70,10 +78,6 @@ $main-width: 90%;
 	  font-family: "URoman";  
 	  src: local("UnivrstyRoman-Bd-BT-Bold"), url( /images/fonts/UnivrstyRoman-Bd-BT-Bold.ttf ) format("truetype");
 	}
-	
-body {
-	font-size: 16px;
-}
 
 @mixin font-1 {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -129,7 +133,7 @@ h4 {
 /* The Basics */
 
 body {
-	background: $color-3 url('/images/debut_light.png');
+	background: #ccc;
 }
 
 /* Structure */
@@ -147,8 +151,6 @@ body {
 		padding: .5em .2em;
 		a {color: #fff; text-decoration: none;}
 	}	
-	
-	
 }
 
 .nav { 
@@ -175,7 +177,9 @@ body {
 /* Columns */
 
 .columns {
+
 	ul {
+		
 		@include clear;
 		li {
 			padding: 0 15px;
@@ -207,7 +211,6 @@ body {
 	ul {
 		background: #fff;
 		li {
-			background: #fff;
 			text-align: center;
 			img {
 				width: 100%;
@@ -224,7 +227,9 @@ body {
  		
 		ul {
 			margin: 15px 0 0 0;
-			background: #fff;
+			li {
+				@include shadow;
+			}
 	}
 }
 
