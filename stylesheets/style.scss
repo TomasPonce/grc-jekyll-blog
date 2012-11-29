@@ -214,7 +214,7 @@ body {
 /* Columns */
 
 .columns {
-	margin: 20px 0 0 0;
+	margin: 20px 0 0 ;
 	ul {
 		@include clear;
 	}
@@ -261,13 +261,6 @@ body {
 		ul {
 			li {
 				padding: 0 7px;
-			li:nth-child(3n+1) {
-				padding: 0 14px 0 0px;
-			}
-			li:nth-child(3n+3) {
-				@include clear;
-				padding: 0 0px 0 14px;
-			}
 				.inner-box {
 					position: relative;
 					background: #fff;
@@ -275,15 +268,23 @@ body {
 					margin-top: 20px;
 					padding: 20px;
 					h3 {
-					position: absolute; 
-					bottom: 20px;
-						
+						position: absolute; 
+						bottom: 20px;		
 					}
-					h3 {display: none;}
+					h3 {
+						display: none;
+						}
 					img {
 						width: 100%;
 					}
 				}
+			
+			}
+			li.first {
+				padding: 0 14px 0 0;
+			}
+			li.third {
+				padding: 0 0 0 14px;
 			}
 	}
 }
