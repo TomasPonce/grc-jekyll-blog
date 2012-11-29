@@ -167,7 +167,8 @@ h4 {
 /* The Basics */
 
 body {
-	@include generic-background-image("/images/nasty_fabric");
+	background: url('/images/wood-bg.jpg');
+	/* @include generic-background-image("/images/nasty_fabric"); */
 }
 
 /* Structure */
@@ -177,7 +178,7 @@ body {
 
 
 .header {
-	background: url('/images/wood-bg.jpg');
+	background: $color-6;
 	display: block;
 	position: relative;
 	text-align: left;
@@ -213,20 +214,9 @@ body {
 /* Columns */
 
 .columns {
-	margin: 15px 0 0 0;
+	margin: 20px 0 0 0;
 	ul {
-		
 		@include clear;
-		li {
-			padding: 0 7.5px;
-		}
-		li:first-of-type {
-			padding: 0 7.5px 0 0;
-		}
-		
-		li:last-of-type {
-			padding: 0 0 0 7.5px;
-		}
 	}
 }
 
@@ -250,7 +240,7 @@ body {
 	@include shadow;
 	ul {
 		background: #fff;
-		padding: 15px;	
+		padding: 20px;	
 		li {
 			text-align: center;
 			img {
@@ -259,7 +249,7 @@ body {
 			h4 {
 				color: $color-5;
 				border-bottom: 4px solid #666;
-				margin: 0 0 15px 0;
+				margin: 0 0 20px 0;
 				padding: 0;
 			}
 		}
@@ -267,16 +257,29 @@ body {
 }
 
 .posts {
+		margin: 0 0 0 0;
 		ul {
 			li {
+				padding: 0 7px;
+			li:nth-child(3n+1) {
+				padding: 0 14px 0 0px;
+			}
+			li:nth-child(3n+3) {
+				@include clear;
+				padding: 0 0px 0 14px;
+			}
 				.inner-box {
+					position: relative;
 					background: #fff;
 					@include shadow;
-					min-height: 500px;
-					padding: 15px;
+					margin-top: 20px;
+					padding: 20px;
 					h3 {
-						height: 80px;
+					position: absolute; 
+					bottom: 20px;
+						
 					}
+					h3 {display: none;}
 					img {
 						width: 100%;
 					}
@@ -288,8 +291,28 @@ body {
 .text {
 	@include shadow;
 	background: #fff;
-	padding: 15px;
-	margin-bottom: 15px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+footer {
+	margin: 0;
+	border-top: 5px solid $color-6;
+	.columns {margin: 0;
+		border-top: 20px solid $color-5;
+		ul {
+		background: $color-6;
+		
+			li > ul {
+				li {
+				float: none;
+				margin: 10px;
+				text-align: left;
+				width: 100%;
+				}
+			}	
+		}	
+	}
 }
 
 /* Media Queries */
@@ -299,7 +322,7 @@ body {
 		li {
 			@include breakpoint(full-screen) {max-width: 600px;}
 			@include breakpoint(half-screen) {}
-			@include breakpoint(quarter-screen) {margin: 15px 0; padding: 0; width: 100%;}
+			@include breakpoint(quarter-screen) {margin: 20px 0; padding: 0; width: 100%;}
 			@include breakpoint(mobile) {}
 			}
 		li:first-of-type, li:last-of-type {@include breakpoint(quarter-screen) {padding: 0;}
