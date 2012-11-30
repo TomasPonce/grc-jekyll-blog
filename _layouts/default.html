@@ -56,7 +56,7 @@
 <footer>
 	<div class="columns four-col points">
 		<ul>
-			<li>
+			<li><h5>Links</h5>
 				<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
@@ -65,7 +65,7 @@
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			</li>
-			<li>
+			<li><h5>Coming Soon</h5>
 				<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
@@ -74,16 +74,14 @@
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			</li>
-			<li>
-				<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+			<li><h5>Recent Posts</h5>
+				<ul class="disc">
+				{% for post in site.related_posts limit: 10 %}
+				<li><a href="{{post.url}}">{{post.title}}</a></li>
+				{% endfor %}
+				</ul>
 			</li>
-			<li>
+			<li><h5>Contact</h5>
 				<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
