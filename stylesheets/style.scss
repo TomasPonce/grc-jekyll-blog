@@ -285,6 +285,7 @@ body {
 			}
 			li.third {
 				padding: 0 0 0 14px;
+			@include breakpoint(quarter-screen) {padding: 0;}	
 			}
 	}
 }
@@ -323,10 +324,10 @@ footer {
 		li {
 			@include breakpoint(full-screen) {max-width: 600px;}
 			@include breakpoint(half-screen) {}
-			@include breakpoint(quarter-screen) {margin: 20px 0; padding: 0; width: 100%;}
+			@include breakpoint(quarter-screen) {margin: 10px 0; padding: 0; width: 100%;}
 			@include breakpoint(mobile) {}
 			}
-		li:first-of-type, li:last-of-type {@include breakpoint(quarter-screen) {padding: 0;}
+		li.first, li.third {@include breakpoint(quarter-screen) {padding: 0;}
 		}
 	
 	}
