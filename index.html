@@ -11,20 +11,18 @@ layout: default
     </div>
 
 	<div class="columns four-col points">
-		<ul>
-			<li><h4>Method</h4><a href="#"><img src="images/svg/beaker.svg"></a><h3><a href="#">The Secret Formula</a></h3></li>
-			<li><h4>Work</h4><a href="#"><img src="images/svg/work.svg"></a><h3><a href="#">View our Projects</a></h3></li>
-			<li><h4>Team</h4><a href="#"><img src="images/svg/team.svg"></a><h3><a href="#">A Network of Talent</a></h3></li>
-			<li><h4>Learn</h4><a href="#"><img src="images/svg/learn.svg"></a><h3><a href="#">Tutorials and Research</a></h3></li>
-		<ul>
+
+			<div><h4>Method</h4><a href="{{ page.name.about }}"><img src="images/svg/beaker.svg"></a><h3><a href="">The Secret Formula</a></h3></div>
+			<div><h4>Work</h4><a href="#"><img src="images/svg/work.svg"></a><h3><a href="#">View our Projects</a></h3></div>
+			<div><h4>Team</h4><a href="#"><img src="images/svg/team.svg"></a><h3><a href="#">A Network of Talent</a></h3></div>
+			<div><h4>Learn</h4><a href="#"><img src="images/svg/learn.svg"></a><h3><a href="#">Tutorials and Research</a></h3></div>
+
 	</div>	
 
 	<div class="columns three-col posts">
-		<ul>
-			{% for post in site.posts limit 3 %}
-				{% include post-loop.html %}
-			{% endfor %}
-		</ul>
+		{% for post in site.posts limit:6 %}
+			{% include post-loop.html %}
+		{% endfor %}
 	</div>
 	<div class="columns one-col text">	
 	      <h3>About Us</h3>

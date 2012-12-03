@@ -4,7 +4,7 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-12-03T01:04:15-08:00</updated>
+ <updated>2012-12-03T14:00:44-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
@@ -14,18 +14,18 @@
  
  	<entry>
  		<title>testerrrrr</title>
- 		<link href="http://graphicrustication.com/articles/test-2"/>
+ 		<link href="http://graphicrustication.com/blog/test-2"/>
  		<updated>2012-11-29T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/articles/test-2</id>
+ 		<id>http://graphicrustication.com/blog/test-2</id>
  		<content type="html">&lt;p&gt;It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&amp;rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.&lt;/p&gt;
 </content>
  	</entry>
  
  	<entry>
  		<title>test 2</title>
- 		<link href="http://graphicrustication.com/articles/test-3"/>
+ 		<link href="http://graphicrustication.com/blog/test-3"/>
  		<updated>2012-11-28T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/articles/test-3</id>
+ 		<id>http://graphicrustication.com/blog/test-3</id>
  		<content type="html">&lt;p&gt;Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
 
 &lt;p&gt;Why is this so appealing? First of all it runs fast on any server because it&amp;rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&amp;rsquo;s fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the &lt;em&gt;post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called &lt;/em&gt;site.&lt;/p&gt;
@@ -36,41 +36,52 @@
  
  	<entry>
  		<title>Tester</title>
- 		<link href="http://graphicrustication.com/articles/test-1"/>
+ 		<link href="http://graphicrustication.com/blog/test-1"/>
  		<updated>2012-11-28T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/articles/test-1</id>
+ 		<id>http://graphicrustication.com/blog/test-1</id>
  		<content type="html">&lt;p&gt;Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.&lt;/p&gt;
 </content>
  	</entry>
  
  	<entry>
  		<title>New Nikon 50mm Lens</title>
- 		<link href="http://graphicrustication.com/articles/new-50mm-nikon-lense"/>
+ 		<link href="http://graphicrustication.com/blog/new-50mm-nikon-lense"/>
  		<updated>2012-11-24T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/articles/new-50mm-nikon-lense</id>
+ 		<id>http://graphicrustication.com/blog/new-50mm-nikon-lense</id>
  		<content type="html">&lt;p&gt;It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&amp;rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.&lt;/p&gt;
 </content>
  	</entry>
  
  	<entry>
  		<title>Black Friday Analysis</title>
- 		<link href="http://graphicrustication.com/articles/black-friday-marketing"/>
+ 		<link href="http://graphicrustication.com/blog/black-friday-marketing"/>
  		<updated>2012-11-23T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/articles/black-friday-marketing</id>
+ 		<id>http://graphicrustication.com/blog/black-friday-marketing</id>
  		<content type="html">&lt;p&gt;Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.&lt;/p&gt;
 </content>
  	</entry>
  
  	<entry>
  		<title>Migrating to Jekyll from Wordpress</title>
- 		<link href="http://graphicrustication.com/articles/the-wordpress-to-jekyll-migration"/>
+ 		<link href="http://graphicrustication.com/blog/the-wordpress-to-jekyll-migration"/>
  		<updated>2012-11-17T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/articles/the-wordpress-to-jekyll-migration</id>
+ 		<id>http://graphicrustication.com/blog/the-wordpress-to-jekyll-migration</id>
  		<content type="html">&lt;p&gt;Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
 
 &lt;p&gt;Why is this so appealing? First of all it runs fast on any server because it&amp;rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&amp;rsquo;s fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the &lt;em&gt;post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called &lt;/em&gt;site.&lt;/p&gt;
 
 &lt;p&gt;So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. So far I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. That&amp;rsquo;s all for now, next comes a new responsive design.&lt;/li&gt;&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>A Fortnight Later</title>
+ 		<link href="http://graphicrustication.com/blog/a-fortnight-later"/>
+ 		<updated>2012-09-15T00:00:00-07:00</updated>
+ 		<id>http://graphicrustication.com/blog/a-fortnight-later</id>
+ 		<content type="html">&lt;p&gt; A fortnight later, by excellent good fortune, the doctor gave one of his pleasant dinners to some five or six old cronies, all intelligent, reputable men and all judges of good wine; and Mr. Utterson so contrived that he remained behind after the others had departed. This was no new arrangement, but a thing that had befallen many scores of times. Where Utterson was liked, he was liked well. Hosts loved to detain the dry lawyer, when the light-hearted and loose-tongued had already their foot on the threshold; they liked to sit a while in his unobtrusive company, practising for solitude, sobering their minds in the man&amp;rsquo;s rich silence after the expense and strain of gaiety.&lt;/p&gt;
+
+&lt;p&gt; To this rule, Dr. Jekyll was no exception; and as he now sat on the opposite side of the fire &amp;mdash; a large, well-made, smooth-faced man of fifty, with something of a stylish cast perhaps, but every mark of capacity and kindness &amp;mdash; you could see by his looks that he cherished for Mr. Utterson a sincere and warm affection.&lt;/p&gt;
 </content>
  	</entry>
  

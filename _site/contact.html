@@ -38,62 +38,103 @@
 
 <body>
     <div class="header">
-      <h2><a href="/">The Graphic <span>Rustication</span> Company</a></h2>
+      <h2><a href="/">The Graphic Rustication Company</a></h2>
 		
     </div>
 	<div class="nav">
 		<ul>
 			<li class="homeabout"><a href="/">Home</a></li>
-			<li class="about"><a href="about-graphic-rustication.html">About</a></li>
-			<li class="portfolio"><a href="graphic-design-portfolio.html">Portfolio</a></li>
+			<li class="about"><a href="about.html">About</a></li>
+			<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
 			<li class="writing"><a href="blog.html">Writing</a></li>
 			<li class="contact"><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
+<div class="bg">	
 <div class="wrapper">
-    <div class="columns one-col text">		
-	      <h3>Contact Us</h3>
-	<h4>530.306.7756</h4>
-	</div>
+    <div class="columns one-col text">	
+					<h3>Contact | The Graphic Rustication Company</h3>
+
+				
+							<h3>Phone: 530-306-7756</h3>
+
+<div id="wufoo-z7x3p9">
+Fill out my <a href="http://graphicrustication.wufoo.com/forms/z7x3p9">online form</a>.
+</div>
+
+
+<script type="text/javascript">var z7x3p9;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'graphicrustication', 
+'formHash':'z7x3p9', 
+'autoResize':true,
+'height':'951',
+'async':true,
+'header':'show'};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
+
+<p>    </div></p>
+
+						</div>
 
 </div> <!-- /wrapper -->
+</div>
 <footer>
+	<div class="wrapper">
 	<div class="columns four-col points">
-		<ul>
-			<li><h4>Links</h4>
+	
+			<div><h4>Navigation</h4>
 				<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
 				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
 				<li><a href="blog.html">Writing</a></li>
 				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			</li>
-			<li><h4>Coming Soon</h4>
+				</ul>
+			</div>
+			<div><h4>Fav Links</h4>
 				<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			</li>
-			<li><h4>Recent Posts</h4>
+				<li><a href="http://css-tricks.com">CSS Tricks</a></li>
+				<li><a href="http://codepen.io/">Codepen</a></li>
+				<li><a href="http://www.wired.com/">Wired</a></li>
+				<li><a href="http://makezine.com/">Make Mag</a></li>
+				<li><a href="http://placervilledesign.com/">Placerville Design</a></li>
+				</ul>
+			</div>
+			<div><h4>Recent Posts</h4>
 				<ul class="disc">
 				
+				<li><a href="/blog/test-2">testerrrrr</a></li>
+				
+				<li><a href="/blog/test-3">test 2</a></li>
+				
+				<li><a href="/blog/test-1">Tester</a></li>
+				
+				<li><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></li>
+				
+				<li><a href="/blog/black-friday-marketing">Black Friday Analysis</a></li>
+				
 				</ul>
-			</li>
-			<li><h4>Contact</h4>
+			</div>
+			<div><h4>Contact</h4>
 				<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
 				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
 				<li><a href="blog.html">Writing</a></li>
 				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			</li>
-		<ul>
+				</ul>
+			</div>
 	</div>
+		<div class="copyright">Copyright © 2012 The Graphic Rustication Company</div>
+	</div>
+
 </footer>
 
 <script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
@@ -102,6 +143,10 @@
 $(window).load(function() {
     $('#slider').nivoSlider();
 setEqualHeight($(".container  > div"));  
+});
+$("li").click(function(){
+     window.location=$(this).find("a").attr("href"); 
+     return false;
 });
 </script>
 

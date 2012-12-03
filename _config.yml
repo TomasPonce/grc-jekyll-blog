@@ -3,5 +3,5 @@ site_url: 'http://graphicrustication.com'
 markdown: rdiscount
 rdiscount:
     extensions: [smart]
-permalink: /articles/:title
+permalink: /blog/:title
 paginate: 3

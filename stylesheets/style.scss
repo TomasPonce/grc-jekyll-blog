@@ -137,7 +137,6 @@ ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	li {}
 }
 
 h1, h2, h3, h4 {
@@ -157,6 +156,7 @@ h2 {
 h3 {
 	@include font-1;
 	color: $color-5;
+	margin-bottom: 20px;
 }
 
 h4 {
@@ -167,8 +167,7 @@ h4 {
 /* The Basics */
 
 body {
-	background: url('/images/wood-bg.jpg');
-	/* @include generic-background-image("/images/nasty_fabric"); */
+background: $color-5;
 }
 
 /* Structure */
@@ -202,66 +201,72 @@ body {
 		li {
 			padding: 8px 0 3px 0;
 			@include col-width(5);
-				a {color: #fff;font-size: 1.4em; text-transform: uppercase;}	
+			cursor: pointer;
+				a {color: #fff;font-size: 1.2em; text-transform: uppercase;}	
 			}
 		}
 }
 
+.bg {
+background: url('/images/wood-bg.jpg');
+/* @include generic-background-image("/images/nasty_fabric"); */
+}
 .wrapper {
 	width: $main-width;
+	padding: 20px 0;
 }
 
 /* Columns */
 
 .columns {
 	margin: 20px 0 0 ;
-	ul {
-		@include clear;
-	}
+	@include clear;
+
 }
 
-.one-col ul li {
+.one-col div {
 	@include col-width(1);
 }
 
-.two-col ul li {
+.two-col div{
 	@include col-width(2);
 }
 
-.three-col ul li {
+.three-col div{
 	@include col-width(3);
 }
 
-.four-col ul li {
+.four-col div{
 	@include col-width(4);
 }
 
 .points {
 	@include shadow;
-	ul {
-		background: #fff;
-		padding: 20px;	
-		li {
+	background: #fff;
+	
+
+		div {padding: 20px;
 			text-align: center;
 			img {
 				width: 80%;
 			}
 			h4 {
 				color: $color-5;
-				border-bottom: 4px solid #666;
+			
 				margin: 0 0 20px 0;
 				padding: 0;
 			}
 		}
-	}
+	
 }
 
 .posts {
 		margin: 0 0 0 0;
-		ul {
-			li {
+		
+			div {
 				padding: 0 7px;
 				.inner-box {
+					width: 100%;
 					position: relative;
 					background: #fff;
 					@include shadow;
@@ -280,14 +285,14 @@ body {
 				}
 			
 			}
-			li.first {
+			div.first {
 				padding: 0 14px 0 0;
 			}
-			li.third {
+			div.third {
 				padding: 0 0 0 14px;
 			@include breakpoint(quarter-screen) {padding: 0;}	
 			}
-	}
+	
 }
 
 .text {
@@ -298,43 +303,63 @@ body {
 }
 
 footer {
-	margin: 20px 0 0 0;
 	border-top: 5px solid $color-6;
+	margin: 0;
+	width: 100%;
+	.copyright {
+		color: $color-3;
+		float: right;
+		font-size: .7em;
+		padding: 20px 0;
+	}
 	.columns {margin: 0;
-		border-top: 20px solid $color-5;
-		ul {
 		background: $color-6;
-			li > h4 {border: none;}	
-			li > ul {
+			div {padding: 10px; 
+			 h4 {margin: 0 0 10px 0; text-align: left;font-size: 1.2em ;border: none; color: #fff;}	
+		 		ul {
+				background: $color-4;
 				li {
 				border-bottom: 1px dotted $color-5;
+				cursor: pointer;
 				float: none;
-				margin: 10px;
 				padding: 10px;
 				text-align: left;
 				width: 100%;
-				@include breakpoint(quarter-screen) {text-align: center;}
-					a {color: #fff;}
+				@include breakpoint(quarter-screen) {line-height: 200%}
+					a {
+					color: #fff;
+					&:hover {
+						color: #ccc;
+					}
+					}
 				}
 			}	
-		}	
-	}
+		}
+	}	
+
 }
 
 /* Media Queries */
 
 .columns {
-	ul {
-		li {
+
+		div {
 			@include breakpoint(full-screen) {max-width: 600px;}
 			@include breakpoint(half-screen) {}
 			@include breakpoint(quarter-screen) {margin: 10px 0; padding: 0; width: 100%;}
 			@include breakpoint(mobile) {}
 			}
-		li.first, li.third {@include breakpoint(quarter-screen) {padding: 0;}
+		div.first, div.third {@include breakpoint(quarter-screen) {padding: 0;}
 		}
-	
+		
+}
+
+.points {
+	div {
+		@include breakpoint(quarter-screen) {margin: 10px 0; padding: 0; width: 50%;}
+		@include breakpoint(mobile) {}
 	}
+	
 }
 
 .nav ul  { 
