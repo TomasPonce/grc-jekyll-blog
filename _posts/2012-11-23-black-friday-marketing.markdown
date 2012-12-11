@@ -1,8 +1,0 @@
----
-layout: post
-title: Black Friday Analysis
-date: November 23, 2012
-image: /images/posts/black-friday.gif
----
-
-Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.
