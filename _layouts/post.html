@@ -2,11 +2,17 @@
 layout: default
 ---
 
-<div class="columns one-col text">	
-		
-<h3>{{ page.title }}</h3>
-			<div class="meta">{{ page.date | time_ago }} - {{ page.tags | tag_links }}</div>
-
-			<img src="{{ post.image }}" /> {{ content }}
+<div class="columns text">	
+<div class="content-col">
+<h3>{{ page.title }} // {{ page.date | date: "%B %d %Y" }}</h3>
+			<div class="main-img">
+			<a href="{{  page.imgurl }}" target="_blank"><img src="{{ page.image }}"/></a>
+			</div>
+			<br/>
+			{{ content }}
 			
-						</div>
+</div>
+<div class="sidebar-col">
+	{% include sidebar.html %}
+	</div>
+</div>

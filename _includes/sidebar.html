@@ -1,0 +1,14 @@
+<h4>Recent Writings</h4>
+	<p>From the archives:</p>
+	<ul class="disc">
+		{% for post in site.posts offset: 3 limit: 10 %}
+			<li><a href="{{post.url}}">{{post.title}}</a></li>
+		{% endfor %}
+	</ul>
+<h4>Categories</h4>
+	<p>Read More Updated Weekly:</p>
+	<ul class="disc">
+			<li><a href="/portfolio">Portfolio</a></li>
+			<li><a href="/blog">Writing</a></li>
+			<li><a href="/tutorials">Tutorials</a></li>
+	</ul>

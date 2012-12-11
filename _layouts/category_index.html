@@ -25,19 +25,6 @@ layout: default
 									
 </div>
 <div class="sidebar-col">
-	<h4>Recent Writings</h4>
-	<p>From the archives of this journal:</p>
-	<ul class="disc">
-		{% for post in site.posts offset: 3 limit: 10 %}
-		<li><a href="{{post.url}}">{{post.title}}</a></li>
-		{% endfor %}
-	</ul>
-	<h4>Recent Writings</h4>
-	<p>Yet more amazing information.</p>
-	<ul class="disc">
-		<li><a href="/portfolio">Portfolio</a></li>
-		<li><a href="/blog">Writing</a></li>
-		<li><a href="/tutorials">Tutorials</a></li>
-	</ul>
+	{% include sidebar.html %}
 </div>
 </div>

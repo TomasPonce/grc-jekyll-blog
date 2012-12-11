@@ -248,13 +248,22 @@ background: url('/images/wood-bg.jpg');
 .content-col {
 	float: left;
 	width: 70%;
+	.main-img {
+	background: #F8F8F8;
+	padding: 15px;
+	img {
+		border: 1px solid #E8E8E8 ;
+		width: 100%;
+	}
+	}
+
 }
 
 .sidebar-col {
 	width: 30%;
 	float: left;
-	padding-left: 15px;
-	ul { margin-bottom: 15px;
+	padding-left: 20px;
+	ul { margin: 0 0 15px 15px;
 	li {margin: 0 0 5px 0;}
 	}	
 }
@@ -290,7 +299,7 @@ background: url('/images/wood-bg.jpg');
 					background: #fff;
 					@include shadow;
 					margin-top: 20px;
-					padding: 20px;
+					padding: 15px;
 					h3 {
 						position: absolute; 
 						bottom: 20px;		
@@ -300,7 +309,7 @@ background: url('/images/wood-bg.jpg');
 						}
 					img {
 						width: 100%;
-						border: 1px solid #ccc;
+						border: 1px solid #E8E8E8;
 					}
 				}
 			

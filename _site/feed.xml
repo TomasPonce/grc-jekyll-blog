@@ -4,13 +4,31 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-12-11T12:45:20-08:00</updated>
+ <updated>2012-12-11T15:13:27-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
    <email>fake@mijingo.com</email>
  </author>
 
+ 
+ 	<entry>
+ 		<title>Wordpress Basic Training</title>
+ 		<link href="http://graphicrustication.com/blog/wordpress-basic-training"/>
+ 		<updated>2012-12-11T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/wordpress-basic-training</id>
+ 		<content type="html">&lt;p&gt;More Tutorials on wordpress coming soon&amp;hellip;&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Learning Git for Version Control</title>
+ 		<link href="http://graphicrustication.com/blog/learning-git-version-control"/>
+ 		<updated>2012-12-11T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/learning-git-version-control</id>
+ 		<content type="html">&lt;p&gt;More about learning git coming soon&amp;hellip;&lt;/p&gt;
+</content>
+ 	</entry>
  
  	<entry>
  		<title>Automotive Excellence Website</title>
@@ -224,7 +242,7 @@
  		<link href="http://graphicrustication.com/blog/zoe-mattia-modeling"/>
  		<updated>2012-11-19T00:00:00-08:00</updated>
  		<id>http://graphicrustication.com/blog/zoe-mattia-modeling</id>
- 		<content type="html">
+ 		<content type="html">&lt;p&gt;Zoe Mattia is a very talented up and coming model from Santa Cruz, CA. Keep an eye out, she is going places fast with her career.&lt;/p&gt;
 </content>
  	</entry>
  
