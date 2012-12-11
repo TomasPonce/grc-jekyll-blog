@@ -1,23 +1,24 @@
 =begin
 
-CategoryPagination allows Jekyll sites to have index pages for each category, and to break those
+CategoryPagination allows Jekyll sites to have index pages for each category, and to break those 
 category indexes into multiple pages.
 
-This code belongs in the _plugins directory.
+This code belongs in the _plugins directory. 
 
 The following items need to be true:
 
-* There is a file called "category_index.html" in the _layouts directory
-* In the _config.yml, there needs to be a line that says "pagination: true"
-* There needs to be an "index.html" page with "category: category-name" in the YAML front matter.
-Be sure to use the actual category name.
-For instance, if you wanted to have a paginated set of pages for all posts in the "recipes"
-category, place a file called "index.html" in the "recipes" directory. Make sure that in the
+*   There is a file called "category_index.html" in the _layouts directory
+*   In the _config.yml, there needs to be a line that says "pagination: true"
+*   There needs to be an "index.html" page with "category: category-name" in the YAML front matter. 
+    Be sure to use the actual category name.
+    
+For instance, if you wanted to have a paginated set of pages for all posts in the "recipes" 
+category, place a file called "index.html" in the "recipes" directory. Make sure that in the 
 YAML front matter, there is a line that says "category: recipes".
 
-This plugin is structured so that each category index page can have its own unique landing page.
+This plugin is structured so that each category index page can have its own unique landing page. 
 For instance, a page showing all the recipes can be different than the page showing all the blog
-entries. Subsequent pages (page 2 of the recipes, for example), use the category_index.html
+entries. Subsequent pages (page 2 of the recipes, for example), use the category_index.html 
 template. This is by design. Perhaps someday I'll add a parameter to the index page to specify
 which template to use for sub-pages.
 
@@ -76,7 +77,7 @@ module Jekyll
     
     # same as the base class, but includes the category value
     def initialize(config, page, all_posts, category, num_pages = nil)
-     @category = category
+    	@category = category
       super config, page, all_posts, num_pages
     end
 
@@ -98,14 +99,14 @@ module Jekyll
         
       @site = site
       @base = base
-      @dir = category
+      @dir  = category
       @name = 'index.html'
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), layout || 'category_index.html')
 
-      title_prefix = site.config['cateogry_title_prefix'] || 'Everything in the '
-      self.data['title'] = "#{title_prefix}#{category}"
+      title_prefix             = site.config['cateogry_title_prefix'] || 'Everything in the '
+      self.data['title']       = "#{title_prefix}#{category}"
 
     end
     
@@ -114,31 +115,31 @@ module Jekyll
   
   module Filters
   
-   def pager_links(pager)
+  	def pager_links(pager)
 
-if pager['previous_page'] || pager['next_page']
-  
-html = '<div class="pager clearfix">'
-if pager['previous_page']
+		if pager['previous_page'] || pager['next_page']
+  	  	
+			html = '<div class="pager clearfix">'
+			if pager['previous_page']
+				
+				if pager['previous_page'] == 1
+					html << "<div class=\"previous\"><a href=\"/#{pager['category']}/\">&laquo; Newer posts</a></div>"
+				else
+					html << "<div class=\"previous\"><a href=\"/#{pager['category']}/page#{pager['previous_page']}\">&laquo; Newer posts</a></div>"
+				end
+	
+			end
+	
+			if pager['next_page'] 
+				html << "<div class=\"next\"><a href=\"/#{pager['category']}/page#{pager['next_page']}\">Older posts &raquo;</a></div>"
+			end
+			
+			html << '</div>'
+			html
 
-if pager['previous_page'] == 1
-html << "<div class=\"previous\"><a href=\"/#{pager['category']}/\">&laquo; Newer posts</a></div>"
-else
-html << "<div class=\"previous\"><a href=\"/#{pager['category']}/page#{pager['previous_page']}\">&laquo; Newer posts</a></div>"
-end
+		end
 
-end
-
-if pager['next_page']
-html << "<div class=\"next\"><a href=\"/#{pager['category']}/page#{pager['next_page']}\">Older posts &raquo;</a></div>"
-end
-
-html << '</div>'
-html
-
-end
-
-   end
+  	end
   
   end
 

@@ -34,6 +34,33 @@
   <![endif]-->
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
 	
+	<!-- Toggle Mobile Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('.nav').prepend('<div id="menu-icon">Menu</div>');
+
+		/* toggle nav */
+		$("#menu-icon").on("click", function(){
+			$("#toggle").slideToggle();
+			$(this).toggleClass("active");
+		});
+
+	});
+	</script>
+	<script type="text/javascript">
+	// When ready...
+	window.addEventListener("load",function() {
+	  // Set a timeout...
+	  setTimeout(function(){
+	    // Hide the address bar!
+	    window.scrollTo(0, 1);
+	  }, 0);
+	});
+	</script>	
 </head>
 
 <body>
@@ -42,118 +69,115 @@
 		
     </div>
 	<div class="nav">
-		<ul>
+		<ul id="toggle">
 			<li class="homeabout"><a href="/">Home</a></li>
-			<li class="about"><a href="about.html">About</a></li>
-			<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-			<li class="writing"><a href="blog.html">Writing</a></li>
-			<li class="contact"><a href="contact.html">Contact</a></li>
+			<li class="about"><a href="/about.html">About</a></li>
+			<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+			<li class="writing"><a href="/blog">Writing</a></li>
+			<li class="writing"><a href="/tutorials">Tutorials</a></li>
+			<li class="contact"><a href="/contact.html">Contact</a></li>
 		</ul>
 	</div>
 <div class="bg">	
 <div class="wrapper">
-    <div class="category-index row">
+    <div class="columns text">
+<div class="content-col">
+				
+					
 
-<div class="span8">
-
-<div class="box">
-<div class="box-header">
-<div class="box-header-left clearfix">
-<div class="box-title title">Blog Entries</div>
-</div>
-<div class="box-header-right"></div>
-</div>
-<div class="box-middle">
-<div class="box-middle-left">
-
-
-
+<div class="cat_posts">
 <div class="teaser">
+					
+	<h4 class="title"><a href="/blog/arduino-micro-controller" title="All I want for Christmas is an Arduino">All I want for Christmas is an Arduino</a></h4>
+	<div class="meta"><span class="timeago">Mon Dec 10 00:00:00 -0800 2012</span></div>
 
-<div class="title"><a href="/blog/test-2" title="testerrrrr">testerrrrr</a></div>
-<div class="meta"><span class="timeago">Thu Nov 29 00:00:00 -0800 2012</span></div>
-
-            <div class="row">
-
-              
-                <div class="span7">
-              
-
-                <div class="description"></div>
-                <div class="read-more"><a href="/blog/test-2" title="testerrrrr">Get the whole story... »</a></div>
-              </div>
-            
-            </div>
-
+</div>            
+						
+	<a href="/blog/arduino-micro-controller" title="All I want for Christmas is an Arduino"><img src="/images/blog/arduino-micro-controller.jpg" /></a>
+                
+	<div class="description">
 </div>
+    <div class="read-more"><a href="/blog/arduino-micro-controller" title="All I want for Christmas is an Arduino">Get the whole story... »</a></div>
+</div>
+					
 
-
-
+<div class="cat_posts">
 <div class="teaser">
+					
+	<h4 class="title"><a href="/blog/black-friday" title="Black Friday">Black Friday</a></h4>
+	<div class="meta"><span class="timeago">Wed Nov 28 00:00:00 -0800 2012</span></div>
 
-<div class="title"><a href="/blog/test-3" title="test 2">test 2</a></div>
-<div class="meta"><span class="timeago">Wed Nov 28 00:00:00 -0800 2012</span></div>
-
-            <div class="row">
-
-              
-                <div class="span7">
-              
-
-                <div class="description"></div>
-                <div class="read-more"><a href="/blog/test-3" title="test 2">Get the whole story... »</a></div>
-              </div>
-            
-            </div>
-
+</div>            
+						
+	<a href="/blog/black-friday" title="Black Friday"><img src="/images/blog/black-friday.jpg" /></a>
+                
+	<div class="description">Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.
 </div>
+    <div class="read-more"><a href="/blog/black-friday" title="Black Friday">Get the whole story... »</a></div>
+</div>
+					
 
-
-
+<div class="cat_posts">
 <div class="teaser">
+					
+	<h4 class="title"><a href="/blog/new-50mm-nikon-lense" title="New Nikon 50mm Lens">New Nikon 50mm Lens</a></h4>
+	<div class="meta"><span class="timeago">Sat Nov 24 00:00:00 -0800 2012</span></div>
 
-<div class="title"><a href="/blog/test-1" title="Tester">Tester</a></div>
-<div class="meta"><span class="timeago">Wed Nov 28 00:00:00 -0800 2012</span></div>
-
-            <div class="row">
-
-              
-                <div class="span7">
-              
-
-                <div class="description"></div>
-                <div class="read-more"><a href="/blog/test-1" title="Tester">Get the whole story... »</a></div>
-              </div>
-            
-            </div>
-
+</div>            
+						
+	<a href="/blog/new-50mm-nikon-lense" title="New Nikon 50mm Lens"><img src="/images/blog/nikon-50mm.jpg" /></a>
+                
+	<div class="description">It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens....</div>
+    <div class="read-more"><a href="/blog/new-50mm-nikon-lense" title="New Nikon 50mm Lens">Get the whole story... »</a></div>
 </div>
-
-
-
-<div class="pager clearfix"><div class="next"><a href="//page2">Older posts &raquo;</a></div></div>
-
+					
+					
+					
+									
 </div>
-<div class="box-middle-right"></div>
+<div class="sidebar-col">
+	<h4>Recent Writings</h4>
+	<p>From the archives of this journal:</p>
+	<ul class="disc">
+		
+		<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
+		
+		<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
+		
+		<li><a href="/blog/carson-ridge-evergreens">Carson Ridge Evergreens</a></li>
+		
+		<li><a href="/blog/classic-throttle">Classic Throttle</a></li>
+		
+		<li><a href="/blog/elect-todd-white">Elect Todd White Eldorado County School Board</a></li>
+		
+		<li><a href="/blog/hey-day-cafe">Heyday Cafe</a></li>
+		
+		<li><a href="/blog/kevin-brown-school-board">Kevin Brown for El Dorado County School Board</a></li>
+		
+		<li><a href="/blog/mama-earth-organic-farm">Mama Earth Organic Farm</a></li>
+		
+		<li><a href="/blog/mosquito-creek-outfitters-placerville">Mosquito Creek Outfitters Placerville</a></li>
+		
+		<li><a href="/blog/natural-flair-floral-designs">Natural Flair Floral Designs</a></li>
+		
+	</ul>
+	<h4>Recent Writings</h4>
+	<p>Yet more amazing information.</p>
+	<ul class="disc">
+		<li><a href="/portfolio">Portfolio</a></li>
+		<li><a href="/blog">Writing</a></li>
+		<li><a href="/tutorials">Tutorials</a></li>
+	</ul>
 </div>
-
 </div>
-
-</div>
-
-</div>
-
-
-
-
 </div> <!-- /wrapper -->
 </div>
 <footer>
 	<div class="wrapper">
-	<div class="columns four-col points">
+	<div class="columns four-col">
 	
 			<div><h4>Navigation</h4>
-				<ul>
+				<ul class="first">
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
 				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
@@ -173,29 +197,32 @@
 			<div><h4>Recent Posts</h4>
 				<ul class="disc">
 				
-				<li><a href="/blog/test-2">testerrrrr</a></li>
+				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
 				
-				<li><a href="/blog/test-3">test 2</a></li>
+				<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
 				
-				<li><a href="/blog/test-1">Tester</a></li>
+				<li><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></li>
 				
-				<li><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></li>
+				<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
 				
-				<li><a href="/blog/black-friday-marketing">Black Friday Analysis</a></li>
+				<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
 				
 				</ul>
 			</div>
 			<div><h4>Contact</h4>
-				<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<ul class="last">
+					<li class="homeabout"><a href="/">Home</a></li>
+					<li class="about"><a href="/about.html">About</a></li>
+					<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+					<li class="writing"><a href="/blog">Writing</a></li>
+					<li class="writing"><a href="/tutorials">Tutorials</a></li>
+					<li class="contact"><a href="/contact.html">Contact</a></li>
 				</ul>
 			</div>
 	</div>
-		<div class="copyright">Copyright © 2012 The Graphic Rustication Company</div>
+		<div class="copyright">Copyright © 2013
+
+		 The Graphic Rustication Company</div>
 	</div>
 
 </footer>

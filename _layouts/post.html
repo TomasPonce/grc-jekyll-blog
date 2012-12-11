@@ -3,8 +3,10 @@ layout: default
 ---
 
 <div class="columns one-col text">	
-					<h3>{{page.title}}</h3>
+		
+<h3>{{ page.title }}</h3>
+			<div class="meta">{{ page.date | time_ago }} - {{ page.tags | tag_links }}</div>
 
-				
-							{{content}}
+			<img src="{{ post.image }}" /> {{ content }}
+			
 						</div>

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Josh Howenstine's Blog
+category: portfolio
+---
+
+<div class="columns three-col posts">
+
+	{% for post in site.categories['portfolio'] %}
+		{% include post-loop.html %}
+	{% endfor %}
+
+</div>
