@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="columns text">
+<div class="content-col">
+				
+					{% for post in paginator.posts %}
+
+<div class="cat_posts">
+<div class="teaser">
+					
+	<h4 class="title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+	<div class="meta"><span class="timeago">{{ post.date | time_ago }}</span>{{ post.tags | tag_links }}</div>
+
+</div>            
+						
+	<a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+                
+	<div class="description">{{ post.content | strip_html | truncatewords: 45 }}</div>
+    <div class="read-more"><a href="{{ post.url }}" title="{{ post.title }}">Get the whole story... »</a></div>
+</div>
+					{% endfor %}
+					
+					{{ paginator | pager_links }}
+									
+</div>
+<div class="sidebar-col">
+	<h4>Recent Writings</h4>
+	<p>From the archives of this journal:</p>
+	<ul class="disc">
+		{% for post in site.posts offset: 3 limit: 10 %}
+		<li><a href="{{post.url}}">{{post.title}}</a></li>
+		{% endfor %}
+	</ul>
+	<h4>Recent Writings</h4>
+	<p>Yet more amazing information.</p>
+	<ul class="disc">
+		<li><a href="/portfolio">Portfolio</a></li>
+		<li><a href="/blog">Writing</a></li>
+		<li><a href="/tutorials">Tutorials</a></li>
+	</ul>
+</div>
+</div>

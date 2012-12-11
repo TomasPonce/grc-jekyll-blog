@@ -34,6 +34,23 @@
   <![endif]-->
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
 	
+	<!-- Toggle Mobile Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('.nav').prepend('<div id="menu-icon">Menu</div>');
+
+		/* toggle nav */
+		$("#menu-icon").on("click", function(){
+			$("#toggle").slideToggle();
+			$(this).toggleClass("active");
+		});
+
+	});
+	</script>	
 </head>
 
 <body>
@@ -42,12 +59,13 @@
 		
     </div>
 	<div class="nav">
-		<ul>
+		<ul id="toggle">
 			<li class="homeabout"><a href="/">Home</a></li>
-			<li class="about"><a href="about.html">About</a></li>
-			<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-			<li class="writing"><a href="blog.html">Writing</a></li>
-			<li class="contact"><a href="contact.html">Contact</a></li>
+			<li class="about"><a href="/about.html">About</a></li>
+			<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+			<li class="writing"><a href="/blog">Writing</a></li>
+			<li class="writing"><a href="/tutorials">Tutorials</a></li>
+			<li class="contact"><a href="/contact.html">Contact</a></li>
 		</ul>
 	</div>
 <div class="bg">	
@@ -72,38 +90,46 @@
 	<div class="columns three-col posts">
 		
 			 
-<div class="first"><div class="inner-box"><h3>29 Nov 2012 &raquo; <br><a href="/blog/test-2">testerrrrr</a></h3> 
-	<a href="/blog/test-2"><img src="/images/posts/nikon-50mm.jpg" /></a>
+<div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></h3> 
+	<a href="/blog/automotive-excellence-placerville"><img src="/images/portfolio/automotive-excellence-placerville.jpg" /></a>
 	</div>
 </div>
 		
 			 
-<div class=""><div class="inner-box"><h3>28 Nov 2012 &raquo; <br><a href="/blog/test-3">test 2</a></h3> 
-	<a href="/blog/test-3"><img src="/images/posts/jekyll.gif" /></a>
+<div class=""><div class="inner-box"><h3>09 Dec 2012 &raquo; <br><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></h3> 
+	<a href="/blog/bamf-fight-gear"><img src="/images/portfolio/bamf-fight-gear.jpg" /></a>
 	</div>
 </div>
 		
 			 
-<div class="third"><div class="inner-box"><h3>28 Nov 2012 &raquo; <br><a href="/blog/test-1">Tester</a></h3> 
-	<a href="/blog/test-1"><img src="/images/posts/black-friday.gif" /></a>
+<div class="third"><div class="inner-box"><h3>08 Dec 2012 &raquo; <br><a href="/blog/breaker-glass-company">Breaker Glass Company</a></h3> 
+	<a href="/blog/breaker-glass-company"><img src="/images/portfolio/breaker-glass-placerville.jpg" /></a>
+	</div>
+</div>
+		
+		
+			 
+<div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></h3> 
+	<a href="/blog/arduino-micro-controller"><img src="/images/blog/arduino-micro-controller.jpg" /></a>
 	</div>
 </div>
 		
 			 
-<div class="first"><div class="inner-box"><h3>24 Nov 2012 &raquo; <br><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
-	<a href="/blog/new-50mm-nikon-lense"><img src="/images/posts/nikon-50mm.jpg" /></a>
+<div class=""><div class="inner-box"><h3>28 Nov 2012 &raquo; <br><a href="/blog/black-friday">Black Friday</a></h3> 
+	<a href="/blog/black-friday"><img src="/images/blog/black-friday.jpg" /></a>
 	</div>
 </div>
 		
 			 
-<div class=""><div class="inner-box"><h3>23 Nov 2012 &raquo; <br><a href="/blog/black-friday-marketing">Black Friday Analysis</a></h3> 
-	<a href="/blog/black-friday-marketing"><img src="/images/posts/black-friday.gif" /></a>
+<div class="third"><div class="inner-box"><h3>24 Nov 2012 &raquo; <br><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
+	<a href="/blog/new-50mm-nikon-lense"><img src="/images/blog/nikon-50mm.jpg" /></a>
 	</div>
 </div>
 		
+		
 			 
-<div class="third"><div class="inner-box"><h3>17 Nov 2012 &raquo; <br><a href="/blog/the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
-	<a href="/blog/the-wordpress-to-jekyll-migration"><img src="/images/posts/jekyll.gif" /></a>
+<div class="firstthird"><div class="inner-box"><h3>17 Nov 2012 &raquo; <br><a href="/blog/3the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
+	<a href="/blog/3the-wordpress-to-jekyll-migration"><img src="/images/tutorials/jekyll.jpg" /></a>
 	</div>
 </div>
 		
@@ -122,10 +148,10 @@
 </div>
 <footer>
 	<div class="wrapper">
-	<div class="columns four-col points">
+	<div class="columns four-col">
 	
 			<div><h4>Navigation</h4>
-				<ul>
+				<ul class="first">
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
 				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
@@ -145,29 +171,32 @@
 			<div><h4>Recent Posts</h4>
 				<ul class="disc">
 				
-				<li><a href="/blog/test-2">testerrrrr</a></li>
+				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
 				
-				<li><a href="/blog/test-3">test 2</a></li>
+				<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
 				
-				<li><a href="/blog/test-1">Tester</a></li>
+				<li><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></li>
 				
-				<li><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></li>
+				<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
 				
-				<li><a href="/blog/black-friday-marketing">Black Friday Analysis</a></li>
+				<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
 				
 				</ul>
 			</div>
 			<div><h4>Contact</h4>
-				<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<ul class="last">
+					<li class="homeabout"><a href="/">Home</a></li>
+					<li class="about"><a href="/about.html">About</a></li>
+					<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+					<li class="writing"><a href="/blog">Writing</a></li>
+					<li class="writing"><a href="/tutorials">Tutorials</a></li>
+					<li class="contact"><a href="/contact.html">Contact</a></li>
 				</ul>
 			</div>
 	</div>
-		<div class="copyright">Copyright © 2012 The Graphic Rustication Company</div>
+		<div class="copyright">Copyright © 2013
+
+		 The Graphic Rustication Company</div>
 	</div>
 
 </footer>

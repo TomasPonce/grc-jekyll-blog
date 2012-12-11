@@ -34,6 +34,23 @@
   <![endif]-->
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
 	
+	<!-- Toggle Mobile Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('.nav').prepend('<div id="menu-icon">Menu</div>');
+
+		/* toggle nav */
+		$("#menu-icon").on("click", function(){
+			$("#toggle").slideToggle();
+			$(this).toggleClass("active");
+		});
+
+	});
+	</script>	
 </head>
 
 <body>
@@ -42,12 +59,13 @@
 		
     </div>
 	<div class="nav">
-		<ul>
+		<ul id="toggle">
 			<li class="homeabout"><a href="/">Home</a></li>
-			<li class="about"><a href="about.html">About</a></li>
-			<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-			<li class="writing"><a href="blog.html">Writing</a></li>
-			<li class="contact"><a href="contact.html">Contact</a></li>
+			<li class="about"><a href="/about.html">About</a></li>
+			<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+			<li class="writing"><a href="/blog">Writing</a></li>
+			<li class="writing"><a href="/tutorials">Tutorials</a></li>
+			<li class="contact"><a href="/contact.html">Contact</a></li>
 		</ul>
 	</div>
 <div class="bg">	
@@ -55,21 +73,112 @@
     <div class="columns one-col text">	
 	<ul>
 		
-		<li><h3>29 Nov 2012 &raquo; <br><a href="/blog/test-2">testerrrrr</a></h3> 
-			<p>It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.</p>
+		<li><h3>10 Dec 2012 &raquo; <br><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></h3> 
+			
 <br>
-			<a href="/blog/test-2">Read more...</a><br><br>
+			<a href="/blog/automotive-excellence-placerville">Read more...</a><br><br>
 		</li>
 		
-		<li><h3>28 Nov 2012 &raquo; <br><a href="/blog/test-3">test 2</a></h3> 
-			<p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>...<br>
-			<a href="/blog/test-3">Read more...</a><br><br>
+		<li><h3>10 Dec 2012 &raquo; <br><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></h3> 
+			
+<br>
+			<a href="/blog/arduino-micro-controller">Read more...</a><br><br>
 		</li>
 		
-		<li><h3>28 Nov 2012 &raquo; <br><a href="/blog/test-1">Tester</a></h3> 
+		<li><h3>09 Dec 2012 &raquo; <br><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></h3> 
+			
+<br>
+			<a href="/blog/bamf-fight-gear">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>08 Dec 2012 &raquo; <br><a href="/blog/breaker-glass-company">Breaker Glass Company</a></h3> 
+			
+<br>
+			<a href="/blog/breaker-glass-company">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>07 Dec 2012 &raquo; <br><a href="/blog/california-water-treatment">California Water Treatment</a></h3> 
+			
+<br>
+			<a href="/blog/california-water-treatment">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>06 Dec 2012 &raquo; <br><a href="/blog/carson-ridge-evergreens">Carson Ridge Evergreens</a></h3> 
+			
+<br>
+			<a href="/blog/carson-ridge-evergreens">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>05 Dec 2012 &raquo; <br><a href="/blog/classic-throttle">Classic Throttle</a></h3> 
+			
+<br>
+			<a href="/blog/classic-throttle">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>04 Dec 2012 &raquo; <br><a href="/blog/elect-todd-white">Elect Todd White Eldorado County School Board</a></h3> 
+			
+<br>
+			<a href="/blog/elect-todd-white">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>03 Dec 2012 &raquo; <br><a href="/blog/hey-day-cafe">Heyday Cafe</a></h3> 
+			
+<br>
+			<a href="/blog/hey-day-cafe">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>02 Dec 2012 &raquo; <br><a href="/blog/kevin-brown-school-board">Kevin Brown for El Dorado County School Board</a></h3> 
+			
+<br>
+			<a href="/blog/kevin-brown-school-board">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>01 Dec 2012 &raquo; <br><a href="/blog/mama-earth-organic-farm">Mama Earth Organic Farm</a></h3> 
+			
+<br>
+			<a href="/blog/mama-earth-organic-farm">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>29 Nov 2012 &raquo; <br><a href="/blog/mosquito-creek-outfitters-placerville">Mosquito Creek Outfitters Placerville</a></h3> 
+			
+<br>
+			<a href="/blog/mosquito-creek-outfitters-placerville">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>28 Nov 2012 &raquo; <br><a href="/blog/natural-flair-floral-designs">Natural Flair Floral Designs</a></h3> 
+			
+<br>
+			<a href="/blog/natural-flair-floral-designs">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>28 Nov 2012 &raquo; <br><a href="/blog/black-friday">Black Friday</a></h3> 
 			<p>Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.</p>
 <br>
-			<a href="/blog/test-1">Read more...</a><br><br>
+			<a href="/blog/black-friday">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>27 Nov 2012 &raquo; <br><a href="/blog/print-project-managers">Print Project Managers</a></h3> 
+			
+<br>
+			<a href="/blog/print-project-managers">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>26 Nov 2012 &raquo; <br><a href="/blog/sacramento-kids-club">Sacramento Kids Club</a></h3> 
+			
+<br>
+			<a href="/blog/sacramento-kids-club">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>25 Nov 2012 &raquo; <br><a href="/blog/sierra-nevada-sealcoating">Sierra Nevada Sealcoating</a></h3> 
+			
+<br>
+			<a href="/blog/sierra-nevada-sealcoating">Read more...</a><br><br>
+		</li>
+		
+		<li><h3>24 Nov 2012 &raquo; <br><a href="/blog/steven-banks-mad-my-way">Steven Banks Mad My Way</a></h3> 
+			
+<br>
+			<a href="/blog/steven-banks-mad-my-way">Read more...</a><br><br>
 		</li>
 		
 		<li><h3>24 Nov 2012 &raquo; <br><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
@@ -78,20 +187,10 @@
 			<a href="/blog/new-50mm-nikon-lense">Read more...</a><br><br>
 		</li>
 		
-		<li><h3>23 Nov 2012 &raquo; <br><a href="/blog/black-friday-marketing">Black Friday Analysis</a></h3> 
-			<p>Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.</p>
+		<li><h3>23 Nov 2012 &raquo; <br><a href="/blog/sullen-clothing-blog">Sullen Clothing Blog</a></h3> 
+			
 <br>
-			<a href="/blog/black-friday-marketing">Read more...</a><br><br>
-		</li>
-		
-		<li><h3>17 Nov 2012 &raquo; <br><a href="/blog/the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
-			<p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>...<br>
-			<a href="/blog/the-wordpress-to-jekyll-migration">Read more...</a><br><br>
-		</li>
-		
-		<li><h3>15 Sep 2012 &raquo; <br><a href="/blog/a-fortnight-later">A Fortnight Later</a></h3> 
-			<p> A fortnight later, by excellent good fortune, the doctor gave one of his pleasant dinners to some five or six old cronies, all intelligent, reputable men and all judges of good wine; and Mr. Utterson so contrived that he remained behind after the others had departed. This was no new arrangement, but a thing that had befallen many scores of times. Where Utterson was liked, he was liked well. Hosts loved to detain the dry lawyer, when the light-hearted and loose-tongued had already their foot on the threshold; they liked to sit a while in his unobtrusive company, practising...<br>
-			<a href="/blog/a-fortnight-later">Read more...</a><br><br>
+			<a href="/blog/sullen-clothing-blog">Read more...</a><br><br>
 		</li>
 		
 	</ul>
@@ -99,13 +198,25 @@
 		<h4>Recent Writings</h4>
 		<ul class="disc">
 			
-			<li><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></li>
+			<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
 			
-			<li><a href="/blog/black-friday-marketing">Black Friday Analysis</a></li>
+			<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
 			
-			<li><a href="/blog/the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></li>
+			<li><a href="/blog/carson-ridge-evergreens">Carson Ridge Evergreens</a></li>
 			
-			<li><a href="/blog/a-fortnight-later">A Fortnight Later</a></li>
+			<li><a href="/blog/classic-throttle">Classic Throttle</a></li>
+			
+			<li><a href="/blog/elect-todd-white">Elect Todd White Eldorado County School Board</a></li>
+			
+			<li><a href="/blog/hey-day-cafe">Heyday Cafe</a></li>
+			
+			<li><a href="/blog/kevin-brown-school-board">Kevin Brown for El Dorado County School Board</a></li>
+			
+			<li><a href="/blog/mama-earth-organic-farm">Mama Earth Organic Farm</a></li>
+			
+			<li><a href="/blog/mosquito-creek-outfitters-placerville">Mosquito Creek Outfitters Placerville</a></li>
+			
+			<li><a href="/blog/natural-flair-floral-designs">Natural Flair Floral Designs</a></li>
 			
 		</ul>
     </div>
@@ -118,10 +229,10 @@
 </div>
 <footer>
 	<div class="wrapper">
-	<div class="columns four-col points">
+	<div class="columns four-col">
 	
 			<div><h4>Navigation</h4>
-				<ul>
+				<ul class="first">
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
 				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
@@ -141,29 +252,32 @@
 			<div><h4>Recent Posts</h4>
 				<ul class="disc">
 				
-				<li><a href="/blog/test-2">testerrrrr</a></li>
+				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
 				
-				<li><a href="/blog/test-3">test 2</a></li>
+				<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
 				
-				<li><a href="/blog/test-1">Tester</a></li>
+				<li><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></li>
 				
-				<li><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></li>
+				<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
 				
-				<li><a href="/blog/black-friday-marketing">Black Friday Analysis</a></li>
+				<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
 				
 				</ul>
 			</div>
 			<div><h4>Contact</h4>
-				<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<ul class="last">
+					<li class="homeabout"><a href="/">Home</a></li>
+					<li class="about"><a href="/about.html">About</a></li>
+					<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+					<li class="writing"><a href="/blog">Writing</a></li>
+					<li class="writing"><a href="/tutorials">Tutorials</a></li>
+					<li class="contact"><a href="/contact.html">Contact</a></li>
 				</ul>
 			</div>
 	</div>
-		<div class="copyright">Copyright © 2012 The Graphic Rustication Company</div>
+		<div class="copyright">Copyright © 2013
+
+		 The Graphic Rustication Company</div>
 	</div>
 
 </footer>

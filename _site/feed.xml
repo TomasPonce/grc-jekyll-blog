@@ -4,7 +4,7 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-12-03T14:00:44-08:00</updated>
+ <updated>2012-12-10T16:23:40-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
@@ -13,33 +13,164 @@
 
  
  	<entry>
- 		<title>testerrrrr</title>
- 		<link href="http://graphicrustication.com/blog/test-2"/>
+ 		<title>Automotive Excellence Website</title>
+ 		<link href="http://graphicrustication.com/blog/automotive-excellence-placerville"/>
+ 		<updated>2012-12-10T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/automotive-excellence-placerville</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>All I want for Christmas is an Arduino</title>
+ 		<link href="http://graphicrustication.com/blog/arduino-micro-controller"/>
+ 		<updated>2012-12-10T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/arduino-micro-controller</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>BAMF Fight Gear</title>
+ 		<link href="http://graphicrustication.com/blog/bamf-fight-gear"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/bamf-fight-gear</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Breaker Glass Company</title>
+ 		<link href="http://graphicrustication.com/blog/breaker-glass-company"/>
+ 		<updated>2012-12-08T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/breaker-glass-company</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>California Water Treatment</title>
+ 		<link href="http://graphicrustication.com/blog/california-water-treatment"/>
+ 		<updated>2012-12-07T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/california-water-treatment</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Carson Ridge Evergreens</title>
+ 		<link href="http://graphicrustication.com/blog/carson-ridge-evergreens"/>
+ 		<updated>2012-12-06T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/carson-ridge-evergreens</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Classic Throttle</title>
+ 		<link href="http://graphicrustication.com/blog/classic-throttle"/>
+ 		<updated>2012-12-05T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/classic-throttle</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Elect Todd White Eldorado County School Board</title>
+ 		<link href="http://graphicrustication.com/blog/elect-todd-white"/>
+ 		<updated>2012-12-04T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/elect-todd-white</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Heyday Cafe</title>
+ 		<link href="http://graphicrustication.com/blog/hey-day-cafe"/>
+ 		<updated>2012-12-03T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/hey-day-cafe</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Kevin Brown for El Dorado County School Board</title>
+ 		<link href="http://graphicrustication.com/blog/kevin-brown-school-board"/>
+ 		<updated>2012-12-02T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/kevin-brown-school-board</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Mama Earth Organic Farm</title>
+ 		<link href="http://graphicrustication.com/blog/mama-earth-organic-farm"/>
+ 		<updated>2012-12-01T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/mama-earth-organic-farm</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Mosquito Creek Outfitters Placerville</title>
+ 		<link href="http://graphicrustication.com/blog/mosquito-creek-outfitters-placerville"/>
  		<updated>2012-11-29T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/test-2</id>
- 		<content type="html">&lt;p&gt;It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&amp;rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.&lt;/p&gt;
+ 		<id>http://graphicrustication.com/blog/mosquito-creek-outfitters-placerville</id>
+ 		<content type="html">
 </content>
  	</entry>
  
  	<entry>
- 		<title>test 2</title>
- 		<link href="http://graphicrustication.com/blog/test-3"/>
+ 		<title>Natural Flair Floral Designs</title>
+ 		<link href="http://graphicrustication.com/blog/natural-flair-floral-designs"/>
  		<updated>2012-11-28T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/test-3</id>
- 		<content type="html">&lt;p&gt;Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-
-&lt;p&gt;Why is this so appealing? First of all it runs fast on any server because it&amp;rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&amp;rsquo;s fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the &lt;em&gt;post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called &lt;/em&gt;site.&lt;/p&gt;
-
-&lt;p&gt;So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. So far I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. That&amp;rsquo;s all for now, next comes a new responsive design.&lt;/li&gt;&lt;/p&gt;
+ 		<id>http://graphicrustication.com/blog/natural-flair-floral-designs</id>
+ 		<content type="html">
 </content>
  	</entry>
  
  	<entry>
- 		<title>Tester</title>
- 		<link href="http://graphicrustication.com/blog/test-1"/>
+ 		<title>Black Friday</title>
+ 		<link href="http://graphicrustication.com/blog/black-friday"/>
  		<updated>2012-11-28T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/test-1</id>
+ 		<id>http://graphicrustication.com/blog/black-friday</id>
  		<content type="html">&lt;p&gt;Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Print Project Managers</title>
+ 		<link href="http://graphicrustication.com/blog/print-project-managers"/>
+ 		<updated>2012-11-27T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/print-project-managers</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Sacramento Kids Club</title>
+ 		<link href="http://graphicrustication.com/blog/sacramento-kids-club"/>
+ 		<updated>2012-11-26T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/sacramento-kids-club</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Sierra Nevada Sealcoating</title>
+ 		<link href="http://graphicrustication.com/blog/sierra-nevada-sealcoating"/>
+ 		<updated>2012-11-25T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/sierra-nevada-sealcoating</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Steven Banks Mad My Way</title>
+ 		<link href="http://graphicrustication.com/blog/steven-banks-mad-my-way"/>
+ 		<updated>2012-11-24T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/steven-banks-mad-my-way</id>
+ 		<content type="html">
 </content>
  	</entry>
  
@@ -53,35 +184,60 @@
  	</entry>
  
  	<entry>
- 		<title>Black Friday Analysis</title>
- 		<link href="http://graphicrustication.com/blog/black-friday-marketing"/>
+ 		<title>Sullen Clothing Blog</title>
+ 		<link href="http://graphicrustication.com/blog/sullen-clothing-blog"/>
  		<updated>2012-11-23T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/black-friday-marketing</id>
- 		<content type="html">&lt;p&gt;Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.&lt;/p&gt;
+ 		<id>http://graphicrustication.com/blog/sullen-clothing-blog</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Surfing Playa Venao</title>
+ 		<link href="http://graphicrustication.com/blog/surfing-playa-venao"/>
+ 		<updated>2012-11-22T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/surfing-playa-venao</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>The Beauty Will Rise</title>
+ 		<link href="http://graphicrustication.com/blog/the-beauty-will-rise"/>
+ 		<updated>2012-11-21T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/the-beauty-will-rise</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Vacation Home in Lake Tahoe</title>
+ 		<link href="http://graphicrustication.com/blog/vacation-home-in-lake-tahoe"/>
+ 		<updated>2012-11-20T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/vacation-home-in-lake-tahoe</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Zoe Mattia Modeling</title>
+ 		<link href="http://graphicrustication.com/blog/zoe-mattia-modeling"/>
+ 		<updated>2012-11-19T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/zoe-mattia-modeling</id>
+ 		<content type="html">
 </content>
  	</entry>
  
  	<entry>
  		<title>Migrating to Jekyll from Wordpress</title>
- 		<link href="http://graphicrustication.com/blog/the-wordpress-to-jekyll-migration"/>
+ 		<link href="http://graphicrustication.com/blog/3the-wordpress-to-jekyll-migration"/>
  		<updated>2012-11-17T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/the-wordpress-to-jekyll-migration</id>
+ 		<id>http://graphicrustication.com/blog/3the-wordpress-to-jekyll-migration</id>
  		<content type="html">&lt;p&gt;Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jeckyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
 
 &lt;p&gt;Why is this so appealing? First of all it runs fast on any server because it&amp;rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&amp;rsquo;s fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the &lt;em&gt;post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called &lt;/em&gt;site.&lt;/p&gt;
 
 &lt;p&gt;So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. So far I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. That&amp;rsquo;s all for now, next comes a new responsive design.&lt;/li&gt;&lt;/p&gt;
-</content>
- 	</entry>
- 
- 	<entry>
- 		<title>A Fortnight Later</title>
- 		<link href="http://graphicrustication.com/blog/a-fortnight-later"/>
- 		<updated>2012-09-15T00:00:00-07:00</updated>
- 		<id>http://graphicrustication.com/blog/a-fortnight-later</id>
- 		<content type="html">&lt;p&gt; A fortnight later, by excellent good fortune, the doctor gave one of his pleasant dinners to some five or six old cronies, all intelligent, reputable men and all judges of good wine; and Mr. Utterson so contrived that he remained behind after the others had departed. This was no new arrangement, but a thing that had befallen many scores of times. Where Utterson was liked, he was liked well. Hosts loved to detain the dry lawyer, when the light-hearted and loose-tongued had already their foot on the threshold; they liked to sit a while in his unobtrusive company, practising for solitude, sobering their minds in the man&amp;rsquo;s rich silence after the expense and strain of gaiety.&lt;/p&gt;
-
-&lt;p&gt; To this rule, Dr. Jekyll was no exception; and as he now sat on the opposite side of the fire &amp;mdash; a large, well-made, smooth-faced man of fifty, with something of a stylish cast perhaps, but every mark of capacity and kindness &amp;mdash; you could see by his looks that he cherished for Mr. Utterson a sincere and warm affection.&lt;/p&gt;
 </content>
  	</entry>
  

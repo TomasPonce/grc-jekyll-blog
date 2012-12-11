@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>The Graphic Rustication Company</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+  <link rel="stylesheet" href="/stylesheets/nivo-slider.css">
+  <script src="/javascripts/modernizr.foundation.js"></script>
+  
+  <!-- Included Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
+	
+	<!-- Toggle Mobile Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('.nav').prepend('<div id="menu-icon">Menu</div>');
+
+		/* toggle nav */
+		$("#menu-icon").on("click", function(){
+			$("#toggle").slideToggle();
+			$(this).toggleClass("active");
+		});
+
+	});
+	</script>	
+</head>
+
+<body>
+    <div class="header">
+      <h2><a href="/">The Graphic Rustication Company</a></h2>
+		
+    </div>
+	<div class="nav">
+		<ul id="toggle">
+			<li class="homeabout"><a href="/">Home</a></li>
+			<li class="about"><a href="/about.html">About</a></li>
+			<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+			<li class="writing"><a href="/blog">Writing</a></li>
+			<li class="writing"><a href="/tutorials">Tutorials</a></li>
+			<li class="contact"><a href="/contact.html">Contact</a></li>
+		</ul>
+	</div>
+<div class="bg">	
+<div class="wrapper">
+    <div class="columns one-col text">	
+		
+<h3>Black Friday</h3>
+			<div class="meta">Wed Nov 28 00:00:00 -0800 2012 - </div>
+
+			<img src="" /> <p>Yet another Black Friday has come and gone. How did your black friday specials pan out? I will be doing an in depth analysis on all data across all accounts. More coming soon as the redesign progresses.</p>
+
+			
+						</div>
+
+</div> <!-- /wrapper -->
+</div>
+<footer>
+	<div class="wrapper">
+	<div class="columns four-col">
+	
+			<div><h4>Navigation</h4>
+				<ul class="first">
+				<li><a href="/">Home</a></li>
+				<li><a href="about-graphic-rustication.html">About</a></li>
+				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
+				<li><a href="blog.html">Writing</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div><h4>Fav Links</h4>
+				<ul>
+				<li><a href="http://css-tricks.com">CSS Tricks</a></li>
+				<li><a href="http://codepen.io/">Codepen</a></li>
+				<li><a href="http://www.wired.com/">Wired</a></li>
+				<li><a href="http://makezine.com/">Make Mag</a></li>
+				<li><a href="http://placervilledesign.com/">Placerville Design</a></li>
+				</ul>
+			</div>
+			<div><h4>Recent Posts</h4>
+				<ul class="disc">
+				
+				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
+				
+				<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
+				
+				<li><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></li>
+				
+				<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
+				
+				<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
+				
+				</ul>
+			</div>
+			<div><h4>Contact</h4>
+				<ul class="last">
+					<li class="homeabout"><a href="/">Home</a></li>
+					<li class="about"><a href="/about.html">About</a></li>
+					<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+					<li class="writing"><a href="/blog">Writing</a></li>
+					<li class="writing"><a href="/tutorials">Tutorials</a></li>
+					<li class="contact"><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+	</div>
+		<div class="copyright">Copyright © 2013
+
+		 The Graphic Rustication Company</div>
+	</div>
+
+</footer>
+
+<script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="javascripts/equal-height-floats.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider();
+setEqualHeight($(".container  > div"));  
+});
+$("li").click(function(){
+     window.location=$(this).find("a").attr("href"); 
+     return false;
+});
+</script>
+
+</body>
+</html>

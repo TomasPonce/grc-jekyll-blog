@@ -34,6 +34,23 @@
   <![endif]-->
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
 	
+	<!-- Toggle Mobile Nav -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('.nav').prepend('<div id="menu-icon">Menu</div>');
+
+		/* toggle nav */
+		$("#menu-icon").on("click", function(){
+			$("#toggle").slideToggle();
+			$(this).toggleClass("active");
+		});
+
+	});
+	</script>	
 </head>
 
 <body>
@@ -42,32 +59,35 @@
 		
     </div>
 	<div class="nav">
-		<ul>
+		<ul id="toggle">
 			<li class="homeabout"><a href="/">Home</a></li>
-			<li class="about"><a href="about.html">About</a></li>
-			<li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
-			<li class="writing"><a href="blog.html">Writing</a></li>
-			<li class="contact"><a href="contact.html">Contact</a></li>
+			<li class="about"><a href="/about.html">About</a></li>
+			<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+			<li class="writing"><a href="/blog">Writing</a></li>
+			<li class="writing"><a href="/tutorials">Tutorials</a></li>
+			<li class="contact"><a href="/contact.html">Contact</a></li>
 		</ul>
 	</div>
 <div class="bg">	
 <div class="wrapper">
     <div class="columns one-col text">	
-					<h3>New Nikon 50mm Lens</h3>
+		
+<h3>New Nikon 50mm Lens</h3>
+			<div class="meta">Sat Nov 24 00:00:00 -0800 2012 - </div>
 
-				
-							<p>It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.</p>
+			<img src="" /> <p>It was not easy to find but I picked up my new nikon 50mm f/1.8 lens. I&rsquo;m still using my old trusty D70 while I save for a full frame D600 but this new lens should really be an improvement from my old stock lens. Really looking forward to posting up some new photos with this setup.</p>
 
+			
 						</div>
 
 </div> <!-- /wrapper -->
 </div>
 <footer>
 	<div class="wrapper">
-	<div class="columns four-col points">
+	<div class="columns four-col">
 	
 			<div><h4>Navigation</h4>
-				<ul>
+				<ul class="first">
 				<li><a href="/">Home</a></li>
 				<li><a href="about-graphic-rustication.html">About</a></li>
 				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
@@ -87,29 +107,32 @@
 			<div><h4>Recent Posts</h4>
 				<ul class="disc">
 				
-				<li><a href="/blog/test-2">testerrrrr</a></li>
+				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
 				
-				<li><a href="/blog/test-3">test 2</a></li>
+				<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
 				
-				<li><a href="/blog/test-1">Tester</a></li>
+				<li><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></li>
 				
-				<li><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></li>
+				<li><a href="/blog/breaker-glass-company">Breaker Glass Company</a></li>
 				
-				<li><a href="/blog/black-friday-marketing">Black Friday Analysis</a></li>
+				<li><a href="/blog/california-water-treatment">California Water Treatment</a></li>
 				
 				</ul>
 			</div>
 			<div><h4>Contact</h4>
-				<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<ul class="last">
+					<li class="homeabout"><a href="/">Home</a></li>
+					<li class="about"><a href="/about.html">About</a></li>
+					<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
+					<li class="writing"><a href="/blog">Writing</a></li>
+					<li class="writing"><a href="/tutorials">Tutorials</a></li>
+					<li class="contact"><a href="/contact.html">Contact</a></li>
 				</ul>
 			</div>
 	</div>
-		<div class="copyright">Copyright © 2012 The Graphic Rustication Company</div>
+		<div class="copyright">Copyright © 2013
+
+		 The Graphic Rustication Company</div>
 	</div>
 
 </footer>
