@@ -20,7 +20,7 @@ return $output;
 if (!empty($_POST['payload'])) {
 
 // pull from master
-$result = syscall('git pull', '~/public_html/wp-content/themes/Responsive-Wordpress-Theme');
+$result = syscall('git pull', '/home/grc/grc_jekyll');
 
 // send us the output
 mail('josh@graphicrustication.com', 'GitHub hook `git pull` result', $result);
