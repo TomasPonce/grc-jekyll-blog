@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -35,8 +34,6 @@
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
 	
 	<!-- Toggle Mobile Nav -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
 	<script type="text/javascript">
 	jQuery(document).ready(function($){
 
@@ -60,6 +57,28 @@
 	    window.scrollTo(0, 1);
 	  }, 0);
 	});
+	</script>
+	<script type="text/javascript">
+	//Modernizer SVG to PNG Fallback
+	window.onload = function(){
+	if(!Modernizr.svg) {
+	var imgs = $('img[data-fallback]');
+	imgs.attr('src', imgs.data('fallback'));
+	}
+	}
+	</script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-10728002-32']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
 	</script>	
 </head>
 
@@ -91,7 +110,7 @@
 
 	<div class="columns four-col points">
 
-			<div><h4>Method</h4><a href="/about.html"><img src="/images/svg/beaker.svg"></a><h3><a href="/about.html">The Secret Formula</a></h3></div>
+			<div><h4>Method</h4><a href="/about.html"><img src="/images/svg/beaker.svg" alt="Method" data-fallback="beaker.png"&nbsp; alt="Graphic Rustication Co. Methods" /></a><h3><a href="/about.html">The Secret Formula</a></h3></div>
 			<div><h4>Work</h4><a href="/portfolio"><img src="/images/svg/work.svg"></a><h3><a href="/portfolio">View our Projects</a></h3></div>
 			<div><h4>Network</h4><a href="/about.html"><img src="/images/svg/team.svg"></a><h3><a href="/about.html">Only the Best</a></h3></div>
 			<div><h4>Learn</h4><a href="/tutorials"><img src="/images/svg/learn.svg"></a><h3><a href="tutorial">Tutorials & Tricks</a></h3></div>
@@ -102,68 +121,65 @@
 		
 			 
 <div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></h3> 
-	<a href="/blog/automotive-excellence-placerville"><img src="/images/portfolio/automotive-excellence-placerville.jpg" /></a>
+	<a href="/blog/automotive-excellence-placerville" class="img-shadow"><img src="/images/portfolio/automotive-excellence-placerville.jpg" /></a>
 	</div>
 </div>
 		
 			 
 <div class=""><div class="inner-box"><h3>09 Dec 2012 &raquo; <br><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></h3> 
-	<a href="/blog/bamf-fight-gear"><img src="/images/portfolio/bamf-fight-gear.jpg" /></a>
+	<a href="/blog/bamf-fight-gear" class="img-shadow"><img src="/images/portfolio/bamf-fight-gear.jpg" /></a>
 	</div>
 </div>
 		
 			 
 <div class="third"><div class="inner-box"><h3>08 Dec 2012 &raquo; <br><a href="/blog/breaker-glass-company">Breaker Glass Company</a></h3> 
-	<a href="/blog/breaker-glass-company"><img src="/images/portfolio/breaker-glass-placerville.jpg" /></a>
+	<a href="/blog/breaker-glass-company" class="img-shadow"><img src="/images/portfolio/breaker-glass-placerville.jpg" /></a>
 	</div>
 </div>
 		
 		
 			 
 <div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></h3> 
-	<a href="/blog/arduino-micro-controller"><img src="/images/blog/arduino-micro-controller.jpg" /></a>
+	<a href="/blog/arduino-micro-controller" class="img-shadow"><img src="/images/blog/arduino-micro-controller.jpg" /></a>
 	</div>
 </div>
 		
 			 
 <div class=""><div class="inner-box"><h3>28 Nov 2012 &raquo; <br><a href="/blog/black-friday">Black Friday</a></h3> 
-	<a href="/blog/black-friday"><img src="/images/blog/black-friday.jpg" /></a>
+	<a href="/blog/black-friday" class="img-shadow"><img src="/images/blog/black-friday.jpg" /></a>
 	</div>
 </div>
 		
 			 
 <div class="third"><div class="inner-box"><h3>24 Nov 2012 &raquo; <br><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
-	<a href="/blog/new-50mm-nikon-lense"><img src="/images/blog/nikon-50mm.jpg" /></a>
+	<a href="/blog/new-50mm-nikon-lense" class="img-shadow"><img src="/images/blog/nikon-50mm.jpg" /></a>
 	</div>
 </div>
 		
 		
 			 
 <div class="first"><div class="inner-box"><h3>11 Dec 2012 &raquo; <br><a href="/blog/wordpress-basic-training">Wordpress Basic Training</a></h3> 
-	<a href="/blog/wordpress-basic-training"><img src="/images/tutorials/wordpress-basics.gif" /></a>
+	<a href="/blog/wordpress-basic-training" class="img-shadow"><img src="/images/tutorials/wordpress-basics.gif" /></a>
 	</div>
 </div>
 		
 			 
 <div class=""><div class="inner-box"><h3>11 Dec 2012 &raquo; <br><a href="/blog/learning-git-version-control">Learning Git for Version Control</a></h3> 
-	<a href="/blog/learning-git-version-control"><img src="/images/tutorials/learn-git.gif" /></a>
+	<a href="/blog/learning-git-version-control" class="img-shadow"><img src="/images/tutorials/learn-git.gif" /></a>
 	</div>
 </div>
 		
 			 
 <div class="third"><div class="inner-box"><h3>17 Nov 2012 &raquo; <br><a href="/blog/3the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
-	<a href="/blog/3the-wordpress-to-jekyll-migration"><img src="/images/tutorials/jekyll.jpg" /></a>
+	<a href="/blog/3the-wordpress-to-jekyll-migration" class="img-shadow"><img src="/images/tutorials/jekyll.jpg" /></a>
 	</div>
 </div>
 		
 	</div>
 	<div class="columns one-col text">	
 	      <h3>About Us</h3>
-	      <p>
-
-		The Graphic Rustication Company was originally starting in Irvine, CA by my father in the 1970's. Quickly GRC became known for unmatched quality and creativity that pushed the envelope of what many had previously conceived as multimedia commercial design. I revived the Graphic Rustication Co. to create a beautiful, and highly functional graphics, signs, and web interfaces. A blending of old lost techniques with new technology and tools.  
-
-		</p>	
+	      <p>The Graphic Rustication Company was originally starting in Irvine, CA by my father in the 1970's. Quickly GRC became known for unmatched quality and creativity that pushed the envelope of what many had previously conceived as multimedia commercial design. I revived the Graphic Rustication Co. to create a beautiful, and highly functional graphics, signs, and web interfaces. A blending of old lost techniques with new technology and tools. </p>
+	<p>Located at the base of the Sierra Nevada Mountains, we love to balance technology with nature. It is one reason that you will find a subtle unique texture and style in every project that we produce. Please <a href="/contact.html">contact us</a> to discuss your needs. We look forward to working with you to make your dreams a reality.
 	</div>
 
 	
