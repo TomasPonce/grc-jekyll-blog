@@ -1,6 +1,7 @@
 /* CSS SASS */
 
-@import "box-sizing";
+@import "box-sizing.scss";
+@import "nav.scss";
 
 /* Variables */
 
@@ -171,7 +172,7 @@ background: $color-5;
 }
 
 /* Structure */
-.header h2, .header .nav ul, .wrapper {
+.header h2, .wrapper {
 	margin: 0 auto;
 } 
 
@@ -189,32 +190,145 @@ background: $color-5;
 	}	
 }
 
-.nav { 
-	background: $color-5;
-	border-bottom: 4px solid $color-1;
-	border-top: 1px solid $color-6;
-	bottom: 0;
+/* Navigation */
+
+.clear { 
+	clear:both; }
+.nav {
+	display:block;
+	width:90%;
+	max-width: 940px;
+	margin: 0 auto;  
+	}
+
+.mobile-nav {
+	visibility: hidden;
+	padding: 0;
+	height: 0px;}
+ 
+ul.primary {
+	list-style: none;
+	height: 45px;
+	min-width: 350px;
 	position: relative;
-	text-align: center;
+	margin: 0;
+	padding: 0;
+	float: right;}
+ 
+	ul.primary li {
+		float: left;
+		display: inline;
+		font-weight: bold;
+		font-size: 13px;
+		max-width: 100%; }
+ 
+		ul.primary li a, ul.drop li a {
+			display: block;
+			padding: 10px;
+			color: white;
+			text-decoration: none; }
+ 
+ul.drop li a { padding: 5px; }
+ 
+ul.primary li a:hover, ul.drop li a:hover { background: #444; }
+ 
+ul.primary li, ul.drop li { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+ 
+ul.primary li.active > a { background: #444; }
+ 
+a.has-drop { cursor: pointer; }
+ 
+	a.has-drop span {
+		margin: -8px 0 0 5px;
+		width: 10px;
+		height: 5px;
+		float: right;
+		background: url("/images/drop-caret.png") no-repeat center right; }
+ 
+li.active > a.has-drop span {
+	margin: -8px 0 0 5px;
+	width: 10px;
+	height: 5px;
+	float: right;
+	background: url("/images/drop-caret-up.png") no-repeat center right; }
+ 
+ul.drop {
+	display: none;
+	z-index: 999;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	width: auto;
+	width: auto;
+	list-style: none;
+	background: #242424;
+	border: none; }
+ 
+	ul.drop li {
+		float: none;
+		font-weight: normal; }
+
+@media only screen and (max-width: 767px) {
+	nav {
+	display: block;
 	width: 100%;
-	ul {
-		width: 90%;
-		@include clear;
-		li {
-			padding: 8px 0 3px 0;
-			@include col-width(6);
-			cursor: pointer;
-				a {color: #fff;font-size: 1.2em; text-transform: uppercase;}	
-				:hover {
-						color: #ccc;
-						}
-				}
+	border: 0px solid white;
+	padding: 10px 0; }
+ 
+.mobile-nav {
+	visibility: visible;
+	height: auto;
+	margin: 0 5px;
+	padding: 10px 0;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	background: url("/images/mobile-nav.png") no-repeat center right; }
+ 
+ul.primary {
+	float: none;
+	display: none;
+	height: auto;
+	margin: 0;
+	padding: 0; 
+	}
+ 
+	ul.primary li {
+		display: block;
+		float: none;
+		border-bottom: 1px solid #444; 
+		margin-right: 15px;
 		}
+ 
+		ul.primary li:last-child { border-bottom: none; }
+ 
+ul.drop li, ul.primary li.active { border-bottom: none; }
+ 
+ul.drop li a {
+	text-indent: 15px;
+	font-size: 12px;
+	font-style: italic; }
+ 
+a.has-drop span {
+	margin: 5px 0 0 5px;
+	width: 10px;
+	height: 5px;
+	float: right;
+	background: url("/images/drop-caret.png") no-repeat center right; }
+ 
+li.active > a.has-drop span {
+	margin: 5px 0 0 5px;
+	width: 10px;
+	height: 5px;
+	float: right;
+	background: url("/images/drop-caret-up.png") no-repeat center right; }
 }
 
 .bg {
 background: url('/images/wood-bg.jpg');
 /* @include generic-background-image("/images/nasty_fabric"); */
+	border-top: 4px solid #fff;
 }
 .wrapper {
 	width: $main-width;
@@ -437,33 +551,5 @@ footer {
 		@include breakpoint(mobile) {}
 	}
 	
-}
-
-.nav {
-		#menu-icon {
-			display: none; /* hide menu icon initially */
-			@include breakpoint(quarter-screen) {
-			
-				color: #000;
-				display: block;
-				height: 30px;
-				background: #ecebeb url(/images/menu-icon.png) no-repeat 10px center;
-				padding: 8px 10px 0 42px;
-				cursor: pointer;
-				border: solid 1px #666;
-				display: block; /* show menu icon */
-			}
-		}
- 		ul {
-		margin: 0 auto;
-		max-width: 940px;
-		@include breakpoint(quarter-screen) {display: none;text-align: center;}
-		li {@include breakpoint(quarter-screen) {clear: left; display: block; width: 100%; border-bottom: 1px dotted #ccc;}
-			
-		a {@include breakpoint(quarter-screen) {font-size: 1.5em; line-height: 2em}
-		}
-		}
-		
-		}
 }
 

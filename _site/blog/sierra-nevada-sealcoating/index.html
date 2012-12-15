@@ -26,28 +26,63 @@
   <!-- Included Google Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
-
-  <!-- IE Fix for HTML5 Tags -->
+	
+    <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	
-	<!-- Toggle Mobile Nav -->
-	<script type="text/javascript">
-	jQuery(document).ready(function($){
+<script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+var $s = jQuery.noConflict();
+$s(window).load(function() {
+    $s('#slider').nivoSlider();
+setEqualHeight($s(".container  > div"));  
+});
+$s("li").click(function(){
+     window.location=$s(this).find("a").attr("href"); 
+     return false;
+});
+</script>
+<script type="text/javascript">
+var $n = jQuery.noConflict();
+$n(document).ready(function () {
+$n('ul.primary li').click(function () {
+    var a = this;
+    if ($n('ul', this).is(':visible')) {
+        $n('ul', this).slideUp(function () {
+            $n(a).removeClass('active')
+        })
+    } else {
+        $n('ul.drop').slideUp();
+        $n('ul.primary li').removeClass('active');
+        $n('ul', this).slideDown();
+        $n(a).addClass('active')
+    }
+});
+$n('body').click(function (a) {
+    if (!$n(a.target).is('a')) {
+        $n('ul.drop').slideUp();
+        $n('ul.primary li').removeClass('active')
+    }
+});
+$n(function () {
+    $n('.mobile-nav').click(function (e) {
+        $n('.primary').slideToggle(150, "swing");
+        e.stopPropagation()
+    });
+    $n(window).resize(function() {
+        $n('ul.drop').slideUp();
+        $n('ul.primary li').removeClass('active')
+        $n('ul.primary').removeAttr('style')
+    });
+})
+});
+</script>
 
-		/* prepend menu icon */
-		$('.nav').prepend('<div id="menu-icon">Menu</div>');
+</body>
 
-		/* toggle nav */
-		$("#menu-icon").on("click", function(){
-			$("#toggle").slideToggle();
-			$(this).toggleClass("active");
-		});
-
-	});
-	</script>
 	<script type="text/javascript">
 	// When ready...
 	window.addEventListener("load",function() {
@@ -66,20 +101,8 @@
 	imgs.attr('src', imgs.data('fallback'));
 	}
 	}
-	</script>
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-10728002-32']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
 	</script>	
+	
 </head>
 
 <body>
@@ -88,14 +111,27 @@
 		
     </div>
 	<div class="nav">
-		<ul id="toggle">
-			<li class="homeabout"><a href="/">Home</a></li>
+			<div class="mobile-nav">Navigation</div>
+		<ul class="primary">
+			<li class="home"><a href="/">Home</a></li>
 			<li class="about"><a href="/about.html">About</a></li>
-			<li class="portfolio"><a href="/portfolio">Portfolio</a></li>
-			<li class="writing"><a href="/blog">Writing</a></li>
-			<li class="writing"><a href="/tutorials">Tutorials</a></li>
-			<li class="contact"><a href="/contact.html">Contact</a></li>
+			<li><a class="has-drop">Portfolio<span></span></a>
+				<ul class="drop">
+					<li><a href="/portfolio">Web Design</a></li>
+					<li><a href="/portfolio">Print Design</a></li>
+					<li><a href="/portfolio">Photography</a></li>
+					<li><a href="/portfolio">Logo and Identity</a></li>
+				</ul>
+			</li>
+			<li><a class="has-drop">Writing<span></span></a>
+				<ul class="drop">
+					<li><a href="/blog">Industry</a></li>
+					<li><a href="/blog">Tutorials</a></li>
+				</ul>
+			</li>
+			<li><a href="/contact.html">Contact</a></li>
 		</ul>
+	<div class="clear"></div>
 	</div>
 <div class="bg">	
 <div class="wrapper">
@@ -199,18 +235,5 @@
 
 </footer>
 
-<script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="javascripts/equal-height-floats.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-    $('#slider').nivoSlider();
-setEqualHeight($(".container  > div"));  
-});
-$("li").click(function(){
-     window.location=$(this).find("a").attr("href"); 
-     return false;
-});
-</script>
 
-</body>
 </html>
