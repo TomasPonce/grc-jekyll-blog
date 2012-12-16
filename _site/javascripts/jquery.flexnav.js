@@ -8,7 +8,7 @@
 *
 * Date: Sunday July 8
 */
-$(window).load(function() {
+
 (function($) {
 	$.fn.flexNav = function(options) {
 	    var settings = $.extend({
@@ -67,4 +67,3 @@ $(window).load(function() {
 	};
 
 })(jQuery);
-});
