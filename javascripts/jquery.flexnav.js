@@ -48,18 +48,32 @@
 
 	    // Toggle for nav menu
 	    $('.menu-button').click(function() {
-	        $this.slideToggle(settings.animationSpeed);
+	        $this.slideToggle(settings.animationSpeed); 
 	    });
 	
 	    //Closes nav menu after links clicked/touched
-	    $this.find('a').click(function() {
-	        $this.show();
-	    });
+	    //$this.find('a').click(function() {
+	    //    $this.show();
+	    //});
 	
-	    // Toggle click for sub-menus on touch and or small screens
+	     //Toggle click for sub-menus on touch and or small screens
 	    $('.item-with-ul').click(function() {
-	        $(this).find('.sub-menu').slideToggle(settings.animationSpeed);
+	       $(this).find('.sub-menu').slideToggle(settings.animationSpeed);
 	    });
+
+		//if (self.has('ul')) {
+		//	self.on({
+		//		mouseenter : function() {
+		//			$self.find('ul').slideDown(settings.animationSpeed);
+		//		},
+		//		mouseleave : function {
+		//			setTimeout(function () {
+		//					$(self).find('ul').slideUp(settings.animationSpeed);
+		//			}, 250);
+		//		}
+		//	});
+	//	}
+
 
 	    // Call on resize.
 	    $(window).on('resize', resizer);

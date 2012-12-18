@@ -2,9 +2,17 @@
 layout: default
 ---
 
-<div class="columns one-col text">	
-					<h3>{{page.title}}</h3>
-
-				
-							{{content}}
-						</div>
+<div class="columns text">	
+<div class="content-col">
+	<h3>{{page.title}}</h3>
+		{% if page.feature-img %}
+			<div class="main-img">
+			<img src="{{page.feature-img }}">
+			</div>
+		{% endif %}
+			{{content}}
+</div>
+<div class="sidebar-col">
+	{% include sidebar.html %}
+	</div>
+</div>

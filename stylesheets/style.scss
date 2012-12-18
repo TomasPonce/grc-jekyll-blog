@@ -238,13 +238,8 @@ background: $color-5;
 	position: relative;
 	list-style: none;
 	display: block;	
-	background-color: #222;	
+	background-color: $color-5;	
 	width: 100%;		
-}
-
-[role='navigation'] li.item-with-ul {	
-	background-color: $color-6;	
-			
 }
 
 [role='navigation'] li a {
@@ -252,10 +247,6 @@ background: $color-5;
 	display: block;
 	color: #ddd;
 	border-bottom: 1px solid #111;			
-}
-
-[role='navigation'] li a.link-with-ul {
-			
 }
 
 [role='navigation'] .top-level a {
@@ -281,14 +272,13 @@ background: $color-5;
 	.last a {
 		background-color: $color-5-e;
 	}
-
 }
 
 [role='navigation'] li ul {
 	width: 100%;
 	position: relative;
 	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #333;	
 }
 [role='navigation'] li ul li {
 	float: none;
@@ -297,8 +287,7 @@ background: $color-5;
 
 [role='navigation'] li ul li a {
 	display: block;
-	background-color: #333;
-			
+	background-color: $color-4 !important;			
 }
 
 [role='navigation'] .item-with-ul {
@@ -312,19 +301,7 @@ background: $color-5;
 .sub-menu.open {
 	display: block;
 }
-.site-footer {
-	margin: 1em 0;
-	overflow: hidden;
-}
-.site-footer li {
-	list-style: none;
-	margin: 0;
-	display: block;
-	float: left;
-}
-.site-footer li a {
-	padding: .5em .5em .5em 0;
-}
+
 
 @media all and (min-width: 800px) {
 	p {font-size: 100%; margin-bottom: 1.5em; line-height: 1.25em;}	
@@ -348,14 +325,14 @@ background: $color-5;
 		width: 20%;	
 	}
 
-
 	.flexNav-no-touch .item-with-ul:hover > ul { 
 		opacity: 1;
-		top: 3.3em;	
-		position: absolute;	
+		top: 3.0em;	
+		position: absolute;
+		border-top: 1px solid #000;	
 	}	
 	[role='navigation'] li a {
-		border-bottom: none; 		
+		border-bottom: 1px solid $color-5-b; 		
 	}
 	.flexNav-no-touch [role='navigation'] li ul {
 		position: absolute; 
@@ -366,9 +343,28 @@ background: $color-5;
 		height: 1px;
 		z-index: 100;			
 	}
-	[role='navigation'] li ul li a {
-		border-bottom: none;	
+	
+	[role='navigation'] li ul li {
+		width: 100%;
+		border-bottom: 1px solid $color-5-e;	
+	}
+	
+	[role='navigation'] li ul li:first-child {
+		border-top: 1px solid $color-5-e;
+	}
+	
+	[role='navigation'] li ul li:last-child {
+		border-bottom: none;
 	}	
+	
+	[role='navigation'] li ul li:first-child a {
+		border-top: 1px solid $color-5-e;
+	}
+	
+	[role='navigation'] li ul li a {
+		 background-color: $color-5-c !important;
+	}
+	
 	.flexNav-touch [role='navigation'] li ul.sub-menu {
 		position: absolute; 
 		top: auto;
@@ -383,7 +379,7 @@ background: $color-5;
 		height: auto;
 		display: block;	
 		border-right: 1px solid #000;
-		border-bottom: 1px solid #000;		
+		border-bottom: 1px solid #000;	
 	}			
 }
 
@@ -428,7 +424,7 @@ background: url('/images/wood-bg.jpg');
 	width: 70%;
 	.main-img {
 	background: #F8F8F8;
-	padding: 15px;
+	padding: 10px;
 	img {
 		border: 1px solid #E8E8E8 ;
 		width: 100%;
@@ -477,7 +473,7 @@ background: url('/images/wood-bg.jpg');
 					background: #fff;
 					@include shadow;
 					margin-top: 20px;
-					padding: 15px;
+					padding: 10px;
 					h3 {
 						position: absolute; 
 						bottom: 20px;		
