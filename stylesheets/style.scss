@@ -195,6 +195,7 @@ background: $color-5;
 		font-size: 2em;
 		padding: .5em .2em;
 		width: $main-width;
+		max-width: 940px;
 		a {color: #fff; text-decoration: none;}
 	}	
 }
@@ -452,11 +453,13 @@ background: url('/images/wood-bg.jpg');
 			img {
 				width: 80%;
 			}
-			h4 {
-				color: $color-5;
-			
-				margin: 0 0 20px 0;
-				padding: 0;
+			h3 {
+				background: $color-6;
+				margin: 10px 0 0 0;
+				a {
+					color: #fff;
+					line-height: 150%;
+				}
 			}
 		}
 	
