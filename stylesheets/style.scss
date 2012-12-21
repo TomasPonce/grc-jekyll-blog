@@ -2,11 +2,15 @@
 
 @import "box-sizing.scss";
 
-/* Variables */
+/*------------------------------------*\
+    COLOR VARIABLES
+\*------------------------------------*/
 
 $color-1-base: rgb(144, 43, 0); /* Red */
 
 $color-1: lighten($color-1-base, 0%);
+
+$color-darker-1: darken($color-1-base, 3%);
 
 $color-2-base: rgb(43, 43, 43); /* Black */
 
@@ -38,8 +42,13 @@ $color-6-base: rgb(0, 0, 0);
 
 $color-6: lighten($color-6-base, 15%); /* Modified Black */
 
+/* Other Useful Tidbits */
 
 $main-width: 90%;
+
+/*------------------------------------*\
+    MIXINS
+\*------------------------------------*/
 
 /* Columns */
 
@@ -48,24 +57,6 @@ $main-width: 90%;
 	width: (100% / $col-number); 
 }
 
-/* Breakpoints */
-
-@mixin breakpoint($point) {
-  @if $point == full-screen {
-    @media (max-width: 1600px) { @content; }
-  }
-  @if $point == half-screen {
-    @media (max-width: 1250px) { @content; }
-  }
-  @if $point == quarter-screen {
-	@media (max-width: 650px) { @content; }
-  }
-  @else if $point == mobile {
-    @media (max-width: 480px)  { @content; }
-  }
-}
-
-/* CSS3 Shadows */
 
 @mixin shadow() {
 	-webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
@@ -102,9 +93,63 @@ $main-width: 90%;
 	}
 }
 
+/*------------------------------------*\
+    BREAKPOINTS
+\*------------------------------------*/
+
+@mixin breakpoint($point) {
+  @if $point == full-screen {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == half-screen {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == quarter-screen {
+	@media (max-width: 650px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 480px)  { @content; }
+  }
+}
 
 
-/* Fonts */
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header, footer, nav, section, article, hgroup, figure {
+  display: block; }
+
+/*------------------------------------*\
+   	FONTS & BASIC TEXT STYLES
+\*------------------------------------*/
+
+@mixin breakpoint($point) {
+  @if $point == full-screen {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == half-screen {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == quarter-screen {
+	@media (max-width: 650px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 480px)  { @content; }
+  }
+}
 
 @font-face {
     font-family: 'URoman';
@@ -167,6 +212,9 @@ h3 {
 	@include font-1;
 	color: $color-5;
 	margin-bottom: 20px;
+	span {
+		color: $color-1; 
+	}
 }
 
 h4 {
@@ -174,13 +222,25 @@ h4 {
 	font-size: 1.6em;
 }
 
-/* The Basics */
+/*------------------------------------*\
+   	STRUCTURE
+\*------------------------------------*/
 
 body {
 background: $color-5;
 }
 
-/* Structure */
+
+.bg {
+	background: url('/images/wood-bg.jpg');	
+	border-top: 4px solid #fff;
+}
+.wrapper {
+	width: $main-width;
+	max-width: 940px;
+	padding: 20px 0;
+}
+
 .header h2, .wrapper {
 	margin: 0 auto;
 } 
@@ -200,8 +260,12 @@ background: $color-5;
 	}	
 }
 
-/* Navigation // http://jasonweaver.name */
 
+/*------------------------------------*\
+   	NAVIGATION
+\*------------------------------------*/
+
+/* Special Thanks to // http://jasonweaver.name */
 
 [role='main'] {
 	margin: 5% auto;
@@ -385,22 +449,10 @@ background: $color-5;
 }
 
 
-
-.bg {
-background: url('/images/wood-bg.jpg');
-/* @include generic-background-image("/images/nasty_fabric"); */
-	border-top: 4px solid #fff;
-}
-.wrapper {
-	width: $main-width;
-	max-width: 940px;
-	padding: 20px 0;
-}
-
 /* Columns */
 
 .columns {
-	margin: 20px 0 0 ;
+	margin: 20px 0 0 0 ;
 	@include clear;
 }
 
@@ -446,101 +498,105 @@ background: url('/images/wood-bg.jpg');
 .points {
 	@include shadow;
 	background: #fff;
-	
-
-		div {padding: 20px;
+	padding: 10px 0 0 0;
+		div {
+			position: relative;
 			text-align: center;
-			img, object {
+			display: block;
+			text-align: center; 
+			img {
 				width: 80%;
 			}
-			
 			h3 {
-				background: $color-6;
+				background: $color-1;
+				border-top: 4px solid $color-darker-1;
+				width: 100%;
 				margin: 10px 0 0 0;
+				padding: 0 0 5px 0;
+				color: #fff;
 				a {
 					color: #fff;
-					line-height: 150%;
 				}
 			}
-		}
-	
+		}	
 }
 
 .posts {
-		margin: 0 0 0 0;
-		
-			div {
-				padding: 0 7px;
-				.inner-box {
-					width: 100%;
-					position: relative;
-					background: #fff;
-					@include shadow;
-					margin-top: 20px;
-					padding: 10px;
-					h3 {
-						position: absolute; 
-						bottom: 20px;		
-					}
-					h3 {
-						display: none;
-						}
-					
-						.img-shadow {
-							display: block;
-							position: relative;
-						}
-						.img-shadow::before {
-							display:block;
-							content:'';
-							position:absolute;
-							width:100%;
-							height:100%;
-							-moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
-							-webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
-							box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
-						}
-					img {
-						width: 100%;
-						display: block;
-						margin: 0;
-					}
-				}
-			
+	margin: 0;
+	div {
+		padding: 0 7px;
+		&.first {
+			padding: 0 14px 0 0;
 			}
-			div.first {
-				padding: 0 14px 0 0;
-			}
-			div.third {
-				padding: 0 0 0 14px;
+		&.third {
+			padding: 0 0 0 14px;
 			@include breakpoint(quarter-screen) {padding: 0;}
-		 	
-			}
-	
+			}	
+		.inner-box {
+			width: 100%;
+			position: relative;
+			background: #fff;
+			@include shadow;
+			margin-top: 20px;
+			padding: 10px;
+			h3 {
+				position: absolute; 
+				bottom: 20px;		
+				}
+			.img-shadow {
+				display: block;
+				position: relative;
+				}
+			.img-shadow::before {
+				display:block;
+				content:'';
+				position:absolute;
+				width:100%;
+				height:100%;
+				-moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
+				-webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
+				box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
+				}
+				img {
+					width: 100%;
+					display: block;
+					}
+		}
+	}
+}
+
+.related-post {
+	ul {
+		li {
+			margin: 10px 0;
+		}
+	}
+}
+
+
+.meta {
+	color: #fff;
+	display: block;
+	background: #ccc;
+	margin: 5px 0 15px 0;
+	font-size: .8em;
+	line-height: 1.8em;
+	text-indent: 10px;
 }
 
 .cat_posts {
 	border-bottom: 1px dotted $color-5;
 	margin: 15px;
-	.description {
-	
-	}
-	.meta {
-		color: #fff;
-		display: block;
-		background: #ccc;
-		padding: 5px;
-		margin: 5px 0 15px 0;
-		font-size: .8em;
-	}
+
 	.read-more {
 		margin: 15px 0 0 0;
 		padding: 0 0 5px 0;
 		text-align: right;
 	}
-	img {width: 100%; margin-bottom: 15px;}
-
-	
+	img {
+		margin-bottom: 15px;
+		width: 100%; 
+		}
 }
 
 .text {
@@ -559,26 +615,34 @@ footer {
 		font-size: .7em;
 		padding: 20px 0;
 		@include breakpoint(quarter-screen) {width: 100%; text-align: center;}
-	}
-	.columns {margin: 0;
+		}
+	.columns {
 		background: $color-6;
-			div {padding: 10px; 
-			 h4 {margin: 0 0 10px 0; text-align: left;font-size: 1.2em ;border: none; color: #fff;}	
+			div {
+				padding: 10px; 
+			 	h4 {
+					margin: 0 0 10px 0; 
+					text-align: left;
+					font-size: 1.2em ;
+					border: none; 
+					color: #fff;
+					}	
 		 		ul {
-				&.first {
-					margin-left: 10px;
-					}
-				&.last {margin-right: 10px;
-					}
-				&.first, &.last {@include breakpoint(quarter-screen) {margin: 0;}}		
-				background: $color-4;
-				li {
-				border-bottom: 1px dotted $color-5;
-				cursor: pointer;
-				float: none;
-				padding: 10px;
-				text-align: left;
-				width: 100%;
+					background: $color-4;
+					&.first {
+						margin-left: 10px;
+						}
+						&.last {
+							margin-right: 10px;
+						}
+					&.first, &.last {@include breakpoint(quarter-screen) {margin: 0;}}
+					li { 
+						border-bottom: 1px dotted $color-5;
+						cursor: pointer;
+						float: none;
+						padding: 10px;
+						text-align: left;
+						width: 100%;
 				@include breakpoint(quarter-screen) {line-height: 200%}
 					a {
 					display: block;
@@ -620,3 +684,4 @@ footer {
 	
 }
 
+/*  */ 

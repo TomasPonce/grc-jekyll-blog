@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
 <head>
   <meta charset="utf-8" />
 
@@ -79,7 +79,7 @@ $("li").click(function(){
 
 	<li class="top-level second"><a href="/about.html">About Us</a>
 	</li>
-	<li class="top-level third item-with-ul"><a href="" class="link-with-ul">Portfolio</a>
+	<li class="top-level third item-with-ul"><a class="link-with-ul">Portfolio</a>
 		<ul class="sub-menu">
 			<li><a href="/portfolio/">View All</a></li>
 			<li><a href="/tags/web/">Web</a></li>
@@ -87,7 +87,7 @@ $("li").click(function(){
 			<li><a href="/tags/signs/">Signs</a></li>
 		</ul>
 	</li>
-	<li class="top-level fourth item-with-ul"><a href="" class="link-with-ul">Writing</a>
+	<li class="top-level fourth item-with-ul"><a class="link-with-ul">Writing</a>
 		<ul class="sub-menu">
 			<li><a href="/blog">Tutorials</a></li>
 			<li><a href="/blog">Marketing</a></li>
@@ -109,30 +109,24 @@ $("li").click(function(){
                 <img src="images/print.jpg" data-thumb="/images/print.jpg" alt="" data-transition="fade" />
               	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="fadew" />
             </div>
-
     </div>
 
 	<div class="columns four-col points">
-
 		<div>
-			<a href="/about.html"><object data="/images/svg/beaker.svg" type="image/svg+xml">
-			<img src="/images/svg/team.png"></object></a>
-			<h3><a href="/about.html">Formula</a></h3>
-		</div>
-		<div>
-			<a href="/portfolio/"><object data="/images/svg/work.svg" type="image/svg+xml">
-		    <img src="/images/svg/work.png"></object></a>
-			<h3><a href="/about.html">Work</a></h3>
+			<a href="/about.html"><img src="/images/svg/beaker.svg">
+			<h3>Formula</h3></a>
 		</div>	
 		<div>
-			<a href="/about.html"><object data="/images/svg/team.svg" type="image/svg+xml">
-		    <img src="/images/svg/team.png"></object></a>
-			<h3><a href="/about.html">Network</a></h3>		
+			<a href="/portfolio/"><img src="/images/svg/work.svg">
+			<h3>Work</h3></a>
 		</div>
 		<div>
-			<a href="/tutorials/"><object data="/images/svg/learn.svg" type="image/svg+xml">
-		    <img src="/images/svg/learn.png"></object></a>
-			<h3><a href="/tutorials/">Learn</a></h3>
+			<a href="/about.html"><img src="/images/svg/team.svg">
+			<h3>Network</h3></a>
+		</div>
+		<div>
+			<a href="/about.html"><img src="/images/svg/learn.svg">
+			<h3>Learn</h3></a>
 		</div>
 	</div>	
 
@@ -141,27 +135,27 @@ $("li").click(function(){
 	<div class="columns three-col posts">
 		
 			
-<div class="first"><div class="inner-box"><h3>20 Dec 2012 &raquo; <br><a href="/blog/pony-express-sign">Pony Express Sign Pollock Pines</a></h3> 
+<div class="first"><div class="inner-box">
 	
-	<a href="/blog/pony-express-sign" class="img-shadow"><img src="/images/portfolio/pony-express-plaza.jpg" /></a>
-	
-	</div>
-</div>
-
-		
-			
-<div class=""><div class="inner-box"><h3>20 Dec 2012 &raquo; <br><a href="/blog/mather-commerce-center">Mather Commerce Center</a></h3> 
-	
-	<a href="/blog/mather-commerce-center" class="img-shadow"><img src="/images/portfolio/mather-commerce-center.jpg" /></a>
+	<a href="/blog/pony-express-sign" class="img-shadow"><img src="/images/portfolio/pony-express-plaza.jpg" alt="Pony Express Sign Pollock Pines"/></a>
 	
 	</div>
 </div>
 
 		
 			
-<div class="third"><div class="inner-box"><h3>20 Dec 2012 &raquo; <br><a href="/blog/kirk-ranch-carved-sign">Kirk Ranch Carved Sign</a></h3> 
+<div class=""><div class="inner-box">
 	
-	<a href="/blog/kirk-ranch-carved-sign" class="img-shadow"><img src="/images/portfolio/kirk-ranch.jpg" /></a>
+	<a href="/blog/mather-commerce-center" class="img-shadow"><img src="/images/portfolio/mather-commerce-center.jpg" alt="Mather Commerce Center"/></a>
+	
+	</div>
+</div>
+
+		
+			
+<div class="third"><div class="inner-box">
+	
+	<a href="/blog/kirk-ranch-carved-sign" class="img-shadow"><img src="/images/portfolio/kirk-ranch.jpg" alt="Kirk Ranch Carved Sign"/></a>
 	
 	</div>
 </div>
@@ -169,27 +163,27 @@ $("li").click(function(){
 		
 		
 			
-<div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></h3> 
+<div class="first"><div class="inner-box">
 	
-	<a href="/blog/arduino-micro-controller" class="img-shadow"><img src="/images/blog/arduino-micro-controller.jpg" /></a>
-	
-	</div>
-</div>
-
-		
-			
-<div class=""><div class="inner-box"><h3>28 Nov 2012 &raquo; <br><a href="/blog/black-friday">Black Friday</a></h3> 
-	
-	<a href="/blog/black-friday" class="img-shadow"><img src="/images/blog/black-friday.jpg" /></a>
+	<a href="/blog/arduino-micro-controller" class="img-shadow"><img src="/images/blog/arduino-micro-controller.jpg" alt="All I want for Christmas is an Arduino"/></a>
 	
 	</div>
 </div>
 
 		
 			
-<div class="third"><div class="inner-box"><h3>24 Nov 2012 &raquo; <br><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
+<div class=""><div class="inner-box">
 	
-	<a href="/blog/new-50mm-nikon-lense" class="img-shadow"><img src="/images/blog/nikon-50mm.jpg" /></a>
+	<a href="/blog/black-friday" class="img-shadow"><img src="/images/blog/black-friday.jpg" alt="Black Friday"/></a>
+	
+	</div>
+</div>
+
+		
+			
+<div class="third"><div class="inner-box">
+	
+	<a href="/blog/new-50mm-nikon-lense" class="img-shadow"><img src="/images/blog/nikon-50mm.jpg" alt="New Nikon 50mm Lens"/></a>
 	
 	</div>
 </div>
@@ -197,27 +191,27 @@ $("li").click(function(){
 		
 		
 			
-<div class="first"><div class="inner-box"><h3>11 Dec 2012 &raquo; <br><a href="/blog/wordpress-basic-training">Wordpress Basic Training</a></h3> 
+<div class="first"><div class="inner-box">
 	
-	<a href="/blog/wordpress-basic-training" class="img-shadow"><img src="/images/tutorials/wordpress-basics.gif" /></a>
-	
-	</div>
-</div>
-
-		
-			
-<div class=""><div class="inner-box"><h3>11 Dec 2012 &raquo; <br><a href="/blog/learning-git-version-control">Learning Git for Version Control</a></h3> 
-	
-	<a href="/blog/learning-git-version-control" class="img-shadow"><img src="/images/tutorials/learn-git.gif" /></a>
+	<a href="/blog/wordpress-basic-training" class="img-shadow"><img src="/images/tutorials/wordpress-basics.gif" alt="Wordpress Basic Training"/></a>
 	
 	</div>
 </div>
 
 		
 			
-<div class="third"><div class="inner-box"><h3>17 Nov 2012 &raquo; <br><a href="/blog/3the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
+<div class=""><div class="inner-box">
 	
-	<a href="/blog/3the-wordpress-to-jekyll-migration" class="img-shadow"><img src="/images/tutorials/jekyll.jpg" /></a>
+	<a href="/blog/learning-git-version-control" class="img-shadow"><img src="/images/tutorials/learn-git.gif" alt="Learning Git for Version Control"/></a>
+	
+	</div>
+</div>
+
+		
+			
+<div class="third"><div class="inner-box">
+	
+	<a href="/blog/3the-wordpress-to-jekyll-migration" class="img-shadow"><img src="/images/tutorials/jekyll.jpg" alt="Migrating to Jekyll from Wordpress"/></a>
 	
 	</div>
 </div>
@@ -225,7 +219,7 @@ $("li").click(function(){
 		
 	</div>
 	<div class="columns one-col text">	
-	      <h3>About Us</h3>
+		<h3>About Us</h3>
 	      <p>The Graphic Rustication Company was originally starting in Irvine, CA by my father in the 1970's. Quickly GRC became known for unmatched quality and creativity that pushed the envelope of what many had previously conceived as multimedia commercial design. I revived the Graphic Rustication Co. to create a beautiful, and highly functional graphics, signs, and web interfaces. A blending of old lost techniques with new technology and tools. </p>
 	<p>Located at the base of the Sierra Nevada Mountains, we love to balance technology with nature. It is one reason that you will find a subtle unique texture and style in every project that we produce. Please <a href="/contact.html">contact us</a> to discuss your needs. We look forward to working with you to make your dreams a reality.
 	</div>
@@ -237,16 +231,16 @@ $("li").click(function(){
 	<div class="wrapper">
 	<div class="columns four-col">
 	
-			<div><h4>Navigation</h4>
+			<div class="col"><h4>Navigation</h4>
 				<ul class="first">
 				<li><a href="/">Home</a></li>
-				<li><a href="about-graphic-rustication.html">About</a></li>
-				<li><a href="graphic-design-portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Writing</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/blog/">Writing</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
-			<div><h4>Fav Links</h4>
+			<div class="col"><h4>Fav Links</h4>
 				<ul>
 				<li><a href="http://css-tricks.com">CSS Tricks</a></li>
 				<li><a href="http://codepen.io/">Codepen</a></li>
@@ -255,7 +249,7 @@ $("li").click(function(){
 				<li><a href="http://placervilledesign.com/">Placerville Design</a></li>
 				</ul>
 			</div>
-			<div><h4>Recent Posts</h4>
+			<div class="col"><h4>Recent Posts</h4>
 				<ul class="disc">
 				
 				<li><a href="/blog/pony-express-sign">Pony Express Sign Pollock Pines</a></li>
@@ -270,12 +264,11 @@ $("li").click(function(){
 				
 				</ul>
 			</div>
-			<div><h4>Contact</h4>
+			<div class="col"><h4>Contact</h4>
 				<ul class="last">
 					<li><a href="/contact.html">Graphic Rustication</a></li>
 					<li><a href="tel:15303067756">Ph: (530) 305-7756</a></li>
 					<li><a href="/contact.html">Pollock Pines, CA</a></li>
-
 				</ul>
 			</div>
 	</div>

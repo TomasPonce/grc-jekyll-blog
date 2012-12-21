@@ -4,7 +4,7 @@ layout: default
 
 <div class="columns text">	
 <div class="content-col">
-<h3>{{ page.title }} // {{ page.date | date: "%B %d %Y" }}</h3>
+<h3>{{ page.title }} <span>// {{ page.date | date: "%B %d %Y" }}</span></h3>
 <div class="meta">Tagged | {{ page.tags | tag_links }}</div>
 			<div class="main-img">
 			<a href="{{  page.imgurl }}" target="_blank"><img src="{{ page.image }}"/></a>
