@@ -6,8 +6,8 @@ category: portfolio
 
 <div class="columns three-col posts">
 
-	{% for post in site.categories['portfolio'] %}
+	{% for post in paginator.posts %}
 		{% include post-loop.html %}
 	{% endfor %}
-
 </div>
+<div class="columns one-col text">{{ paginator | pager_links }}</div>

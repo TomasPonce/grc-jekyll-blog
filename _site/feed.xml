@@ -4,13 +4,49 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-12-18T23:58:50-08:00</updated>
+ <updated>2012-12-20T16:19:45-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
    <email>fake@mijingo.com</email>
  </author>
 
+ 
+ 	<entry>
+ 		<title>Pony Express Sign Pollock Pines</title>
+ 		<link href="http://graphicrustication.com/blog/pony-express-sign"/>
+ 		<updated>2012-12-20T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/pony-express-sign</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Mather Commerce Center</title>
+ 		<link href="http://graphicrustication.com/blog/mather-commerce-center"/>
+ 		<updated>2012-12-20T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/mather-commerce-center</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Kirk Ranch Carved Sign</title>
+ 		<link href="http://graphicrustication.com/blog/kirk-ranch-carved-sign"/>
+ 		<updated>2012-12-20T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/kirk-ranch-carved-sign</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Heavenly Sports</title>
+ 		<link href="http://graphicrustication.com/blog/hevenly-sports"/>
+ 		<updated>2012-12-20T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/hevenly-sports</id>
+ 		<content type="html">
+</content>
+ 	</entry>
  
  	<entry>
  		<title>Wordpress Basic Training</title>
@@ -44,6 +80,87 @@
  		<link href="http://graphicrustication.com/blog/arduino-micro-controller"/>
  		<updated>2012-12-10T00:00:00-08:00</updated>
  		<id>http://graphicrustication.com/blog/arduino-micro-controller</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Vintage Signs</title>
+ 		<link href="http://graphicrustication.com/blog/vintage-signs-graphic-rustication"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/vintage-signs-graphic-rustication</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>The Red Onion Restaurant</title>
+ 		<link href="http://graphicrustication.com/blog/the-red-onion"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/the-red-onion</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>The Huntington Apartments</title>
+ 		<link href="http://graphicrustication.com/blog/the-huntington-apartments"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/the-huntington-apartments</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Strawberry Lodge Sign</title>
+ 		<link href="http://graphicrustication.com/blog/strawberry-lodge-sign"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/strawberry-lodge-sign</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Vintage Signs from the 1970's</title>
+ 		<link href="http://graphicrustication.com/blog/signs-from-the-1970s"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/signs-from-the-1970s</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Myers Station Sign</title>
+ 		<link href="http://graphicrustication.com/blog/myers-station-sign-lake-tahoe"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/myers-station-sign-lake-tahoe</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Insurance Associates Sign</title>
+ 		<link href="http://graphicrustication.com/blog/insurance-associates-sign"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/insurance-associates-sign</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Country Estates Sign</title>
+ 		<link href="http://graphicrustication.com/blog/country-estates-sign"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/country-estates-sign</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Blue Anchor Cay</title>
+ 		<link href="http://graphicrustication.com/blog/blue-anchor-cay"/>
+ 		<updated>2012-12-09T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/blue-anchor-cay</id>
  		<content type="html">
 </content>
  	</entry>

@@ -450,9 +450,10 @@ background: url('/images/wood-bg.jpg');
 
 		div {padding: 20px;
 			text-align: center;
-			img {
+			img, object {
 				width: 80%;
 			}
+			
 			h3 {
 				background: $color-6;
 				margin: 10px 0 0 0;
@@ -512,7 +513,8 @@ background: url('/images/wood-bg.jpg');
 			}
 			div.third {
 				padding: 0 0 0 14px;
-			@include breakpoint(quarter-screen) {padding: 0;}	
+			@include breakpoint(quarter-screen) {padding: 0;}
+		 	
 			}
 	
 }

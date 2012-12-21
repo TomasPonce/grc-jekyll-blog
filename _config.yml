@@ -4,4 +4,4 @@ markdown: rdiscount
 rdiscount:
     extensions: [smart]
 permalink: /blog/:title
-paginate: 20
+paginate: 18

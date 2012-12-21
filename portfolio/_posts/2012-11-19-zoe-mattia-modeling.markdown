@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Zoe Mattia Modeling
+tags:
+- web
 image: /images/portfolio/zoe-mattia-modeling.jpg
 imgurl: http://zoemattia.com
 ---

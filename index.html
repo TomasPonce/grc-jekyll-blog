@@ -5,20 +5,38 @@ layout: default
 	<div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
                 <img src="images/grc-mountains.jpg" data-thumb="/images/grc-mountains.jpg" alt="The Graphic Rustication Company" data-transition="fade"/>
-                <img src="images/signs.jpg" data-thumb="/images/signs.jpg" alt="" data-transition="slideInLeft" />
-                <img src="images/print.jpg" data-thumb="/images/print.jpg" alt="" data-transition="slideInLeft" />
-              	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/signs.jpg" data-thumb="/images/signs.jpg" alt="" data-transition="fade" />
+                <img src="images/print.jpg" data-thumb="/images/print.jpg" alt="" data-transition="fade" />
+              	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="fadew" />
             </div>
+
     </div>
 
 	<div class="columns four-col points">
 
-			<div><a href="/about.html"><img src="/images/svg/beaker.svg" alt="Method" data-fallback="beaker.png"&nbsp; alt="Graphic Rustication Co. Methods" /></a><h3><a href="/about.html">Method</a></h3></div>
-			<div><a href="/portfolio"><img src="/images/svg/work.svg"></a><h3><a href="/portfolio">Portfolio</a></h3></div>
-			<div><a href="/about.html"><img src="/images/svg/team.svg"></a><h3><a href="/about.html">Network</a></h3></div>
-			<div><a href="/tutorials"><img src="/images/svg/learn.svg"></a><h3><a href="tutorial">Tutorials</a></h3></div>
-
+		<div>
+			<a href="/about.html"><object data="/images/svg/beaker.svg" type="image/svg+xml">
+			<img src="/images/svg/team.png"></object></a>
+			<h3><a href="/about.html">Formula</a></h3>
+		</div>
+		<div>
+			<a href="/portfolio/"><object data="/images/svg/work.svg" type="image/svg+xml">
+		    <img src="/images/svg/work.png"></object></a>
+			<h3><a href="/about.html">Work</a></h3>
+		</div>	
+		<div>
+			<a href="/about.html"><object data="/images/svg/team.svg" type="image/svg+xml">
+		    <img src="/images/svg/team.png"></object></a>
+			<h3><a href="/about.html">Network</a></h3>		
+		</div>
+		<div>
+			<a href="/tutorials/"><object data="/images/svg/learn.svg" type="image/svg+xml">
+		    <img src="/images/svg/learn.png"></object></a>
+			<h3><a href="/tutorials/">Learn</a></h3>
+		</div>
 	</div>	
+
+
 
 	<div class="columns three-col posts">
 		{% for post in site.categories['portfolio'] limit:3 %}

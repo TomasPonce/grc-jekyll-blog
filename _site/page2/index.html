@@ -31,6 +31,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="javascripts/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="/javascripts/jquery.flexnav.js"></script>
+<script type="text/javascript" src="/javascripts/modernizr.foundation.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
     $('#slider').nivoSlider();
@@ -80,9 +81,10 @@ $("li").click(function(){
 	</li>
 	<li class="top-level third item-with-ul"><a href="" class="link-with-ul">Portfolio</a>
 		<ul class="sub-menu">
-			<li><a href="/portfolio">Web</a></li>
-			<li><a href="/portfolio">Print</a></li>
-			<li><a href="/portfolio">Signs</a></li>
+			<li><a href="/portfolio/">View All</a></li>
+			<li><a href="/tags/web/">Web</a></li>
+			<li><a href="/tags/print/">Print</a></li>
+			<li><a href="/tags/signs/">Signs</a></li>
 		</ul>
 	</li>
 	<li class="top-level fourth item-with-ul"><a href="" class="link-with-ul">Writing</a>
@@ -103,78 +105,123 @@ $("li").click(function(){
     	<div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
                 <img src="images/grc-mountains.jpg" data-thumb="/images/grc-mountains.jpg" alt="The Graphic Rustication Company" data-transition="fade"/>
-                <img src="images/signs.jpg" data-thumb="/images/signs.jpg" alt="" data-transition="slideInLeft" />
-                <img src="images/print.jpg" data-thumb="/images/print.jpg" alt="" data-transition="slideInLeft" />
-              	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/signs.jpg" data-thumb="/images/signs.jpg" alt="" data-transition="fade" />
+                <img src="images/print.jpg" data-thumb="/images/print.jpg" alt="" data-transition="fade" />
+              	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="fadew" />
             </div>
+
     </div>
 
 	<div class="columns four-col points">
 
-			<div><a href="/about.html"><img src="/images/svg/beaker.svg" alt="Method" data-fallback="beaker.png"&nbsp; alt="Graphic Rustication Co. Methods" /></a><h3><a href="/about.html">Method</a></h3></div>
-			<div><a href="/portfolio"><img src="/images/svg/work.svg"></a><h3><a href="/portfolio">Portfolio</a></h3></div>
-			<div><a href="/about.html"><img src="/images/svg/team.svg"></a><h3><a href="/about.html">Network</a></h3></div>
-			<div><a href="/tutorials"><img src="/images/svg/learn.svg"></a><h3><a href="tutorial">Tutorials</a></h3></div>
-
+		<div>
+			<a href="/about.html"><object data="/images/svg/beaker.svg" type="image/svg+xml">
+			<img src="/images/svg/team.png"></object></a>
+			<h3><a href="/about.html">Formula</a></h3>
+		</div>
+		<div>
+			<a href="/portfolio/"><object data="/images/svg/work.svg" type="image/svg+xml">
+		    <img src="/images/svg/work.png"></object></a>
+			<h3><a href="/about.html">Work</a></h3>
+		</div>	
+		<div>
+			<a href="/about.html"><object data="/images/svg/team.svg" type="image/svg+xml">
+		    <img src="/images/svg/team.png"></object></a>
+			<h3><a href="/about.html">Network</a></h3>		
+		</div>
+		<div>
+			<a href="/tutorials/"><object data="/images/svg/learn.svg" type="image/svg+xml">
+		    <img src="/images/svg/learn.png"></object></a>
+			<h3><a href="/tutorials/">Learn</a></h3>
+		</div>
 	</div>	
+
+
 
 	<div class="columns three-col posts">
 		
-			 
-<div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></h3> 
-	<a href="/blog/automotive-excellence-placerville" class="img-shadow"><img src="/images/portfolio/automotive-excellence-placerville.jpg" /></a>
+			
+<div class="first"><div class="inner-box"><h3>20 Dec 2012 &raquo; <br><a href="/blog/pony-express-sign">Pony Express Sign Pollock Pines</a></h3> 
+	
+	<a href="/blog/pony-express-sign" class="img-shadow"><img src="/images/portfolio/pony-express-plaza.jpg" /></a>
+	
 	</div>
 </div>
+
 		
-			 
-<div class=""><div class="inner-box"><h3>09 Dec 2012 &raquo; <br><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></h3> 
-	<a href="/blog/bamf-fight-gear" class="img-shadow"><img src="/images/portfolio/bamf-fight-gear.jpg" /></a>
+			
+<div class=""><div class="inner-box"><h3>20 Dec 2012 &raquo; <br><a href="/blog/mather-commerce-center">Mather Commerce Center</a></h3> 
+	
+	<a href="/blog/mather-commerce-center" class="img-shadow"><img src="/images/portfolio/mather-commerce-center.jpg" /></a>
+	
 	</div>
 </div>
+
 		
-			 
-<div class="third"><div class="inner-box"><h3>08 Dec 2012 &raquo; <br><a href="/blog/breaker-glass-company">Breaker Glass Company</a></h3> 
-	<a href="/blog/breaker-glass-company" class="img-shadow"><img src="/images/portfolio/breaker-glass-placerville.jpg" /></a>
+			
+<div class="third"><div class="inner-box"><h3>20 Dec 2012 &raquo; <br><a href="/blog/kirk-ranch-carved-sign">Kirk Ranch Carved Sign</a></h3> 
+	
+	<a href="/blog/kirk-ranch-carved-sign" class="img-shadow"><img src="/images/portfolio/kirk-ranch.jpg" /></a>
+	
 	</div>
 </div>
+<div style="clear: both;"></div>
 		
 		
-			 
+			
 <div class="first"><div class="inner-box"><h3>10 Dec 2012 &raquo; <br><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></h3> 
+	
 	<a href="/blog/arduino-micro-controller" class="img-shadow"><img src="/images/blog/arduino-micro-controller.jpg" /></a>
+	
 	</div>
 </div>
+
 		
-			 
+			
 <div class=""><div class="inner-box"><h3>28 Nov 2012 &raquo; <br><a href="/blog/black-friday">Black Friday</a></h3> 
+	
 	<a href="/blog/black-friday" class="img-shadow"><img src="/images/blog/black-friday.jpg" /></a>
+	
 	</div>
 </div>
+
 		
-			 
+			
 <div class="third"><div class="inner-box"><h3>24 Nov 2012 &raquo; <br><a href="/blog/new-50mm-nikon-lense">New Nikon 50mm Lens</a></h3> 
+	
 	<a href="/blog/new-50mm-nikon-lense" class="img-shadow"><img src="/images/blog/nikon-50mm.jpg" /></a>
+	
 	</div>
 </div>
+<div style="clear: both;"></div>
 		
 		
-			 
+			
 <div class="first"><div class="inner-box"><h3>11 Dec 2012 &raquo; <br><a href="/blog/wordpress-basic-training">Wordpress Basic Training</a></h3> 
+	
 	<a href="/blog/wordpress-basic-training" class="img-shadow"><img src="/images/tutorials/wordpress-basics.gif" /></a>
+	
 	</div>
 </div>
+
 		
-			 
+			
 <div class=""><div class="inner-box"><h3>11 Dec 2012 &raquo; <br><a href="/blog/learning-git-version-control">Learning Git for Version Control</a></h3> 
+	
 	<a href="/blog/learning-git-version-control" class="img-shadow"><img src="/images/tutorials/learn-git.gif" /></a>
+	
 	</div>
 </div>
+
 		
-			 
+			
 <div class="third"><div class="inner-box"><h3>17 Nov 2012 &raquo; <br><a href="/blog/3the-wordpress-to-jekyll-migration">Migrating to Jekyll from Wordpress</a></h3> 
+	
 	<a href="/blog/3the-wordpress-to-jekyll-migration" class="img-shadow"><img src="/images/tutorials/jekyll.jpg" /></a>
+	
 	</div>
 </div>
+<div style="clear: both;"></div>
 		
 	</div>
 	<div class="columns one-col text">	
@@ -211,15 +258,15 @@ $("li").click(function(){
 			<div><h4>Recent Posts</h4>
 				<ul class="disc">
 				
+				<li><a href="/blog/pony-express-sign">Pony Express Sign Pollock Pines</a></li>
+				
+				<li><a href="/blog/mather-commerce-center">Mather Commerce Center</a></li>
+				
+				<li><a href="/blog/kirk-ranch-carved-sign">Kirk Ranch Carved Sign</a></li>
+				
+				<li><a href="/blog/hevenly-sports">Heavenly Sports</a></li>
+				
 				<li><a href="/blog/wordpress-basic-training">Wordpress Basic Training</a></li>
-				
-				<li><a href="/blog/learning-git-version-control">Learning Git for Version Control</a></li>
-				
-				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
-				
-				<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
-				
-				<li><a href="/blog/bamf-fight-gear">BAMF Fight Gear</a></li>
 				
 				</ul>
 			</div>

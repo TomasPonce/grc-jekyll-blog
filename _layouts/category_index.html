@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="columns text">
 <div class="content-col">
-				
+				{{ paginator | pager_links }}
 					{% for post in paginator.posts %}
 
 <div class="cat_posts">
