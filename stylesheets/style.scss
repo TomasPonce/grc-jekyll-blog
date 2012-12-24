@@ -680,7 +680,7 @@ footer {
 		div {
 			@include breakpoint(full-screen) {max-width: 600px;}
 			@include breakpoint(half-screen) {}
-			@include breakpoint(quarter-screen) {margin: 10px 0; padding: 0; width: 100%;}
+			@include breakpoint(quarter-screen) {margin: 5px 0; padding: 0; width: 100%;}
 			@include breakpoint(mobile) {}
 			}
 		div.first, div.third {@include breakpoint(quarter-screen) {padding: 0;}
