@@ -18,9 +18,9 @@
   -->
   
   <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="/stylesheets/nivo-slider.css"> 
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/normalize.css">
-  <link rel="stylesheet" href="/stylesheets/nivo-slider.css">
   <script src="/javascripts/modernizr.foundation.js"></script>
   
   <!-- Included Google Fonts -->
@@ -63,7 +63,19 @@ $("li").click(function(){
 	  }, 0);
 	});
 	</script>	
-	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10728002-32']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
 </head>
 
 <body>
@@ -103,11 +115,12 @@ $("li").click(function(){
 <div class="bg">	
 <div class="wrapper">
     	<div class="slider-wrapper theme-default">
+			<div class="phone"><span>//</span> 530.306.7756</div>
             <div id="slider" class="nivoSlider">
                 <img src="images/grc-mountains.jpg" data-thumb="/images/grc-mountains.jpg" alt="The Graphic Rustication Company" data-transition="fade"/>
                 <img src="images/signs.jpg" data-thumb="/images/signs.jpg" alt="" data-transition="fade" />
                 <img src="images/print.jpg" data-thumb="/images/print.jpg" alt="" data-transition="fade" />
-              	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="fadew" />
+              	<img src="images/web-design.jpg" data-thumb="/images/web-design.jpg" alt="" data-transition="fade" />
             </div>
     </div>
 

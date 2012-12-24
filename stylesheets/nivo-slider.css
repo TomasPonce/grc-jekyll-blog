@@ -122,6 +122,27 @@ Version: 1.2
 Author: Gilbert Pellegrom
 Author URI: http://dev7studios.com
 */
+.theme-default {
+	position: relative;
+}
+.theme-default .phone {
+	background: rgb(0, 0, 0);
+	border-bottom: 2px solid rgb(60, 167, 217);
+	color: #fff;
+	font-size: 1.8em;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	position: absolute;
+	text-align: right;
+	top: 20px;
+	right: 0;
+	z-index: 99;
+}
+
+.theme-default .phone span {
+	color: #ccc;
+}
 
 .theme-default .nivoSlider {
 	position:relative;
