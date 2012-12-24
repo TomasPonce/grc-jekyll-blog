@@ -20,9 +20,9 @@ $color-3-base: rgb(205, 201, 201); /* Gray */
 
 $color-3: lighten($color-3-base, 20%);
 
-$color-4-base: bf /* Blue */
+$color-4-base: rgb(60, 167, 217); /* Blue */
 
-$color-4: lighten($color-4-base, 1%);
+$color-4: darken($color-4-base, 1%);
 
 $color-5-base: rgb(57, 57, 57);
 
@@ -522,6 +522,10 @@ background: $color-5;
 }
 
 .posts {
+	.clear {
+		clear: both;
+		@include breakpoint(quarter-screen) {display: none;}
+		}
 	margin: 0;
 	div {
 		padding: 0 7px;
