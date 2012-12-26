@@ -24,6 +24,12 @@ $color-4-base: rgb(60, 167, 217); /* Blue */
 
 $color-4: darken($color-4-base, 1%);
 
+$color-4-a: darken($color-4-base, 10%);
+
+$color-4-b: darken($color-4-base, 15%);
+
+$color-4-c: darken($color-4-base, 20%);
+
 $color-5-base: rgb(57, 57, 57);
 
 $color-5: darken($color-5-base, 5%); /* Drk Gray */
@@ -102,7 +108,7 @@ $main-width: 90%;
     @media (max-width: 1600px) { @content; }
   }
   @if $point == half-screen {
-    @media (max-width: 1250px) { @content; }
+    @media (max-width: 940px) { @content; }
   }
   @if $point == quarter-screen {
 	@media (max-width: 650px) { @content; }
@@ -144,7 +150,7 @@ header, footer, nav, section, article, hgroup, figure {
     @media (max-width: 1250px) { @content; }
   }
   @if $point == quarter-screen {
-	@media (max-width: 650px) { @content; }
+	@media (max-width: 750px) { @content; }
   }
   @else if $point == mobile {
     @media (max-width: 480px)  { @content; }
@@ -163,6 +169,15 @@ header, footer, nav, section, article, hgroup, figure {
 
 }
 
+@font-face {
+    font-family: 'socialico';
+    src: url("/images/fonts/socialico.otf") format('opentype'),
+         url('/images/fonts/socialico.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @mixin font-1 {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     color: $color-1;
@@ -175,6 +190,12 @@ header, footer, nav, section, article, hgroup, figure {
 
 @mixin font-3 {
 	font-family: 'URoman' , verdana, helvetica, sans-serif; 	
+}
+
+@mixin social {
+	color: $color-5-c;
+	font-family: 'socialico' , verdana, helvetica, sans-serif;
+	font-size: 2.8em; 	
 }
 
 p {
@@ -247,16 +268,43 @@ background: $color-5;
 
 
 .header {
-	background: $color-6;
 	display: block;
 	position: relative;
 	text-align: left;
+	width: $main-width;
+	max-width: 940px;
+	margin: 0 auto;
+	@include clear;
+	
 	h2 {	
 		font-size: 2em;
 		padding: .5em .2em;
-		width: $main-width;
-		max-width: 940px;
+		float: left;
+		text-align: center;
+		@include breakpoint(quarter-screen) {
+			width: 100%;
+			span {display: none;}
+		}	
+		
 		a {color: #fff; text-decoration: none;}
+	}
+	ul {text-align: center;
+		float: right;
+		padding: .5em .2em;
+		@include breakpoint(quarter-screen) {
+			width: 100%;
+			li a {
+				font-size: 2.0em;
+			}
+			}
+		li {
+			display: inline;
+			@include social;
+			a {
+				color: $color-4;
+			}
+			span {display: none;}
+		}
 	}	
 }
 
@@ -368,7 +416,7 @@ background: $color-5;
 }
 
 
-@media all and (min-width: 800px) {
+@media all and (min-width:750px) {
 	p {font-size: 100%; margin-bottom: 1.5em; line-height: 1.25em;}	
 	.flexNav-touch [role='navigation'],
 	.flexNav-no-touch [role='navigation'] {
@@ -498,18 +546,20 @@ background: $color-5;
 .points {
 	@include shadow;
 	background: #fff;
-	padding: 10px 0 0 0;
+	padding: 0 0 0 0;
 		div {
 			position: relative;
 			text-align: center;
 			display: block;
 			text-align: center; 
 			img {
+				padding-top: 10px;
 				width: 80%;
 			}
+
 			h3 {
-				background: $color-1;
-				border-top: 4px solid $color-darker-1;
+				background: $color-5;
+				border-top: 4px solid $color-5-a;
 				width: 100%;
 				margin: 10px 0 0 0;
 				padding: 0 0 5px 0;
@@ -518,7 +568,16 @@ background: $color-5;
 					color: #fff;
 				}
 			}
-		}	
+
+		}
+		& div:first-child {background: $color-4;}
+		& div:nth-child(2) {background: $color-4-a;}
+		& div:nth-child(3) {background: $color-4-b;}
+		& div:nth-child(4) {background: $color-4-c;}
+	@include breakpoint(mobile) {
+
+		h3 {display: none}	
+		}		
 }
 
 .posts {
@@ -689,11 +748,10 @@ footer {
 }
 
 .points {
-	div {
-		@include breakpoint(quarter-screen) {margin: 10px 0; padding: 0; width: 50%;}
-		@include breakpoint(mobile) {}
-	}
-	
+		@include breakpoint(quarter-screen) {
+			div {margin:0; padding: 10px; width: 50%;}
+			}
+		@include breakpoint(mobile) {padding: 0;}	
 }
 
 /*  */ 
