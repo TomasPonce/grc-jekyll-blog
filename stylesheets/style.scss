@@ -171,8 +171,8 @@ header, footer, nav, section, article, hgroup, figure {
 
 @font-face {
     font-family: 'socialico';
-    src: url("/images/fonts/socialico.otf") format('opentype'),
-         url('/images/fonts/socialico.ttf') format('truetype');
+    src: url('/images/fonts/socialico.otf') format('opentype');
+    src: url('/images/fonts/socialico.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
