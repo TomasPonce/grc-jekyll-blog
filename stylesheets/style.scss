@@ -170,12 +170,11 @@ header, footer, nav, section, article, hgroup, figure {
 }
 
 @font-face {
-    font-family: 'socialico';
-    src: url('/images/fonts/socialico.otf') format('opentype');
-    src: url('/images/fonts/socialico.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'socialico';
+	src: url('/images/fonts/Socialico.eot');
+	src: local('☺'), url('/images/fonts/Socialico.woff') format('woff'), url('/images/fonts/Socialico.ttf') format('truetype'), url('/images/fonts/Socialico.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @mixin font-1 {
