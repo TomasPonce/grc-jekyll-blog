@@ -289,9 +289,10 @@ background: $color-5;
 	}
 	ul {text-align: center;
 		float: right;
-		padding: .5em .2em;
+		padding: 1.2em .2em 0 0;
 		@include breakpoint(quarter-screen) {
 			width: 100%;
+			padding: 0;
 			li a {
 				font-size: 2.0em;
 			}
@@ -553,7 +554,8 @@ background: $color-5;
 			text-align: center; 
 			img {
 				padding-top: 10px;
-				width: 80%;
+				width: 20%;
+				@include breakpoint(mobile) {width: 90%;}
 			}
 
 			h3 {
@@ -563,8 +565,10 @@ background: $color-5;
 				margin: 10px 0 0 0;
 				padding: 0 0 5px 0;
 				color: #fff;
-				a {
-					color: #fff;
+				@include breakpoint(quarter-screen) {
+					background: none;
+					border: none;
+					text-transform: uppercase;
 				}
 			}
 
@@ -725,13 +729,6 @@ footer {
 }
 
 /* Media Queries */
-
-.theme-default {
-	@include breakpoint(quarter-screen) {padding-top: 40px;}
-.phone {
-		@include breakpoint(quarter-screen) {top: 0; width: 100%;}
-	}
-}
 
 .columns {
 

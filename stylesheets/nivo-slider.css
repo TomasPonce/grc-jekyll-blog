@@ -126,6 +126,7 @@ Author URI: http://dev7studios.com
 	position: relative;
 }
 .theme-default .phone {
+	display: none;
 	background: rgb(0, 0, 0);
 	border-bottom: 2px solid rgb(60, 167, 217);
 	color: #fff;

@@ -4,7 +4,7 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-12-26T15:19:22-08:00</updated>
+ <updated>2012-12-27T01:42:17-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
@@ -13,19 +13,19 @@
 
  
  	<entry>
- 		<title>Pony Express Sign Pollock Pines</title>
- 		<link href="http://graphicrustication.com/blog/pony-express-sign"/>
- 		<updated>2012-12-20T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/pony-express-sign</id>
+ 		<title>Classic Throttle</title>
+ 		<link href="http://graphicrustication.com/blog/classic-throttle"/>
+ 		<updated>2012-12-25T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/classic-throttle</id>
  		<content type="html">
 </content>
  	</entry>
  
  	<entry>
- 		<title>Mather Commerce Center</title>
- 		<link href="http://graphicrustication.com/blog/mather-commerce-center"/>
- 		<updated>2012-12-20T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/mather-commerce-center</id>
+ 		<title>Automotive Excellence Website</title>
+ 		<link href="http://graphicrustication.com/blog/automotive-excellence-placerville"/>
+ 		<updated>2012-12-24T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/automotive-excellence-placerville</id>
  		<content type="html">
 </content>
  	</entry>
@@ -63,15 +63,6 @@
  		<updated>2012-12-11T00:00:00-08:00</updated>
  		<id>http://graphicrustication.com/blog/learning-git-version-control</id>
  		<content type="html">&lt;p&gt;More about learning git coming soon&amp;hellip;&lt;/p&gt;
-</content>
- 	</entry>
- 
- 	<entry>
- 		<title>Automotive Excellence Website</title>
- 		<link href="http://graphicrustication.com/blog/automotive-excellence-placerville"/>
- 		<updated>2012-12-10T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/automotive-excellence-placerville</id>
- 		<content type="html">
 </content>
  	</entry>
  
@@ -188,15 +179,6 @@
  		<link href="http://graphicrustication.com/blog/carson-ridge-evergreens"/>
  		<updated>2012-12-06T00:00:00-08:00</updated>
  		<id>http://graphicrustication.com/blog/carson-ridge-evergreens</id>
- 		<content type="html">
-</content>
- 	</entry>
- 
- 	<entry>
- 		<title>Classic Throttle</title>
- 		<link href="http://graphicrustication.com/blog/classic-throttle"/>
- 		<updated>2012-12-05T00:00:00-08:00</updated>
- 		<id>http://graphicrustication.com/blog/classic-throttle</id>
  		<content type="html">
 </content>
  	</entry>
@@ -346,6 +328,15 @@
  	</entry>
  
  	<entry>
+ 		<title>Pony Express Sign Pollock Pines</title>
+ 		<link href="http://graphicrustication.com/blog/pony-express-sign"/>
+ 		<updated>2012-11-20T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/pony-express-sign</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
  		<title>Zoe Mattia Modeling</title>
  		<link href="http://graphicrustication.com/blog/zoe-mattia-modeling"/>
  		<updated>2012-11-19T00:00:00-08:00</updated>
@@ -364,6 +355,15 @@
 &lt;p&gt;Why is this so appealing? First of all it runs fast on any server because it&amp;rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&amp;rsquo;s fast and natural to write, and all I have to do when I want to write an article is create a .markdown file in the &lt;em&gt;post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called &lt;/em&gt;site.&lt;/p&gt;
 
 &lt;p&gt;So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. So far I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. That&amp;rsquo;s all for now, next comes a new responsive design.&lt;/li&gt;&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Mather Commerce Center</title>
+ 		<link href="http://graphicrustication.com/blog/mather-commerce-center"/>
+ 		<updated>2012-10-20T00:00:00-07:00</updated>
+ 		<id>http://graphicrustication.com/blog/mather-commerce-center</id>
+ 		<content type="html">
 </content>
  	</entry>
  
