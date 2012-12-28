@@ -34,12 +34,28 @@
 <script type="text/javascript" src="/javascripts/modernizr.foundation.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
-    $('#slider').nivoSlider();
-setEqualHeight($(".container  > div"));  
-});
-$("li").click(function(){
-     window.location=$(this).find("a").attr("href"); 
-     return false;
+    $('#slider').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 6000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
 });
 </script>
 
@@ -118,13 +134,12 @@ $("li").click(function(){
 <div class="bg">	
 <div class="wrapper">
     	<div class="slider-wrapper theme-default">
-			<div class="phone"><span>//</span> 530.306.7756</div>
             <div id="slider" class="nivoSlider">
-	             <img src="/images/slider/tomakealifewebsite.jpg" data-thumb="/images/slider/tomakealifewebsite.jpg" alt="The Graphic Rustication Company" data-transition="fade"/>
-                <img src="/images/slider/vintage-signs.jpg" data-thumb="/images/slider/vintage-signs.jpg" alt="Vintage Sign Company" data-transition="fade"/>
-                <img src="/images/signs.jpg" data-thumb="/images/signs.jpg" alt="Sacramento Signs" data-transition="fade" />
-                <img src="/images/slider/mosquito-creek-outfitters-catalog.jpg" data-thumb="/images/slider/mosquito-creek-outfitters-catalog.jpg" alt="Mosquito Creek Outfitters Catalog" data-transition="fade" />
-              	<img src="/images/slider/web-design-bamf-fight-gear.jpg" data-thumb="/images/slider/web-design-bamf-fight-gear.jpg" alt="Bamf Fight Gear Website Design" data-transition="fade" />
+	             <img src="/images/slider/tomakealifewebsite.jpg" data-thumb="/images/slider/tomakealifewebsite.jpg" alt="The Graphic Rustication Company" title="Website for Daniel Walsers book, <b>To Make A Life</b> available on Amazon" data-transition="fade"/>
+                <img src="/images/slider/vintage-signs.jpg" data-thumb="/images/slider/vintage-signs.jpg" alt="Vintage Sign Company" title="Vintage Signs made by The Graphic Rustication Company ~ Circa 1975" data-transition="fade"/>
+                <img src="/images/signs.jpg" data-thumb="/images/signs.jpg" alt="Sacramento Signs" title="Encina Highschool in Sacramento. Steel and Aluminum BULLDOGS Entry Sign ~ Fall 2012" data-transition="fade" />
+                <img src="/images/slider/mosquito-creek-outfitters-catalog.jpg" data-thumb="/images/slider/mosquito-creek-outfitters-catalog.jpg" alt="Mosquito Creek Outfitters Catalog" title="Mosquito Creek Outfitters Fall 2012 48 Page Catalog. Layout and Photos by GRC" data-transition="fade" />
+              	<img src="/images/slider/web-design-bamf-fight-gear.jpg" data-thumb="/images/slider/web-design-bamf-fight-gear.jpg" alt="Bamf Fight Gear Website Design" title="BAMF Fight Gear Ecommerce Website" data-transition="fade" />
             </div>
     </div>
 
@@ -154,7 +169,7 @@ $("li").click(function(){
 			
 <div class="first"><div class="inner-box">
 	
-	<a href="/blog/classic-throttle" class="img-shadow"><img src="/images/portfolio/classic-throttle.jpg" alt="Classic Throttle"/></a>
+	<a href="/blog/encina-high-school-sign-sacramento" class="img-shadow"><img src="/images/portfolio/encina-high-school-bulldogs.jpg" alt="Encina High School Sign"/></a>
 	
 	</div>
 </div>
@@ -163,7 +178,7 @@ $("li").click(function(){
 			
 <div class=""><div class="inner-box">
 	
-	<a href="/blog/automotive-excellence-placerville" class="img-shadow"><img src="/images/portfolio/automotive-excellence-placerville.jpg" alt="Automotive Excellence Website"/></a>
+	<a href="/blog/classic-throttle" class="img-shadow"><img src="/images/portfolio/classic-throttle.jpg" alt="Classic Throttle"/></a>
 	
 	</div>
 </div>
@@ -172,7 +187,7 @@ $("li").click(function(){
 			
 <div class="third"><div class="inner-box">
 	
-	<a href="/blog/kirk-ranch-carved-sign" class="img-shadow"><img src="/images/portfolio/kirk-ranch.jpg" alt="Kirk Ranch Carved Sign"/></a>
+	<a href="/blog/automotive-excellence-placerville" class="img-shadow"><img src="/images/portfolio/automotive-excellence-placerville.jpg" alt="Automotive Excellence Website"/></a>
 	
 	</div>
 </div>
@@ -269,6 +284,8 @@ $("li").click(function(){
 			<div class="col"><h4>Recent Posts</h4>
 				<ul class="disc">
 				
+				<li><a href="/blog/encina-high-school-sign-sacramento">Encina High School Sign</a></li>
+				
 				<li><a href="/blog/classic-throttle">Classic Throttle</a></li>
 				
 				<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
@@ -276,8 +293,6 @@ $("li").click(function(){
 				<li><a href="/blog/kirk-ranch-carved-sign">Kirk Ranch Carved Sign</a></li>
 				
 				<li><a href="/blog/hevenly-sports">Heavenly Sports</a></li>
-				
-				<li><a href="/blog/wordpress-basic-training">Wordpress Basic Training</a></li>
 				
 				</ul>
 			</div>
