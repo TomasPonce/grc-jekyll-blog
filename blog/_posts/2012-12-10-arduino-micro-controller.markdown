@@ -1,5 +1,7 @@
 ---
 layout: post
 title: All I want for Christmas is an Arduino
-image: /images/blog/arduino-micro-controller.jpg
+thumb: /images/blog/arduino-micro-controller.jpg
+images: 
+- /images/blog/arduino-micro-controller.jpg
 ---

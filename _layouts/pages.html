@@ -5,12 +5,12 @@ layout: default
 <div class="columns text">	
 <div class="content-col">
 	<h3>{{page.title}}</h3>
-		{% if page.feature-img %}
-			<div class="main-img">
-			<img src="{{page.feature-img }}">
-			</div>
-		{% endif %}
-			{{content}}
+	{% if (post.thumb) %}
+	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="{{ post.thumb }}" alt="{{ post.title }}"/></a>
+	{% else %}
+	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="/images/default-post-image.gif" alt="{{ post.title }}"/></a>
+	{% endif %}
+	{{content}}
 </div>
 <div class="sidebar-col">
 	{% include sidebar.html %}

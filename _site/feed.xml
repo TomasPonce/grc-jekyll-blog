@@ -4,7 +4,7 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2012-12-28T16:03:43-08:00</updated>
+ <updated>2012-12-29T00:09:22-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
@@ -13,13 +13,56 @@
 
  
  	<entry>
+ 		<title>Ponder This Music Mag Logo</title>
+ 		<link href="http://graphicrustication.com/blog/ponder-this-music-magazine"/>
+ 		<updated>2012-12-28T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/ponder-this-music-magazine</id>
+ 		<content type="html">
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>BAMF Fight Gear Patricky the Pitbull Brazil Walkout Tee</title>
+ 		<link href="http://graphicrustication.com/blog/patricky-pitbull-mma-bamf-walkout-tee"/>
+ 		<updated>2012-12-28T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/patricky-pitbull-mma-bamf-walkout-tee</id>
+ 		<content type="html">&lt;p&gt;Patricky the Pitbull BAMF fight Gear Walkout Tee Design.&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Mosquito Creek Outfitters Fall Catalog</title>
+ 		<link href="http://graphicrustication.com/blog/mosquito-creek-outfitters-fall-catalog"/>
+ 		<updated>2012-12-28T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/mosquito-creek-outfitters-fall-catalog</id>
+ 		<content type="html">&lt;p&gt;Photography and Layout for Mosquito Creek Outfitters Fall Catalog.&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Karsen Williamson Benefit Concert</title>
+ 		<link href="http://graphicrustication.com/blog/karsen-williamson-benefit"/>
+ 		<updated>2012-12-28T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/karsen-williamson-benefit</id>
+ 		<content type="html">&lt;p&gt;Tickets for Karsen Williamson Benefit Concert.&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
  		<title>Encina High School Sign</title>
  		<link href="http://graphicrustication.com/blog/encina-high-school-sign-sacramento"/>
  		<updated>2012-12-28T00:00:00-08:00</updated>
  		<id>http://graphicrustication.com/blog/encina-high-school-sign-sacramento</id>
  		<content type="html">&lt;p&gt;Entry sign for Encina High School. Steel frame construction with powder coated aluminum letters. fillet welded in place, built to last!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/portfolio/encina-high-school-sign-full.jpg&quot;&gt;&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>BAMF Fight Gear Catalog</title>
+ 		<link href="http://graphicrustication.com/blog/bamf-fight-gear-catalog"/>
+ 		<updated>2012-12-28T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/bamf-fight-gear-catalog</id>
+ 		<content type="html">&lt;p&gt;BAMF Fight Gear 2011 Fall Catalog.&lt;/p&gt;
 </content>
  	</entry>
  

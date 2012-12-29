@@ -1,7 +1,7 @@
 {% capture thecycle %}{% cycle '1', '2', '3' %}{% endcapture %}
 <div class="{% if thecycle == '1' %}first{% endif %}{% if thecycle == '3' or forloop.last %}third{% endif %}"><div class="inner-box">
-	{% if (post.image) %}
-	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="{{ post.image }}" alt="{{ post.title }}"/></a>
+	{% if (post.thumb) %}
+	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="{{ post.thumb }}" alt="{{ post.title }}"/></a>
 	{% else %}
 	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="/images/default-post-image.gif" alt="{{ post.title }}"/></a>
 	{% endif %}

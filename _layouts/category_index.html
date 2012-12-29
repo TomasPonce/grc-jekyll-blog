@@ -5,7 +5,7 @@ layout: default
 <div class="content-col">
 				{{ paginator | pager_links }}
 					{% for post in paginator.posts %}
-
+<div class="clear"></div>
 <div class="cat_posts">
 <div class="teaser">
 					
@@ -14,7 +14,11 @@ layout: default
 
 </div>            
 						
-	<a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}" /></a>
+	{% if (post.thumb) %}
+	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="{{ post.thumb }}" alt="{{ post.title }}"/></a>
+	{% else %}
+	<a href="{{ BASE_PATH }}{{ post.url }}" class="img-shadow"><img src="/images/default-post-image.gif" alt="{{ post.title }}"/></a>
+	{% endif %}
                 
 	<div class="description">{{ post.content | strip_html | truncatewords: 45 }}</div>
     <div class="read-more"><a href="{{ post.url }}" title="{{ post.title }}">Get the whole story... »</a></div>

@@ -3,6 +3,8 @@ layout: post
 title: Vintage Signs
 tags:
 - signs
-image: /images/portfolio/vintage-signs.jpg
+thumb: /images/portfolio/vintage-signs.jpg
+images: 
+- /images/portfolio/vintage-signs.jpg
 imgurl: 
 ---

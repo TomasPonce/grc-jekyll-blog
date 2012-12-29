@@ -3,6 +3,8 @@ layout: post
 title: Mather Commerce Center
 tags:
 - signs
-image: /images/portfolio/mather-commerce-center.jpg
+thumb: /images/portfolio/mather-commerce-center.jpg
+images: 
+- /images/portfolio/mather-commerce-center.jpg
 imgurl: 
 ---

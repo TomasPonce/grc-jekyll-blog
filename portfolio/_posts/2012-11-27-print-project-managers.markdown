@@ -3,6 +3,8 @@ layout: post
 title: Print Project Managers
 tags:
 - web
-image: /images/portfolio/print-project-managers.jpg
+thumb: /images/portfolio/print-project-managers.jpg
+images:
+- /images/portfolio/print-project-managers.jpg
 imgurl: http://myppm.com/
 ---

@@ -4,6 +4,8 @@ title: Strawberry Lodge Sign
 location: Strawberry, CA
 tags:
 - signs
-image: /images/portfolio/strawberry-lodge.jpg
+thumb: /images/portfolio/strawberry-lodge.jpg
+images: 
+- /images/portfolio/strawberry-lodge.jpg
 imgurl:
 ---

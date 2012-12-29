@@ -3,7 +3,9 @@ layout: post
 title: Automotive Excellence Website
 tags:
 - web
-image: /images/portfolio/automotive-excellence-placerville.jpg
+thumb: /images/portfolio/automotive-excellence-placerville.jpg
+images: 
+- /images/portfolio/automotive-excellence-placerville.jpg
 imgurl: http://autoxonline.com
 --- 
 

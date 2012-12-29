@@ -282,6 +282,7 @@ background: $color-5;
 		text-align: center;
 		@include breakpoint(quarter-screen) {
 			width: 100%;
+			text-transform: uppercase;
 			span {display: none;}
 		}	
 		
@@ -295,6 +296,7 @@ background: $color-5;
 			padding: 0;
 			li a {
 				font-size: 2.0em;
+				text-transform: lowercase;
 			}
 			}
 		li {
@@ -308,6 +310,14 @@ background: $color-5;
 	}	
 }
 
+.nivo-caption {
+	@include breakpoint(mobile) {opacity: 0;} /* Hide slide description when viewed on mobile */
+}
+
+.clear {
+	clear: both;
+	@include breakpoint(quarter-screen) {display: none;}
+	}
 
 /*------------------------------------*\
    	NAVIGATION
@@ -499,6 +509,10 @@ background: $color-5;
 
 /* Columns */
 
+.shadow {
+	@include shadow;
+}
+
 .columns {
 	margin: 20px 0 0 0 ;
 	@include clear;
@@ -526,6 +540,7 @@ background: $color-5;
 	.main-img {
 	background: #F8F8F8;
 	padding: 10px;
+	margin-bottom: 15px;
 	img {
 		border: 1px solid #E8E8E8 ;
 		width: 100%;
@@ -584,10 +599,6 @@ background: $color-5;
 }
 
 .posts {
-	.clear {
-		clear: both;
-		@include breakpoint(quarter-screen) {display: none;}
-		}
 	margin: 0;
 	div {
 		padding: 0 7px;
@@ -726,6 +737,18 @@ footer {
 		}
 	}	
 
+}
+
+/*------------------------------------*\
+   	PAGINATION
+\*------------------------------------*/
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
 }
 
 /*------------------------------------*\

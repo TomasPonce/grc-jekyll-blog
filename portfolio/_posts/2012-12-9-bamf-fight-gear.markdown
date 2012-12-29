@@ -4,6 +4,8 @@ title: BAMF Fight Gear
 tags:
 - web
 - print
-image: /images/portfolio/bamf-fight-gear.jpg
+thumb: /images/portfolio/bamf-fight-gear.jpg
+images: 
+- /images/portfolio/bamf-fight-gear.jpg
 imgurl: http://bamffightgear.com
 ---

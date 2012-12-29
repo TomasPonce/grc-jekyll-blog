@@ -4,6 +4,8 @@ title: Insurance Associates Sign
 location: Southern California
 tags:
 - signs
-image: /images/portfolio/insurance-associates.jpg
+thumb: /images/portfolio/insurance-associates.jpg
+images: 
+- /images/portfolio/insurance-associates.jpg
 imgurl: 
 ---

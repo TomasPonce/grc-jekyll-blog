@@ -3,6 +3,8 @@ layout: post
 title: Blue Anchor Cay
 tags:
 - signs
-image: /images/portfolio/blue-anchor-cay.jpg
+thumb: /images/portfolio/blue-anchor-cay.jpg
+images: 
+- /images/portfolio/blue-anchor-cay.jpg
 imgurl: 
 ---

@@ -4,6 +4,8 @@ title: Country Estates Sign
 location: Southern Califonia
 tags:
 - signs
-image: /images/portfolio/country-estates.jpg
+thumb: /images/portfolio/country-estates.jpg
+images: 
+- /images/portfolio/country-estates.jpg
 imgurl:
 ---

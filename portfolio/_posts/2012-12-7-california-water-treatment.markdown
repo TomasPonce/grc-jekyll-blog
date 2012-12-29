@@ -3,6 +3,8 @@ layout: post
 title: California Water Treatment
 tags:
 - web
-image: /images/portfolio/california-water-treatment.jpg
+thumb: /images/portfolio/california-water-treatment.jpg
+images: 
+- /images/portfolio/california-water-treatment.jpg
 imgurl: http://californiawatertreatment.com
 ---

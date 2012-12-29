@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Wordpress Basic Training	
-image: /images/tutorials/wordpress-basics.gif
+thumb: /images/tutorials/wordpress-basics.gif
+images: 
+- /images/tutorials/wordpress-basics.gif
 ---
 
 More Tutorials on wordpress coming soon...

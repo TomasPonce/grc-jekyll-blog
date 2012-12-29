@@ -1,15 +1,23 @@
 ---
 layout: default
 ---
-
 <div class="columns text">	
 <div class="content-col">
 <h3>{{ page.title }} <span>// {{ page.date | date: "%B %d %Y" }}</span></h3>
 <div class="meta">Tagged | {{ page.tags | tag_links }}</div>
+			{% if (page.images) %}
 			<div class="main-img">
-			<a href="{{  page.imgurl }}" target="_blank"><img src="{{ page.image }}"/></a>
-			</div>
-			<br/>
+			<div class="slider-wrapper theme-default">
+		            <div id="slider" class="nivoSlider">
+
+			{% for image in page.images %}
+<img src="{{ image }}" data-thumb="{{ image }}" alt="" title="" data-transition="fade"/>
+			{% endfor %}
+
+				</div>
+		    </div>
+		</div>
+		{% endif %}
 			{{ content }}
 			{% include related-posts.html %}
 </div>
