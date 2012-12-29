@@ -18,7 +18,7 @@ $color-2: lighten($color-2-base, 0%);
 
 $color-3-base: rgb(205, 201, 201); /* Gray */
 
-$color-3: lighten($color-3-base, 20%);
+$color-3: lighten($color-3-base, 15%);
 
 $color-4-base: rgb(60, 167, 217); /* Blue */
 
@@ -729,102 +729,81 @@ footer {
 }
 
 /*------------------------------------*\
-   	WOOFOO FORMS
+   	WUFOO FORMS
 \*------------------------------------*/
 
-form header {
-  margin: 0 0 20px 0; 
+.hide {display: none;}
+
+/* ----------- stylized ----------- */
+#stylized{
+overflow: auto;
+background: $color-3;
+padding: 0 0 15px 0;
 }
-form header div {
-  font-size: 90%;
-  color: #999;
+
+#stylized .hide {display: none;}
+
+#stylized ul li {
+	padding: 15px;
+}	
+
+#stylized h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
 }
-form header h2 {
-  margin: 0 0 5px 0;
+#stylized p{
+	font-size:11px;
+	color:#666666;
+	margin-bottom:20px;
+	border-bottom:solid 1px #b7ddf2;
+	padding-bottom:10px;
 }
-form > div {
-  clear: both;
-  overflow: hidden;
-  padding: 1px;
-  margin: 0 0 10px 0;
+#stylized label{
+	display:block;
+	font-weight:bold;
+	text-align:left;
+	margin-bottom: 15px;
+	color: $color-5-c;
+	width: 100%; 
+	clear: both;
 }
-form > div > fieldset > div > div {
-  margin: 0 0 5px 0;
+
+#stylized input{
+	font-size:18px;
+	border:solid 1px $color-5-e;
+	width:100%;
+	padding: 5px;
 }
-form > div > label,
-legend {
+
+#stylized li.first, #stylized li.last { 
+	float: left;
+	width: 50%; 
+}
+
+
+#stylized li.phone {
+	float: left;
 	width: 25%;
-  float: left;
-  padding-right: 10px;
-}
-form > div > div,
-form > div > fieldset > div {
-  width: 75%;
-  float: right;
-}
-form > div > fieldset label {
-	font-size: 90%;
-}
-fieldset {
-	border: 0;
-  padding: 0;
 }
 
-input[type=text],
-input[type=email],
-input[type=url],
-input[type=password],
-textarea {
-	width: 100%;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-input[type=text],
-input[type=email],
-input[type=url],
-input[type=password] {
-  width: 50%;
-}
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=password]:focus,
-textarea:focus {
-  outline: 0;
-  border-color: #4697e4;
+#stylized textarea {
+	font-size:12px;
+	border:solid 1px $color-5-e;
+	width:100%;
 }
 
-@media (max-width: 600px) {
-  form > div {
-    margin: 0 0 15px 0; 
-  }
-  form > div > label,
-  legend {
-	  width: 100%;
-    float: none;
-    margin: 0 0 5px 0;
-  }
-  form > div > div,
-  form > div > fieldset > div {
-    width: 100%;
-    float: none;
-  }
-  input[type=text],
-  input[type=email],
-  input[type=url],
-  input[type=password],
-  textarea,
-  select {
-    width: 100%; 
-  }
-}
-@media (min-width: 1200px) {
-  form > div > label,
-	legend {
-  	text-align: right;
-  }
+#stylized .submit{
+	float: right;
+	margin-right:15px;
+	width:125px;
+	height:31px;
+	background:#666666 no-repeat;
+	text-align:center;
+	line-height:31px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
 }
 
 
