@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
-<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="no-js ie6 oldie"> <![endif]-->
-<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="no-js ie7 oldie"> <![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/stylesheets/oldie.css" /><![endif]-->
 <!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
 <!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
+<!--[if gt IE 7]><link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /><![endif]-->
+<!--[if !IE]><!--><link rel="stylesheet" href="/stylesheets/style.css"><!--<![endif]-->
+
 <head>
   <meta charset="utf-8" />
 
@@ -12,20 +13,16 @@
 
   <title>The Graphic Rustication Company</title>
   
-  <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
-  
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/stylesheets/nivo-slider.css"> 
-  <link rel="stylesheet" href="/stylesheets/style.css">
+
   <link rel="stylesheet" href="/stylesheets/normalize.css">
   <!-- Included Google Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
 	
   
+<script type="text/javascript" src="/javascripts/respond.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="/javascripts/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="/javascripts/jquery.flexnav.js"></script>
@@ -58,16 +55,6 @@ $(window).load(function() {
 });
 </script>
 
-
-	<script type="text/javascript">
-	//Modernizer SVG to PNG Fallback
-	window.onload = function(){
-	if(!Modernizr.svg) {
-	var imgs = $('img[data-fallback]');
-	imgs.attr('src', imgs.data('fallback'));
-	}
-	}
-	</script>
 	<script type="text/javascript">
 	// When ready...
 	window.addEventListener("load",function() {

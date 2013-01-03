@@ -1,5 +1,6 @@
 /* CSS SASS */
-
+@import "normalize.scss";
+@import "nivo-slider.scss";
 @import "box-sizing.scss";
 
 /*------------------------------------*\
@@ -598,6 +599,8 @@ background: $color-5;
 		}		
 }
 
+ 
+
 .posts {
 	margin: 0;
 	div {
@@ -852,4 +855,8 @@ padding: 0 0 15px 0;
 		@include breakpoint(mobile) {padding: 0;}	
 }
 
-/*  */ 
+/* OLDIE IE HACKS */
+html.oldie .points div {
+	background: $color-4;
+	img {display: none;}
+} 
