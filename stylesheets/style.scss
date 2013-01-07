@@ -243,6 +243,28 @@ h4 {
 	font-size: 1.6em;
 }
 
+pre {
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}       
+
+code {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 95%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background: #faf8f0;
+}
+
+
 /*------------------------------------*\
    	STRUCTURE
 \*------------------------------------*/
@@ -626,6 +648,19 @@ background: $color-5;
 			.img-shadow {
 				display: block;
 				position: relative;
+				.read-more {
+							bottom: 0;
+							height: 30px;
+							margin: 0;
+							position: absolute;
+							right: 0;
+							width: 30px;
+							z-index: 100;
+							@include breakpoint(mobile) {
+								height: 60px;
+								width: 60px;
+							} 
+							}
 				}
 			.img-shadow::before {
 				display:block;
@@ -636,6 +671,7 @@ background: $color-5;
 				-moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
 				-webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
 				box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
+				z-index: 1000;
 				}
 				img {
 					width: 100%;

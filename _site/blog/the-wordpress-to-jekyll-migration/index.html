@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/stylesheets/oldie.css" /><![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
+<!--[if gt IE 7]><link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /><![endif]-->
+<!--[if !IE]><!--><link rel="stylesheet" href="/stylesheets/style.css"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>The Graphic Rustication Company</title>
+
+  <!-- Included Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+	
+  
+<script type="text/javascript" src="/javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.flexnav.min.js"></script>
+<script type="text/javascript" src="/javascripts/jquery.nivo.slider.pack.min.js"></script>
+<script type="text/javascript" src="/javascripts/modernizr.foundation.min.js"></script>
+<script type="text/javascript" src="/javascripts/respond.min.js"></script>
+<script type="text/javascript" src="/javascripts/wufoo.min.js"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+    $('#slider').nivoSlider({
+        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+        slices: 15, // For slice animations
+        boxCols: 8, // For box animations
+        boxRows: 4, // For box animations
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 6000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        directionNav: true, // Next & Prev navigation
+        controlNav: true, // 1,2,3... navigation
+        controlNavThumbs: false, // Use thumbnails for Control Nav
+        pauseOnHover: true, // Stop animation while hovering
+        manualAdvance: false, // Force manual transitions
+        prevText: 'Prev', // Prev directionNav text
+        nextText: 'Next', // Next directionNav text
+        randomStart: false, // Start on a random slide
+        beforeChange: function(){}, // Triggers before a slide transition
+        afterChange: function(){}, // Triggers after a slide transition
+        slideshowEnd: function(){}, // Triggers after all slides have been shown
+        lastSlide: function(){}, // Triggers when last slide is shown
+        afterLoad: function(){} // Triggers when slider has loaded
+    });
+});
+</script>
+
+	<script type="text/javascript">
+	// When ready...
+	window.addEventListener("load",function() {
+	  // Set a timeout...
+	  setTimeout(function(){
+	    // Hide the address bar!
+	    window.scrollTo(0, 1);
+	  }, 0);
+	});
+	</script>	
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10728002-32']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
+</head>
+
+<body>
+    <div class="header">
+		<h2><a href="/"><span>The</span> Graphic Rustication <span>Company</span></a></h2>
+		<ul>
+			<li><a href="https://www.facebook.com/pages/The-Graphic-Rustication-Company/136756779766196?ref=hl">F<span>Facebook</span></a></li>
+			<li><a href="https://twitter.com/joshhowenstine">L<span>Twitter</span></a></li>
+			<li><a href="http://dribbble.com/joshhowenstine">D<span>Dribble</span></a></li>
+    </div>
+
+			<div class='menu-button'>Menu</div>
+	<nav>
+		<ul id="nav" role="navigation">
+		<li class="top-level first"><a href="/">Home</a></li>
+
+	<li class="top-level second"><a href="/about.html">About Us</a>
+	</li>
+	<li class="top-level third item-with-ul"><a class="link-with-ul">Portfolio</a>
+		<ul class="sub-menu">
+			<li><a href="/portfolio/">View All</a></li>
+			<li><a href="/tags/web/">Web</a></li>
+			<li><a href="/tags/print/">Print</a></li>
+			<li><a href="/tags/signs/">Signs</a></li>
+		</ul>
+	</li>
+	<li class="top-level fourth item-with-ul"><a class="link-with-ul">Writing</a>
+		<ul class="sub-menu">
+			<li><a href="/blog">Tutorials</a></li>
+			<li><a href="/blog">Marketing</a></li>
+			<li><a href="/blog">Random</a></li>
+		</ul>
+	</li>
+
+	<li class="top-level last"><a href="/contact.html">Contact</a>
+	</li>			
+</ul>
+	</nav>
+
+<div class="bg">	
+<div class="wrapper">
+    <div class="columns text">	
+<div class="content-col">
+<h3>Migrating to Jekyll from Wordpress <span>// November 17 2012</span></h3>
+<div class="meta">Tagged | </div>
+			
+			<div class="main-img">
+			<div class="slider-wrapper theme-default">
+		            <div id="slider" class="nivoSlider">
+
+			
+<img src="/images/tutorials/jekyll.jpg" data-thumb="/images/tutorials/jekyll.jpg" alt="" title="" data-transition="fade"/>
+			
+
+				</div>
+		    </div>
+		</div>
+		
+			<p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jekyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
+
+<p>Why is this so appealing? First of all it runs fast on any server because it&rsquo;s only html that is compiled and deployed. Also without the need for any database it is very secure, so you have to love the simplistic beauty of that. Jekyll also supports markdown, a very easy to read and write text to html conversion tool for web writers/developers like myself. I just started writing this way and I love it. It&rsquo;s fast and natural to write, all I have to do when I want to write an article is create a .markdown file in the <em>post folder, name it appropriately, add a yaml header. Then simply run the command jeckyll in the terminal and it outputs all the necessary html pages, and links to a folder called </em>site.</p>
+
+<pre><code>---
+layout: post
+title: Migrating to Jekyll from Wordpress
+thumb: /images/tutorials/jekyll.jpg
+images: 
+- /images/tutorials/jekyll.jpg
+--- 
+
+### This is markdown!
+Here is some text
+</code></pre>
+
+<p>Always on the lookout for ways to improve my websites and workflow I stumbled upon a ruby based framework called Jekyll. What is Jekyll? In the words of its creator Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
+
+<p>So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs.</p>
+
+				
+
+<h4>Similar Posts?</h4>
+
+
+
+</div>
+<div class="sidebar-col">
+	<h4>Recent Writings</h4>
+	<p>From the archives:</p>
+	<ul class="disc">
+		
+			<li><a href="/blog/ponder-this-music-magazine">Ponder This Music Mag Logo</a></li>
+		
+			<li><a href="/blog/patricky-pitbull-mma-bamf-walkout-tee">BAMF Fight Gear Patricky the Pitbull Brazil Walkout Tee</a></li>
+		
+			<li><a href="/blog/karsen-williamson-benefit">Karsen Williamson Benefit Concert</a></li>
+		
+			<li><a href="/blog/bamf-fight-gear-catalog">BAMF Fight Gear Catalog</a></li>
+		
+			<li><a href="/blog/automotive-excellence-placerville">Automotive Excellence Website</a></li>
+		
+			<li><a href="/blog/kirk-ranch-carved-sign">Kirk Ranch Carved Sign</a></li>
+		
+			<li><a href="/blog/hevenly-sports">Heavenly Sports</a></li>
+		
+			<li><a href="/blog/wordpress-basic-training">Wordpress Basic Training</a></li>
+		
+			<li><a href="/blog/learning-git-version-control">Learning Git for Version Control</a></li>
+		
+			<li><a href="/blog/arduino-micro-controller">All I want for Christmas is an Arduino</a></li>
+		
+	</ul>
+<h4>Categories</h4>
+	<p>Read More Updated Weekly:</p>
+	<ul class="disc">
+			<li><a href="/portfolio">Portfolio</a></li>
+			<li><a href="/blog">Writing</a></li>
+			<li><a href="/tutorials">Tutorials</a></li>
+	</ul>
+	</div>
+</div>
+</div> <!-- /wrapper -->
+</div>
+<footer>
+	<div class="wrapper">
+	<div class="columns four-col">
+	
+			<div class="col"><h4>Navigation</h4>
+				<ul class="first">
+				<li><a href="/">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="/portfolio/">Portfolio</a></li>
+				<li><a href="/blog/">Writing</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col"><h4>Fav Links</h4>
+				<ul>
+				<li><a href="http://css-tricks.com">CSS Tricks</a></li>
+				<li><a href="http://codepen.io/">Codepen</a></li>
+				<li><a href="http://www.wired.com/">Wired</a></li>
+				<li><a href="http://makezine.com/">Make Mag</a></li>
+				<li><a href="http://placervilledesign.com/">Placerville Design</a></li>
+				</ul>
+			</div>
+			<div class="col"><h4>Recent Posts</h4>
+				<ul class="disc">
+				
+				<li><a href="/blog/classic-throttle">Classic Throttle</a></li>
+				
+				<li><a href="/blog/encina-high-school-sign-sacramento">Encina High School Sign</a></li>
+				
+				<li><a href="/blog/mosquito-creek-outfitters-fall-catalog">Mosquito Creek Outfitters Fall Catalog</a></li>
+				
+				<li><a href="/blog/ponder-this-music-magazine">Ponder This Music Mag Logo</a></li>
+				
+				<li><a href="/blog/patricky-pitbull-mma-bamf-walkout-tee">BAMF Fight Gear Patricky the Pitbull Brazil Walkout Tee</a></li>
+				
+				</ul>
+			</div>
+			<div class="col"><h4>Contact</h4>
+				<ul class="last">
+					<li><a href="/contact.html">Graphic Rustication</a></li>
+					<li><a href="tel:15303067756">Ph: (530) 305-7756</a></li>
+					<li><a href="/contact.html">Pollock Pines, CA</a></li>
+				</ul>
+			</div>
+	</div>
+		<div class="copyright">Copyright © 2013 The Graphic Rustication Company</div>
+	</div>
+
+</footer>
+<script> 
+$("[role='navigation']").flexNav(); 
+</script>
+</body>
+</html>
