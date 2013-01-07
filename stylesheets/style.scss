@@ -222,6 +222,8 @@ h1, h2, h3, h4 {
 
 h1 {
 	@include font-1;
+	padding: 0;
+	margin: 0;
 }
 
 h2 {
@@ -297,7 +299,6 @@ background: $color-5;
 	max-width: 940px;
 	margin: 0 auto;
 	@include clear;
-	
 	h2 {	
 		font-size: 2em;
 		padding: .5em .2em;
@@ -335,6 +336,10 @@ background: $color-5;
 
 .nivo-caption {
 	@include breakpoint(mobile) {opacity: 0;} /* Hide slide description when viewed on mobile */
+}
+
+.nivo-directionNav a {
+	display: none; /* Hide next links when viewed on mobile */
 }
 
 .clear {
@@ -560,6 +565,7 @@ background: $color-5;
 .content-col {
 	float: left;
 	width: 70%;
+	
 	.main-img {
 	background: #F8F8F8;
 	padding: 10px;
@@ -575,8 +581,12 @@ background: $color-5;
 .sidebar-col {
 	width: 30%;
 	float: left;
-	padding-left: 20px;
-	img {width: 100%; max-width: 100%;}
+	padding-left: 15px;
+	@include breakpoint(quarter-screen) {padding: 0;}
+	img {
+		width: 100%;
+		@include breakpoint(quarter-screen) {display: none;}
+		}
 	ul { margin: 0 0 15px 15px;
 	li {margin: 0 0 5px 0;}
 	}	
@@ -718,8 +728,8 @@ background: $color-5;
 
 .text {
 	@include shadow;
+	padding: 15px;
 	background: #fff;
-	padding: 20px;
 }
 
 footer {
@@ -875,9 +885,9 @@ padding: 0 0 15px 0;
 .columns {
 
 		div {
-			@include breakpoint(full-screen) {max-width: 600px;}
+			@include breakpoint(full-screen) {}
 			@include breakpoint(half-screen) {}
-			@include breakpoint(quarter-screen) {margin: 5px 0; padding: 0; width: 100%;}
+			@include breakpoint(quarter-screen) {margin: 5px 0; width: 100%;}
 			@include breakpoint(mobile) {}
 			}
 		div.first, div.third {@include breakpoint(quarter-screen) {padding: 0;}
