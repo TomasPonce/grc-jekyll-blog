@@ -121,25 +121,6 @@ $main-width: 90%;
 
 
 /*------------------------------------*\
-    RESET
-\*------------------------------------*/
-
-
-html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure {
-  margin: 0;
-  padding: 0; }
-
-ol, ul {
-  list-style: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-header, footer, nav, section, article, hgroup, figure {
-  display: block; }
-
-/*------------------------------------*\
    	FONTS & BASIC TEXT STYLES
 \*------------------------------------*/
 
@@ -404,7 +385,7 @@ background: $color-5;
 	position: relative;
 	display: block;
 	padding: 1em;
-	z-index: 200;
+	z-index: 100;
 }
 
 [role='navigation'] {
@@ -492,7 +473,7 @@ background: $color-5;
 		opacity: 0;
 		visibility: hidden;
 		height: 1px;
-		z-index: 100;			
+		z-index: 1000;			
 	}
 	
 	[role='navigation'] li ul li {
@@ -521,7 +502,7 @@ background: $color-5;
 		top: auto;
 		left: 0;
 		display: none;
-		z-index: 100;					
+		z-index: 1000;					
 	}	
 
 	.flexNav-no-touch .item-with-ul:hover > ul	 { 
@@ -682,7 +663,7 @@ background: $color-5;
 				-moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
 				-webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
 				box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
-				z-index: 1000;
+				z-index: 100;
 				}
 				img {
 					width: 100%;
