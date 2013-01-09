@@ -11,7 +11,7 @@ layout: default
 		            <div id="slider" class="nivoSlider">
 
 			{% for image in page.images %}
-<img src="{{ image }}" data-thumb="{{ image }}" alt="" title="" data-transition="fade"/>
+{% if page.imgurl %}<a href="{{ page.imgurl }}">{% endif%}<img src="{{ image }}" data-thumb="{{ image }}" alt="" title="" data-transition="fade"/>{% if page.imgurl %}</a>{% endif%}
 			{% endfor %}
 
 				</div>
