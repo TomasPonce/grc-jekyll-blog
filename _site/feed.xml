@@ -4,7 +4,7 @@
  <title>The Graphic Rustication Company</title>
  <link href="http://london-news.demo/feed.xml" rel="self"/>
  <link href="http://london-news.demo"/>
- <updated>2013-01-08T17:02:17-08:00</updated>
+ <updated>2013-01-14T00:27:53-08:00</updated>
  <id>http://graphicrustication.com</id>
  <author>
    <name>Edward Hyde</name>
@@ -108,6 +108,43 @@
  		<updated>2012-12-11T00:00:00-08:00</updated>
  		<id>http://graphicrustication.com/blog/wordpress-basic-training</id>
  		<content type="html">&lt;p&gt;More Tutorials on wordpress coming soon&amp;hellip;&lt;/p&gt;
+</content>
+ 	</entry>
+ 
+ 	<entry>
+ 		<title>Using 1Password with Dropbox</title>
+ 		<link href="http://graphicrustication.com/blog/using-1password-and-dropbox"/>
+ 		<updated>2012-12-11T00:00:00-08:00</updated>
+ 		<id>http://graphicrustication.com/blog/using-1password-and-dropbox</id>
+ 		<content type="html">&lt;h3&gt;New Years Resolution &amp;ndash; Be More Security Conscious&lt;/h3&gt;
+
+&lt;p&gt;Being a web designer and all around tech nerd I have accumilated ALOT of passwords to keep track of over the years. After having one of my servers hacked a few years back I got alittle crazy with the passwords. I fashoined Divinci code like login credentails that were sure to fiol any would be hackers attempts at cracking it. It also prevented me from getting into my own sites and servers all to often as well. Effective, yes, efficient&amp;hellip;.not so much. So what solution to try?&lt;/p&gt;
+
+&lt;h3&gt;1Password Iphone App Testdrive&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://Agilebits.com&quot;&gt;http://Agilebits.com&lt;/a&gt; has had this on the market for quite sometime now, however recently they added support for syncing with dropbox. This I like. So say my Iphone decides to take a dip in the lake this next summer, all my password data will be living save and sound in the cloud residing in a folder structure called agilekeychain.&lt;/p&gt;
+
+&lt;p&gt;So far so good, now I just have to get going adding all these passwords and notes into it. That might take awhile, but it will save me time in the long run for sure.&lt;/p&gt;
+
+&lt;h3&gt;Other Features of 1Password&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Saves your web usernames and passwords&lt;/strong&gt;, a variety of information that you might find in your wallet (licenses, social security numbers, credit cards, etc.), software serial numbers, non-web account information (like iTunes and e-mail) and freeform secure notes to store any data you&amp;rsquo;d like to keep safe from prying eyes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Locks your data&lt;/strong&gt; behind a four-digit unlock code and a master password, both of which you configure. Even if your mobile device is stolen or misplaced, your 1Password information is safe.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Has a browser built right into it.&lt;/strong&gt; Tap a saved login and you&amp;rsquo;re immediately taken to the site, your username and password entered. All you have to do is tap to log in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Syncs safely and securely&lt;/strong&gt; with 1Password for Mac and 1Password for Windows using free Dropbox service. The sync is two-way, so new information can be easily added on your mobile device and synced back to your Mac or PC! To read up on how to sync you can check it out in the 1Password User Guide.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Syncing in Background.&lt;/strong&gt; 1Password takes advantage of background task feature available in iOS 4 to complete sync even if you switch to another app or lock your iPhone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Encrypted data backups.&lt;/strong&gt; Whether you use OS X, Windows, or Linux, 1Password&amp;rsquo;s built-in back up &amp;amp; restore feature enables you to safely store an encrypted backup of your data on your computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copy and Paste.&lt;/strong&gt; Easily copy passwords into other applications or credit card numbers into web forms.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Support for Multi-tasking.&lt;/strong&gt; You can automatically lock 1Password when switching to another app or set it to lock after a time-out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ProUniversal App&lt;/strong&gt; 1Password Pro is a universal application that works iPhone, iPod touch and iPad. It is like having two applications in one!&lt;/p&gt;
 </content>
  	</entry>
  

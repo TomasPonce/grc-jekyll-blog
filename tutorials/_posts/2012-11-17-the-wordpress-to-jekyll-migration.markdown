@@ -25,4 +25,3 @@ Always on the lookout for ways to improve my websites and workflow I stumbled up
 
 So far during my migration I have been completely involved in perfecting my workflow with Jeckyl, Sass, and Git. I have been successful in my quest to have two different computers that I can update my site from via a github repo. Once I update the site with Jekyll all I have to do it push changes to the git repo and it deploys my website to the production server via a git hook. Before I started to use Jekyll I was developing a way to work on a local copy of wordpress and deploy both the site and database via git. Though I will likely still pursue this solution for other clients sites, the static approach of my current workflow makes my life a lot easier for my personal site needs. 
 
-
